@@ -163,6 +163,81 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="www.curryhqy.cn/2020/09/19/leetcode_%E4%B8%AD%E4%BD%8D%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="curryhqy">
+      <meta itemprop="description" content="现在我混日子，将来日子混我">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="curryhqyの的blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/19/leetcode_%E4%B8%AD%E4%BD%8D%E6%95%B0/" class="post-title-link" itemprop="url">leetcode 中位数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-19 16:38:44 / 修改时间：23:49:57" itemprop="dateCreated datePublished" datetime="2020-09-19T16:38:44+08:00">2020-09-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="力扣4-88题，寻找两个有序数组的中位数"><a href="#力扣4-88题，寻找两个有序数组的中位数" class="headerlink" title="力扣4+88题，寻找两个有序数组的中位数"></a>力扣4+88题，寻找两个有序数组的中位数</h1><img src="https://cdn.jsdelivr.net/gh/curryhqy/PICTURE@master/uPic/皮卡丘.jpg" alt="皮卡丘" style="zoom:25%;" />
+
+<h2 id="88题，合并两个有序数组"><a href="#88题，合并两个有序数组" class="headerlink" title="88题，合并两个有序数组"></a>88题，合并两个有序数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=88 lang=java</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [88] 合并两个有序数组</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">//双指针</span></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span> m, <span class="keyword">int</span>[] nums2, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 最简单方法就是合并后排序</span></span><br><span class="line"><span class="comment">         * System.arraycopy(num2, 0, num1, m, n);</span></span><br><span class="line"><span class="comment">         * Arrays.sort(num1);</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="comment">//把num1的数放在其他地方，num1用来存放结果</span></span><br><span class="line">        <span class="keyword">int</span>[] num1_copy = <span class="keyword">new</span> <span class="keyword">int</span>[m];</span><br><span class="line">        System.arraycopy(nums1, <span class="number">0</span>, num1_copy, <span class="number">0</span>, m);</span><br><span class="line">        <span class="keyword">int</span> p1 = <span class="number">0</span>, p2 = <span class="number">0</span>;<span class="comment">//num1_copy和num2的指针</span></span><br><span class="line">        <span class="keyword">int</span> p =<span class="number">0</span>;<span class="comment">//num1的指针</span></span><br><span class="line">        <span class="keyword">while</span>((p1 &lt; m) &amp;&amp; (p2 &lt; n))&#123;</span><br><span class="line">            nums1[p++] = (num1_copy[p1] &lt; nums2[p2]) ? num1_copy[p1++] : nums2[p2++];</span><br><span class="line">            <span class="comment">//若还剩下一个数组没用用完</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(p1 &lt; m)&#123;</span><br><span class="line">            System.arraycopy(num1_copy, p1, nums1, p1+p2, m-p1);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(p2 &lt; n)&#123;</span><br><span class="line">            System.arraycopy(nums2, p2, nums1, p1+p2, n-p2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4题，寻找中位数"><a href="#4题，寻找中位数" class="headerlink" title="4题，寻找中位数"></a>4题，寻找中位数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=4 lang=java</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [4] 寻找两个正序数组的中位数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 时间复杂度要求log(m+n),则用二分查找</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findMedianSortedArrays</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums1.length &gt; nums2.length)&#123;</span><br><span class="line">            <span class="keyword">int</span>[] temp = nums1;</span><br><span class="line">            nums1 = nums2;</span><br><span class="line">            nums2 = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = nums1.length;</span><br><span class="line">        <span class="keyword">int</span> n = nums2.length;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//分割线左边的所有元素需要满足的个数</span></span><br><span class="line">        <span class="keyword">int</span> totalLeft = (m + n + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//在num1的区间[0,m]里查找恰当的分割线</span></span><br><span class="line">        <span class="comment">//使得 num1[i-1]&lt;=num2[j]&amp;&amp;num1[i]&gt;=num2[j-1]</span></span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = m;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> i = left + (right - left + <span class="number">1</span>)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">int</span> j =totalLeft - i;</span><br><span class="line">            <span class="keyword">if</span>(nums1[i-<span class="number">1</span>] &gt; nums2[j])&#123;</span><br><span class="line">                <span class="comment">//搜索区间[left,i-1]</span></span><br><span class="line">                right = i - <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">//[i , right]</span></span><br><span class="line">                left = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> i = left;</span><br><span class="line">        <span class="keyword">int</span> j = totalLeft - i;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//分割线左右的四个值</span></span><br><span class="line">        <span class="keyword">int</span> num1LeftMax = ((i == <span class="number">0</span>) ? Integer.MIN_VALUE : nums1[i-<span class="number">1</span>]);</span><br><span class="line">        <span class="keyword">int</span> num1RightMin = ((i == m) ? Integer.MAX_VALUE : nums1[i]);</span><br><span class="line">        <span class="keyword">int</span> num2LeftMax = ((j == <span class="number">0</span>) ? Integer.MIN_VALUE : nums2[j-<span class="number">1</span>]);</span><br><span class="line">        <span class="keyword">int</span> num2RightMin = ((j == n) ? Integer.MAX_VALUE : nums2[j]);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>((m + n) % <span class="number">2</span> == <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> Math.max(num1LeftMax, num2LeftMax);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> (<span class="keyword">double</span>) ((Math.max(num1LeftMax, num2LeftMax) + Math.min(num1RightMin, num2RightMin))) / <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="www.curryhqy.cn/2020/09/18/leetcode_%E5%85%A8%E6%8E%92%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -860,87 +935,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="www.curryhqy.cn/2020/09/06/diary_9_6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="curryhqy">
-      <meta itemprop="description" content="现在我混日子，将来日子混我">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="curryhqyの的blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/06/diary_9_6/" class="post-title-link" itemprop="url">diary——9.6</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-06 22:50:29" itemprop="dateCreated datePublished" datetime="2020-09-06T22:50:29+08:00">2020-09-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-15 10:45:47" itemprop="dateModified" datetime="2020-09-15T10:45:47+08:00">2020-09-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/diary/" itemprop="url" rel="index"><span itemprop="name">diary</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>2020-9-6   天气：☀️  心情：🐶</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/06/diary_9_6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1010,7 +1004,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
