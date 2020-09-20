@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"www.curryhqy.cn","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="力扣4+88题，寻找两个有序数组的中位数  88题，合并两个有序数组1234567891011121314151617181920212223242526272829303132&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;88 lang&#x3D;java * * [88] 合并两个有序数组 *&#x2F;&#x2F;&#x2F;双指针&#x2F;&#x2F; @lc code&#x3D;startclass Solution &amp;#123;    pub">
+  <meta name="description" content="力扣4+88题，寻找两个有序数组的中位数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode 中位数">
 <meta property="og:url" content="www.curryhqy.cn/2020/09/19/leetcode_%E4%B8%AD%E4%BD%8D%E6%95%B0/index.html">
 <meta property="og:site_name" content="curryhqyの的blog">
-<meta property="og:description" content="力扣4+88题，寻找两个有序数组的中位数  88题，合并两个有序数组1234567891011121314151617181920212223242526272829303132&#x2F;* * @lc app&#x3D;leetcode.cn id&#x3D;88 lang&#x3D;java * * [88] 合并两个有序数组 *&#x2F;&#x2F;&#x2F;双指针&#x2F;&#x2F; @lc code&#x3D;startclass Solution &amp;#123;    pub">
+<meta property="og:description" content="力扣4+88题，寻找两个有序数组的中位数">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/curryhqy/PICTURE@master/uPic/%E7%9A%AE%E5%8D%A1%E4%B8%98.jpg">
 <meta property="article:published_time" content="2020-09-19T08:38:44.031Z">
-<meta property="article:modified_time" content="2020-09-19T15:49:57.160Z">
+<meta property="article:modified_time" content="2020-09-20T03:00:45.981Z">
 <meta property="article:author" content="curryhqy">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/curryhqy/PICTURE@master/uPic/%E7%9A%AE%E5%8D%A1%E4%B8%98.jpg">
@@ -190,10 +190,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-19 16:38:44 / 修改时间：23:49:57" itemprop="dateCreated datePublished" datetime="2020-09-19T16:38:44+08:00">2020-09-19</time>
+              <time title="创建时间：2020-09-19 16:38:44" itemprop="dateCreated datePublished" datetime="2020-09-19T16:38:44+08:00">2020-09-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-20 11:00:45" itemprop="dateModified" datetime="2020-09-20T11:00:45+08:00">2020-09-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -215,7 +221,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="力扣4-88题，寻找两个有序数组的中位数"><a href="#力扣4-88题，寻找两个有序数组的中位数" class="headerlink" title="力扣4+88题，寻找两个有序数组的中位数"></a>力扣4+88题，寻找两个有序数组的中位数</h1><img src="https://cdn.jsdelivr.net/gh/curryhqy/PICTURE@master/uPic/皮卡丘.jpg" alt="皮卡丘" style="zoom:25%;" />
+        <h1 id="力扣4-88题，寻找两个有序数组的中位数"><a href="#力扣4-88题，寻找两个有序数组的中位数" class="headerlink" title="力扣4+88题，寻找两个有序数组的中位数"></a>力扣4+88题，寻找两个有序数组的中位数</h1><a id="more"></a>
+
+<img src="https://cdn.jsdelivr.net/gh/curryhqy/PICTURE@master/uPic/皮卡丘.jpg" alt="皮卡丘" style="zoom:25%;" />
 
 <h2 id="88题，合并两个有序数组"><a href="#88题，合并两个有序数组" class="headerlink" title="88题，合并两个有序数组"></a>88题，合并两个有序数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @lc app=leetcode.cn id=88 lang=java</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [88] 合并两个有序数组</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">//双指针</span></span><br><span class="line"><span class="comment">// @lc code=start</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span> m, <span class="keyword">int</span>[] nums2, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 最简单方法就是合并后排序</span></span><br><span class="line"><span class="comment">         * System.arraycopy(num2, 0, num1, m, n);</span></span><br><span class="line"><span class="comment">         * Arrays.sort(num1);</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="comment">//把num1的数放在其他地方，num1用来存放结果</span></span><br><span class="line">        <span class="keyword">int</span>[] num1_copy = <span class="keyword">new</span> <span class="keyword">int</span>[m];</span><br><span class="line">        System.arraycopy(nums1, <span class="number">0</span>, num1_copy, <span class="number">0</span>, m);</span><br><span class="line">        <span class="keyword">int</span> p1 = <span class="number">0</span>, p2 = <span class="number">0</span>;<span class="comment">//num1_copy和num2的指针</span></span><br><span class="line">        <span class="keyword">int</span> p =<span class="number">0</span>;<span class="comment">//num1的指针</span></span><br><span class="line">        <span class="keyword">while</span>((p1 &lt; m) &amp;&amp; (p2 &lt; n))&#123;</span><br><span class="line">            nums1[p++] = (num1_copy[p1] &lt; nums2[p2]) ? num1_copy[p1++] : nums2[p2++];</span><br><span class="line">            <span class="comment">//若还剩下一个数组没用用完</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(p1 &lt; m)&#123;</span><br><span class="line">            System.arraycopy(num1_copy, p1, nums1, p1+p2, m-p1);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(p2 &lt; n)&#123;</span><br><span class="line">            System.arraycopy(nums2, p2, nums1, p1+p2, n-p2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// @lc code=end</span></span><br></pre></td></tr></table></figure>
 
@@ -251,7 +259,10 @@
     <a href="/2020/09/18/leetcode_%E5%85%A8%E6%8E%92%E5%88%97/" rel="prev" title="leetcode 全排列">
       <i class="fa fa-chevron-left"></i> leetcode 全排列
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/20/Interview/" rel="next" title="java后端面经">
+      java后端面经 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
