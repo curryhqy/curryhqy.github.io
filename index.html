@@ -252,7 +252,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/12/14/alibaba/" class="post-title-link" itemprop="url">alibaba</a>
+            <a href="/2020/12/14/alibaba/" class="post-title-link" itemprop="url">阿里巴巴Java开发手册</a>
         </h2>
 
         <div class="post-meta">
@@ -269,8 +269,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-12-15 16:58:05" itemprop="dateModified" datetime="2020-12-15T16:58:05+08:00">2020-12-15</time>
+                <time title="修改时间：2020-12-15 17:10:33" itemprop="dateModified" datetime="2020-12-15T17:10:33+08:00">2020-12-15</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
 
           
 
@@ -283,229 +292,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="阿里巴巴-java-开发手册"><a href="#阿里巴巴-java-开发手册" class="headerlink" title="阿里巴巴 java 开发手册"></a>阿里巴巴 java 开发手册</h1><h2 id="编程规约"><a href="#编程规约" class="headerlink" title="编程规约"></a>编程规约</h2><h3 id="命名规约"><a href="#命名规约" class="headerlink" title="命名规约"></a>命名规约</h3><ol>
-<li><p>类名使用 UpperCamelCase风格，必须遵从驼峰形式</p>
-<p>![image-20201214111207101](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214111207101.png)</p>
-</li>
-<li><p>方法名、参数名、成员变量、局部变量都统一使用lowerCamelCase风格，必须遵从驼峰形式</p>
-<p>![image-20201214111947213](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214111947213.png)</p>
-</li>
-<li><p>各层命名规约</p>
-<p>A) Service/DAO 层方法命名规约（重要）</p>
-<p>​    <strong>1） 获取单个对象的方法用 get 做前缀。</strong></p>
-<p>​    <strong>2） 获取多个对象的方法用 list 做前缀。</strong></p>
-<p>​    <strong>3） 获取统计值的方法用 count 做前缀。</strong></p>
-<p>​    <strong>4） 插入的方法用 save做前缀。</strong></p>
-<p>​    <strong>5） 删除的方法用 delete做前缀（<u>我们采用del或者delete</u>）。</strong></p>
-<p>​    <strong>6） 修改的方法用 update 做前缀。</strong></p>
-<p>B) 领域模型命名规约</p>
-<p>​    1） 数据对象：xxxDO，xxx 即为数据表名。</p>
-<p>​    2） 数据传输对象：xxxDTO，xxx 为业务领域相关的名称。</p>
-<p>​    3） 展示对象：xxxVO，xxx 一般为网页名称。</p>
-<p>​    4） POJO 是 DO/DTO/BO/VO 的统称，禁止命名成 xxxPOJO。</p>
-</li>
-</ol>
-<h3 id="常量定义"><a href="#常量定义" class="headerlink" title="常量定义"></a>常量定义</h3><ol>
-<li><p>long 或者 Long 初始赋值时，必须使用大写的 L，不能是小写的 l，小写容易跟数字 1</p>
-<p>混淆，造成误解。</p>
-<p><u>Long a = 2l; 写的是数字的 21，还是 Long 型的 2?</u></p>
-</li>
-<li><p>如果变量值仅在一个范围内变化用 Enum 类。如果还带有名称之外的延伸属性，必须</p>
-<p>使用 Enum 类。</p>
-<p>![image-20201214113040962](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214113040962.png)</p>
-</li>
-</ol>
-<h3 id="格式规约"><a href="#格式规约" class="headerlink" title="格式规约"></a>格式规约</h3><ol>
-<li><p><strong>大括号的使用约定。如果是大括号内为空，则简洁地写成{}即可，不需要换行；如果</strong></p>
-<p><strong>是非空代码块则：</strong></p>
-<p><strong>1） 左大括号前不换行。</strong></p>
-<p><strong>2） 左大括号后换行。</strong></p>
-<p><strong>3） 右大括号前换行。</strong></p>
-<p><strong>4） 右大括号后还有 else 等代码则不换行；表示终止右大括号后必须换行。</strong></p>
-</li>
-<li><p><strong>左括号和后一个字符之间不出现空格；同样，右括号和前一个字符之间也不出现空</strong></p>
-<p><strong>格。</strong></p>
-</li>
-<li><p><strong>if/for/while/switch/do 等保留字与左右括号之间都必须加空格。</strong></p>
-</li>
-<li><p><strong>任何运算符左右必须加一个空格。</strong></p>
-</li>
-</ol>
-<p>![image-20201214113853298](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214113853298.png)</p>
-<ol start="5">
-<li><p>单行字符数限制不超过 120 个，超出需要换行，遵循如下原则：</p>
-<p>1） 换行时相对上一行缩进 4 个空格。</p>
-<p>2） 运算符与下文一起换行。</p>
-<p>3） 方法调用的点符号与下文一起换行。</p>
-<p>4） 在多个参数超长，逗号后进行换行。</p>
-<p>5） 在括号前不要换行。</p>
-<p>![image-20201214114141972](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214114141972.png)</p>
-</li>
-<li><p>方法参数在定义和传入时，多个参数逗号后边必须加空格。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">method(<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>IDE 的 text file encoding 设置为 UTF-8; IDE 中文件的换行符使用 Unix 格式，不</p>
-<p>要使用 windows 格式。</p>
-</li>
-</ol>
-<h3 id="OOP规约"><a href="#OOP规约" class="headerlink" title="OOP规约"></a>OOP规约</h3><ol>
-<li><p>所有的覆写方法，必须加@Override 注解。例如：getObject()与 get0bject()的问题。一个是字母的 O，一个是数字的 0，加@Override可以准确判断是否覆盖成功。</p>
-</li>
-<li><p>所有的相同类型的包装类对象之间值的比较，全部使用 equals 方法比较。</p>
-</li>
-<li><p>关于基本数据类型与包装数据类型的使用标准如下：</p>
-<p>1） 所有的 POJO 类属性必须使用包装数据类型。</p>
-<p>2） RPC 方法的返回值和参数必须使用包装数据类型。</p>
-<p>3） 所有的局部变量推荐使用基本数据类型。</p>
-<p>（数据库的查询结果可能是 null，因为自动拆箱，用基本数据类型接收有 NPE 风险）（NPE：<strong>为基本类型的数据返回null值</strong>）</p>
-</li>
-</ol>
-<h3 id="集合处理"><a href="#集合处理" class="headerlink" title="集合处理"></a>集合处理</h3><ol>
-<li>使用集合转数组的方法，必须使用集合的 toArray(T[] array)，传入的是类型完全一样的数组，大小就是 list.size()，例如：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">list.add(<span class="string">"guan"</span>);</span><br><span class="line"></span><br><span class="line">list.add(<span class="string">"bao"</span>);</span><br><span class="line"></span><br><span class="line">String[] array = <span class="keyword">new</span> String[list.size()];</span><br><span class="line"></span><br><span class="line">array = list.toArray(array);</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>使用工具类 Arrays.asList()把数组转换成集合时，不能使用其修改集合相关的方法，它的 add/remove/clear 方法会抛出 UnsupportedOperationException 异常。</p>
-<p>说明：asList 的返回对象是一个 Arrays 内部类，并没有实现集合的修改方法。Arrays.asList体现的是适配器模式，只是转换接口，后台的数据仍是数组。</p>
-</li>
-<li><p>不要在 foreach 循环里进行元素的 remove/add 操作。remove 元素使用 Iterator方式，如果并发操作，需要对 Iterator 对象加锁。</p>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Iterator&lt;String&gt; it = a.iterator();</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(it.hasNext()) &#123;</span><br><span class="line">	String temp =</span><br><span class="line">	it.next();</span><br><span class="line">	<span class="keyword">if</span>(删除元素的条件) &#123;</span><br><span class="line">		it.remove();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li><p>，Comparator 要满足自反性，传递性，对称性，不然 Arrays.sort，Collections.sort 会报IllegalArgumentException 异常。</p>
-<p>1） 自反性：x，y 的比较结果和 y，x 的比较结果相反。</p>
-<p>2） 传递性：x&gt;y,y&gt;z,则 x&gt;z。</p>
-<p>3） 对称性：x=y,则 x,z 比较结果和 y，z 比较结果相同。</p>
-</li>
-<li><p>使用 entrySet 遍历 Map 类集合 KV，而不是 keySet 方式进行遍历。</p>
-<p>说明：keySet 其实是遍历了 2 次，一次是转为 Iterator 对象，另一次是从 hashMap 中取出 key所对应的 value。而 entrySet 只是遍历了一次就把 key 和 value 都放到了 entry 中，效率更高。如果是 JDK8，使用 Map.foreach 方法。values()返回的是 V 值集合，是一个 list 集合对象；keySet()返回的是 K 值集合，是一个 Set 集合对象；entrySet()返回的是 K-V 值组合集合。</p>
-<p>![image-20201214143611543](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201214143611543.png)</p>
-</li>
-<li><p>利用 Set 元素唯一的特性，可以快速对另一个集合进行去重操作，避免使用 List 的contains 方法进行遍历去重操作。</p>
-</li>
-</ol>
-<h3 id="并发处理"><a href="#并发处理" class="headerlink" title="并发处理"></a>并发处理</h3><ol>
-<li>不要显式创建进程，使用线程池</li>
-</ol>
-<p>![image-20201215091104537](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215091104537.png)</p>
-<p>使用线程池的好处是减少在创建和销毁线程上所花的时间以及系统资源的开销，解决资源不足的问题。如果不使用线程池，有可能造成系统创建大量同类线程而导致消耗完内存或者“过度切换”的问题。</p>
-<ol start="2">
-<li><h3 id="控制语句"><a href="#控制语句" class="headerlink" title="控制语句"></a>控制语句</h3></li>
-<li><p>在 if/else/for/while/do 语句中必须使用大括号，即使只有一行代码，避免使用下面的形式：if (condition) statements;</p>
-</li>
-<li><p>循环体中的语句要考量性能，以下操作尽量移至循环体外处理，如定义对象、变量、获取数据库连接，进行不必要的 try-catch 操作（这个 try-catch 是否可以移至循环体外）</p>
-</li>
-<li><p>关于参数校验</p>
-<ul>
-<li><p>需要参数校验的场景</p>
-<p>1） 调用频次低的方法。</p>
-<p>2） 执行时间开销很大的方法，参数校验时间几乎可以忽略不计，但如果因为参数错误导致中间执行回退，或者错误，那得不偿失。</p>
-<p>3） 需要极高稳定性和可用性的方法。</p>
-<p>4） 对外提供的开放接口，不管是 RPC/API/HTTP 接口。</p>
-</li>
-<li><p>不需要参数校验的场景</p>
-<p>1） 极有可能被循环调用的方法，不建议对参数进行校验。但在方法说明里必须注明外部参数检查。</p>
-<p>2） 底层的方法调用频度都比较高，一般不校验。毕竟是像纯净水过滤的最后一道，参数错误不太可能到底层才会暴露问题。一般 DAO 层与 Service 层都在同一个应用中，部署在同一台服务器中，所以 DAO 的参数验，可以省略。</p>
-<p>3） 被声明成 private 只会被自己代码所调用的方法，如果能够确定调用方法的代码传入参数已经做过检查或者肯定不会有问题，此时可以不校验参数。</p>
-</li>
-</ul>
-</li>
-<li><p>除常用方法（如 getXxx/isXxx）等外，不要在条件判断中执行复杂的语句，以提高可读性。</p>
-</li>
-</ol>
-<h3 id="注释规约"><a href="#注释规约" class="headerlink" title="注释规约"></a>注释规约</h3><ol>
-<li>类、类属性、类方法的注释必须使用 javadoc 规范，使用/<em>*内容</em>/格式，不得使用//xxx 方式。说明：在 IDE 编辑窗口中，javadoc 方式会提示相关注释，生成 javadoc 可以正确输出相应注释；在 IDE 中，工程调用方法时，不进入方法即可悬浮提示方法、参数、返回值的意义，提高阅读效率。类似下面这种：</li>
-</ol>
-<p>![image-20201215092118171](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215092118171.png)</p>
-<ol start="2">
-<li><p>所有的类都必须添加创建者信息。</p>
-</li>
-<li><p>方法内部单行注释，在被注释语句上方另起一行，使用//注释。方法内部多行注释使用/* */注释，注意与代码对齐。</p>
-</li>
-<li><p>所有的枚举类型字段必须要有注释，说明每个数据项的用途。</p>
-</li>
-<li><p>代码修改的同时，注释也要进行相应的修改，尤其是参数、返回值、异常、核心逻辑等的修改。(说明：代码与注释更新不同步，就像路网与导航软件更新不同步一样，如果导航软件严重滞后，就失去了导航的意义)</p>
-</li>
-<li><p>特殊注释标记，请注明标记人与标记时间。注意及时处理这些标记，通过标记扫描，经常清理此类标记。线上故障有时候就是来源于这些标记处的代码。</p>
-<p>1） 待办事宜（TODO）:（ 标记人，标记时间，[预计处理时间]）</p>
-<p>​    表示需要实现，但目前还未实现的功能。这实际上是一个 javadoc 的标签，目前的javadoc 还没有实现，但已经被广泛使用。只能应用于类，接口和方法（因为它是一个 javadoc标签）</p>
-<p>2）错误，不能工作（FIXME）：（标记人，标记时间，[预处理时间]）</p>
-<p>​    在注释中用 FIXME 标记某代码是错误的，而且不能工作，需要及时纠正的情况。</p>
-</li>
-</ol>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ol>
-<li>注意 Math.random() 这个方法返回是 double 类型，注意取值范围 0≤x&lt;1（能够取到零值，注意除零异常），如果想获取整数类型的随机数，不要将 x 放大 10 的若干倍然后取整，直接使用 Random 对象的 nextInt 或者 nextLong 方法。如：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Random random = <span class="keyword">new</span> Random();</span><br><span class="line"><span class="comment">//产生0-99的随机数</span></span><br><span class="line"><span class="keyword">int</span> x = random.nextInt(<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>获取当前毫秒数：System.currentTimeMillis(); 而不是 new Date().getTime();</p>
-<p>说明：如果想获取更加精确的纳秒级时间值，用 System.nanoTime。在 JDK8 中，针对统计时间等场景，推荐使用 Instant 类。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Instant instant = Instant.now();<span class="comment">//当前瞬时时间</span></span><br><span class="line">System.out.println(instant.getEpochSecond());<span class="comment">//当前瞬间秒数</span></span><br><span class="line">System.out.println(instant.toEpochMill());<span class="comment">//当前瞬间毫秒数</span></span><br><span class="line">System.out.println(instant.getNano);<span class="comment">//当前瞬间纳秒数</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="异常日志"><a href="#异常日志" class="headerlink" title="异常日志"></a>异常日志</h2><h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><ol>
-<li><p>捕获异常与抛异常，必须是完全匹配，或者捕获异常是抛异常的父类。</p>
-</li>
-<li><p>防止 NPE，是程序员的基本修养，注意 NPE 产生的场景：</p>
-<p>1） 返回类型为包装数据类型，有可能是 null，返回 int 值时注意判空。</p>
-<p>2） 数据库的查询结果可能为 null。</p>
-<p>3） 集合里的元素即使 isNotEmpty，取出的数据元素也可能为 null。</p>
-<p>4） 远程调用返回对象，一律要求进行 NPE 判断。</p>
-<p>5） 对于 Session 中获取的数据，建议 NPE 检查，避免空指针。</p>
-<p>6） 级联调用 obj.getA().getB().getC()；一连串调用，易产生 NPE。</p>
-</li>
-<li><p>在代码中使用“抛异常”还是“返回错误码”，对于公司外的 http/api 开放接口必须使用“错误码”；而应用内部推荐异常抛出；跨应用间 RPC 调用优先考虑使用 Result 方式，封装 isSuccess、“错误码”、“错误简短信息”。</p>
-</li>
-</ol>
-<p>![image-20201215114506068](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215114506068.png)</p>
-<p>![image-20201215114643149](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215114643149.png)</p>
-<h3 id="日志规约"><a href="#日志规约" class="headerlink" title="日志规约"></a>日志规约</h3><ol>
-<li>应用中不可直接使用日志系统（Log4j、Logback）中的 API，而应依赖使用日志框架SLF4J 中的 API，使用门面模式的日志框架，有利于维护和各个类的日志处理方式统一。</li>
-</ol>
-<p>![image-20201215114927126](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215114927126.png)</p>
-<ol start="2">
-<li>避免重复打印日志，浪费磁盘空间，务必在 log4j.xml 中设置 additivity=false</li>
-</ol>
-<p>![image-20201215115308588](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215115308588.png)</p>
-<h2 id="MYSQL规约"><a href="#MYSQL规约" class="headerlink" title="MYSQL规约"></a>MYSQL规约</h2><h3 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h3><ol>
-<li>表名、字段名必须使用小写字母或数字；禁止出现数字开头，禁止两个下划线中间只出现数字。数据库字段名的修改代价很大，因为无法进行预发布，所以字段名称需要慎重考虑。</li>
-<li>表名不使用复数名称</li>
-</ol>
-<p>![image-20201215115943248](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215115943248.png)</p>
-<ol start="3">
-<li><p>小数类型为 decimal，禁止使用 float 和 double。</p>
-<p>说明：float 和 double 在存储的时候，存在精度损失的问题，很可能在值的比较时，得到不正确的结果。如果存储的数据范围超过 decimal 的范围，建议将数据拆成整数和小数分开存储。</p>
-</li>
-<li><p>表必备三字段：id, gmt_create, gmt_modified。</p>
-<p>说明：：其中 id 必为主键，类型为 unsigned bigint、单表时自增、步长为 1；gmt_create, gmt_modified 的类型均为date_time 类型。</p>
-<p>![image-20201215131606546](/Users/heqinyang/Library/Application Support/typora-user-images/image-20201215131606546.png)</p>
-<ol start="5">
-<li><p>合适的字符存储长度，不但节约数据库表空间、节约索引存储，更重要的是提升检索速度。</p>
-<p>例如：人的年龄用 unsigned tinyint（表示范围 0-255，人的寿命不会超过 255 岁）；海龟就必须是 smallint，但如果是太阳的年龄，就必须是 int；如果是所有恒星的年龄都加起来，那么就必须使用 bigint。</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><ol>
-<li><p>SQL 性能优化的目标：至少要达到 range 级别，要求是 ref 级别，如果可以是 consts最好。</p>
-<p>说明：</p>
-<p>1）consts 单表中最多只有一个匹配行（主键或者唯一索引），在优化阶段即可读取到数据。</p>
-<p>2）ref 指的是使用普通的索引。（normal index）</p>
-<p>3）range 对索引进范围检索。</p>
-</li>
-<li><p>页面搜索严禁左模糊或者全模糊，如果需要请走搜索引擎来解决。</p>
-<p>索引文件具有 B-Tree 的最左前缀匹配特性，如果左边的值未确定，那么无法使用此索引。</p>
-</li>
-<li><p>建组合索引的时候，区分度最高的在最左边。</p>
-<p>正例：如果 where a=? and b=? ，a 列的几乎接近于唯一值，那么只需要单建 idx_a 索引即可。</p>
-</li>
-</ol>
-
+          <h2 id="读阿里巴巴-java-开发手册的收获"><a href="#读阿里巴巴-java-开发手册的收获" class="headerlink" title="读阿里巴巴 java 开发手册的收获"></a>读阿里巴巴 java 开发手册的收获</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/14/alibaba/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
