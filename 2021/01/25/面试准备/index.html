@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=%E9%98%88%E5%80%BC%253D%E5%AE%B9%E9%87%8F%5Ctimes%E8%B4%9F%E8%BD%BD%E5%9B%A0%E5%AD%90">
 <meta property="article:published_time" content="2021-01-25T02:02:07.902Z">
-<meta property="article:modified_time" content="2021-03-03T12:52:18.357Z">
+<meta property="article:modified_time" content="2021-03-03T15:48:01.656Z">
 <meta property="article:author" content="curryhqy">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zhihu.com/equation?tex=%E9%98%88%E5%80%BC%253D%E5%AE%B9%E9%87%8F%5Ctimes%E8%B4%9F%E8%BD%BD%E5%9B%A0%E5%AD%90">
@@ -198,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-03 20:52:18" itemprop="dateModified" datetime="2021-03-03T20:52:18+08:00">2021-03-03</time>
+                <time title="修改时间：2021-03-03 23:48:01" itemprop="dateModified" datetime="2021-03-03T23:48:01+08:00">2021-03-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -295,7 +295,7 @@
 <p>S3:分析层级对应的地址元素,将层级对应的地址元素的匹配模式设置为模糊匹配,将其余设置为精确匹配;</p>
 <p>S4:将待分析数据集中的中文地址数据按照地址元素的匹配模式与当前地址树进行匹配;</p>
 <p>S5:对中文地址数据进行编码,并根据编码值大小顺序创建新的地址树.</p>
-<p>S6:S4中匹配失败的地址元素存储于栈结构中,后续匹配成功时补充至地址树</p>
+<p>S6:S4中匹配失败的地址元素存储于栈结构中，后续匹配成功时补充至地址树</p>
 </li>
 <li><h3 id="你使用Redis做过什么？是怎么实现的？"><a href="#你使用Redis做过什么？是怎么实现的？" class="headerlink" title="你使用Redis做过什么？是怎么实现的？"></a>你使用Redis做过什么？是怎么实现的？</h3><p>![image-20210301145738414](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210301145738414.png)</p>
 <p>redis正是通过分数来为集合中的成员进行从小到大的排序，zset的成员是唯一的,但分数(score)却可以重复。</p>
@@ -451,7 +451,8 @@
 </ul>
 <p>总之，每个索引可以被分成多个分片。一个索引也可以被复制0次（意思是没有复制）或多次。一旦复制了，每个索引就有了主分片（作为复制源的原来的分片）和复制分片（主分片的拷贝）之别。分片和复制的数量可以在索引创建的时候指定。在索引创建之后，你可以在任何时候动态地改变复制数量，但是不能改变分片的数量。</p>
 <p>默认五个主分片和一个复制（共十个）</p>
-<p>倒排索引：</p>
+<p><strong>倒排索引：</strong></p>
+<p>倒排索引，描述了从单词到文档的关联关系。利用倒排索引，可以快速的通过单词找到和该单词关联的文档列表。倒排索引由两部分组成，一个是单词词典，一个是倒排列表。一个文档由许多的单词组成，我们交给ES的文档的越多，分析拆分后得到的单词就越多，这些单词被整理组织成一个集合，集合中的每个元素记录了单词本身的一些相关信息以及一个指定倒排列表的指针。通过单词，我们会在倒排列表中找到一个倒排项，该倒排项中，记录了出现过该单词的所有文档ID，以及单词在文档中的位置信息。也就是说，倒排列表，是倒排项的集合。倒排列表会以文件的形式，具体的存储在磁盘中的某个位置，这个文件，称之为倒排文件。实现结构：一种是哈希+链表，另一种是树。</p>
 </li>
 <li><h3 id="索引？索引类型？"><a href="#索引？索引类型？" class="headerlink" title="索引？索引类型？"></a><strong>索引？索引类型？</strong></h3><p>索引是对数据库表中的一个或多个列的值进行排序的结构，有助于快速获取信息。</p>
 <ol>
@@ -557,6 +558,8 @@
 <li><h3 id="Java实现方法限流？"><a href="#Java实现方法限流？" class="headerlink" title="Java实现方法限流？"></a>Java实现方法限流？</h3><p><em>接口限流实现 有一个API网关，出于对API接口的保护，需要建立一个流控功能，根据API名称， 每分钟最多只能请求指定的次数（如1000次），超过限制则这分钟内返回错误，但下一分钟又可以正常请求。</em></p>
 <p>首先：方法限流必须保证线程安全；其次：我们需要通过时间和调用频率来限制对象的使用，所以要用一个对象来存储每个apiName调用的时间和频率。如下我们用CacheValidate类来进行存储，我们采用isValidate方法判断调用次数是否超限：</p>
 </li>
+</ol>
+<ol start="46">
 <li><h3 id="缓存穿透和缓存雪崩？？？"><a href="#缓存穿透和缓存雪崩？？？" class="headerlink" title="缓存穿透和缓存雪崩？？？"></a>缓存穿透和缓存雪崩？？？</h3><ol>
 <li>缓存穿透</li>
 </ol>
@@ -574,6 +577,14 @@
 <p>3：不同的key，设置不同的过期时间，让缓存失效的时间点尽量均匀。</p>
 </li>
 <li><h3 id="Exception-与-Error包结构？"><a href="#Exception-与-Error包结构？" class="headerlink" title="Exception 与 Error包结构？"></a>Exception 与 Error包结构？</h3><p>java可抛出的结构分为三种类型：被检查的异常（CheckedException）,运行时异常（RuntimeException），错误（Error）。</p>
+<ul>
+<li><p>运行时异常：java编译器不会检查它，当程序中可能出现这类异常时，如果既没有throws声明抛出他，也没有try-catch捕获他，还是会编译通过。如：类转换异常、数组越界、控制针。</p>
+</li>
+<li><p>被检查的异常：java编译器会检查它，要么throws声明抛出他，要么try-catch捕获他，否则不会通过编译。如IOException、SQLEXCEPTION。</p>
+</li>
+<li><p>错误：和运行时异常一样，编译器也不会对错误进行检查。当资源不足、约束失败、或是其它程序无法继续运行的条件发生时，就产生错误。如内存泄漏、线程死亡等。</p>
+</li>
+</ul>
 </li>
 <li></li>
 </ol>
