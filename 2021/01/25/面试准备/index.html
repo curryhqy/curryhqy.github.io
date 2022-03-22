@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"www.curryhqy.cn","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录自己准备面试的一些东西">
+  <meta name="description" content="title: 面试准备categories: 面试 记录自己准备面试的一些东西">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试准备">
 <meta property="og:url" content="www.curryhqy.cn/2021/01/25/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/index.html">
 <meta property="og:site_name" content="curryhqyの的blog">
-<meta property="og:description" content="记录自己准备面试的一些东西">
+<meta property="og:description" content="title: 面试准备categories: 面试 记录自己准备面试的一些东西">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.zhihu.com/equation?tex=%E9%98%88%E5%80%BC%253D%E5%AE%B9%E9%87%8F%5Ctimes%E8%B4%9F%E8%BD%BD%E5%9B%A0%E5%AD%90">
 <meta property="article:published_time" content="2021-01-25T02:02:07.902Z">
-<meta property="article:modified_time" content="2021-03-03T15:48:01.656Z">
+<meta property="article:modified_time" content="2021-12-01T10:47:47.646Z">
 <meta property="article:author" content="curryhqy">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zhihu.com/equation?tex=%E9%98%88%E5%80%BC%253D%E5%AE%B9%E9%87%8F%5Ctimes%E8%B4%9F%E8%BD%BD%E5%9B%A0%E5%AD%90">
@@ -198,17 +198,8 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-03 23:48:01" itemprop="dateModified" datetime="2021-03-03T23:48:01+08:00">2021-03-03</time>
+                <time title="修改时间：2021-12-01 18:47:47" itemprop="dateModified" datetime="2021-12-01T18:47:47+08:00">2021-12-01</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">面试</span></a>
-                </span>
-            </span>
 
           
 
@@ -221,10 +212,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="记录自己准备面试的一些东西"><a href="#记录自己准备面试的一些东西" class="headerlink" title="记录自己准备面试的一些东西"></a>记录自己准备面试的一些东西</h2><a id="more"></a>
+        <p>title: 面试准备<br>categories: 面试</p>
+<h2 id="记录自己准备面试的一些东西"><a href="#记录自己准备面试的一些东西" class="headerlink" title="记录自己准备面试的一些东西"></a>记录自己准备面试的一些东西</h2><a id="more"></a>
 
-<ol>
-<li><h3 id="你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"><a href="#你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。" class="headerlink" title="你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"></a>你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。</h3><ul>
+<h3 id="1-你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"><a href="#1-你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。" class="headerlink" title="1 你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"></a>1 你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。</h3><ul>
 <li><p>Spring中依赖注入的Bean实例默认是单例的。</p>
 <p>Spring的依赖注入（包括lazy-init方式）都是发生在AbstractBeanFactory的getBean里。getBean的doGetBean方法调用getSingleton进行bean的创建。spring依赖注入时，使用了 <strong>双重判断加锁</strong> 的单例模式：</p>
 </li>
@@ -233,8 +224,7 @@
 <li><p>策略模式。Spring框架的资源访问Resource接口。该接口提供了更强的资源访问能力，Spring 框架本身大量使用了 Resource 接口来访问底层资源。Resource接口是具体资源访问策略的抽象，也是所有资源访问类所实现的接口。Resource 接口本身没有提供访问任何底层资源的实现逻辑，针对不同的底层资源，Spring 将会提供不同的 Resource 实现类，不同的实现类负责不同的资源访问逻辑。</p>
 </li>
 </ul>
-</li>
-<li><h3 id="Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"><a href="#Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？" class="headerlink" title="Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"></a>Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？</h3><ul>
+<h3 id="2-Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"><a href="#2-Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？" class="headerlink" title="2 Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"></a>2 Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？</h3><ul>
 <li><p>Java有List，Set，Map等集合类；<br>List类型：List是有序的Collection，有ArrayList，Vector，LinkedList。</p>
 <ul>
 <li>ArrayList，内部通过数组实现，允许对元素进行快速的访问；（但是当数组大小不满足时需要增加存储能力，就要将已有数组的数据复制到新的存储空间中）适合随机查找和遍历，不适合插入和删除。</li>
@@ -246,7 +236,7 @@
 <li><p>HashMap 根据键的hashCode值存储数据，大多数情况下可以直接定位到它的值，具有很快的访问速度，但是遍历的顺序却是不确定的。 HashMap 最多只允许一条记录的键为 null，允许多条记录的值为 null。HashMap 非线程安全，即任一时刻可以有多个线程同时写 HashMap，可能会导致数据的不一致。 如果需要满足线程安全，可以用 Collections 的 synchronizedMap 方法使HashMap 具有线程安全的能力 或者使用 ConcurrentHashMap 。</p>
 <p>![image-20210228164402484](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210228164402484.png)</p>
 <p>![image-20210228163815581](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210228163815581.png)</p>
-<p>数组 + 链表 +（链表元素超过8就会转化为红黑树） <strong>红黑树（将时间复杂度从链表长度On降为OlogN）</strong></p>
+<p>数组 + 链表 +（链表元素超过8、总节点数超过64就会转化为红黑树） <strong>红黑树（将时间复杂度从链表长度On降为OlogN）</strong></p>
 </li>
 <li><p>ConcurrentHashMap 和 HashMap 思路是差不多的，但是因为它支持并发操作，所以要复杂一些。整个ConcurrentHashMap 由一个个 Segment 组成，Segment 代表”部分“或”一段“的意思，所以很多地方都会将其描述为分段锁。简单理解就是，ConcurrentHashMap 是一个 Segment 数组，Segment 通过继承ReentrantLock 来进行加锁，所以每次需要加锁的操作锁住的是一个 segment，这样只要保证每个 Segment 是线程安全的，也就实现了全局的线程安全。</p>
 </li>
@@ -267,18 +257,37 @@
 <p>当<strong>多个线程同时操作同一个数组位置</strong>的时候，也都会先取得现在状态下该位置存储的头结点，然后各自去进行计算操作，之后再把结果写会到该数组位置去，其实写回的时候可能其他的线程已经就把这个位置给修改过了，就会<strong>覆盖其他线程的修改</strong>。</p>
 </li>
 </ul>
-</li>
-<li><h3 id="什么是反射？反射有哪些优点？又有哪些缺点？"><a href="#什么是反射？反射有哪些优点？又有哪些缺点？" class="headerlink" title="什么是反射？反射有哪些优点？又有哪些缺点？"></a>什么是反射？反射有哪些优点？又有哪些缺点？</h3><p>每个类都有一个 Class 对象，包含了与类有关的信息。当编译一个新类时，会产生 一个同名的 .class 文件，该文件内容保存着 Class 对象。类加载相当于 Class 对象的加载。类在第一次使用时才动态加载到 JVM 中，可以使用 Class.forName(“com.mysql.jdbc.Driver”) 这种方式来控制类的加载，该方法会返回一个 Class 对象。</p>
+<p>![image-20210305001715627](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210305001715627.png)</p>
+<p><strong>扩容机制详解：</strong></p>
+<p>当往hashMap中成功插入一个key/value节点时，有可能触发扩容动作：<br>1、如果新增节点之后，所在链表的元素个数达到了阈值 <strong>8</strong>，则会调用<code>treeifyBin</code>方法把链表转换成红黑树，不过在结构转换之前，会对数组长度进行判断：</p>
+<ul>
+<li>如果数组长度n小于阈值<code>MIN_TREEIFY_CAPACITY</code>，默认是64，则会调用<code>tryPresize</code>方法把数组长度扩大到原来的两倍，并触发<code>transfer</code>方法，重新调整节点的位置。</li>
+<li>新增节点之后，会调用<code>addCount</code>方法记录元素个数，并检查是否需要进行扩容，当数组元素个数达到阈值时，会触发<code>transfer</code>方法，重新调整节点的位置。</li>
+</ul>
+<p><strong>transfer方法：</strong>实现了在并发的情况下，高效的从原始组数往新数组中移动元素</p>
+<p><strong>HashMap的长度为什么要是2的n次方？</strong></p>
+<p>HashMap为了存取高效，要尽量较少碰撞，就是要尽量把数据分配均匀，每个链表长度大致相同，这个实现就在把数据存到哪个链表中的算法；这个算法实际就是取模，hash%length，计算机中直接求余效率不如位移运算，源码中做了优化hash&amp;(length-1)，hash%length==hash&amp;(length-1)的前提是length是2的n次方；</p>
+<p><strong>红黑树</strong>是一种自平衡二叉查找树，它可以在O(log n)，时间内做查找，插入和删除</p>
+<p>性质1. 结点是红色或黑色。 </p>
+<p>性质2. 根结点是黑色。 </p>
+<p>性质3. 所有叶子都是黑色。（叶子是NIL结点） </p>
+<p>性质4. 每个红色结点的两个子结点都是黑色。（从每个叶子到根的所有路径上不能有两个连续的红色结点）</p>
+<p>性质5. 从任一节结点其每个叶子的所有路径都包含相同数目的黑色结点。 </p>
+<p><strong>红黑树与AVL树比较：</strong></p>
+<p>删除节点导致失衡，AVL需要维护从被删除节点到根节点root这条路径上所有节点的平衡，旋转的量级为O(logN)，而RB-Tree最多只需要旋转3次实现复衡，只需O(1)，所以说RB-Tree删除节点的rebalance的效率更高，开销更小！</p>
+<p>AVL的结构相较于RB-Tree更为平衡，插入和删除引起失衡，RB-Tree复衡效率更高；当然，由于AVL高度平衡，因此AVL的Search效率更高。实际应用中，若搜索的次数远远大于插入和删除，那么选择AVL，如果搜索，插入删除次数几乎差不多，应该选择RB。</p>
+<h3 id="3-什么是反射？反射有哪些优点？又有哪些缺点？"><a href="#3-什么是反射？反射有哪些优点？又有哪些缺点？" class="headerlink" title="3 什么是反射？反射有哪些优点？又有哪些缺点？"></a>3 什么是反射？反射有哪些优点？又有哪些缺点？</h3><p>每个类都有一个 Class 对象，包含了与类有关的信息。当编译一个新类时，会产生 一个同名的 .class 文件，该文件内容保存着 Class 对象。类加载相当于 Class 对象的加载。类在第一次使用时才动态加载到 JVM 中，可以使用 Class.forName(“com.mysql.jdbc.Driver”) 这种方式来控制类的加载，该方法会返回一个 Class 对象。</p>
 <p>反射可以提供运行时的类信息，并且这个类可以在<strong>运行时</strong>才加载进来，甚至在编译时期该类的 .class 不存在也可以加载进来。<strong>反射的核心是 JVM 在运行时才动态加载类或调用方法/访问属性，它不需要事先（写代码的时候或编译期）知道运行对象是谁。</strong></p>
 <p>优点：<strong>在运行时判断任意一个对象所属的类、在运行时构造任意一个类的对象，在运行时判断任意一个类所具有的成员方法和变量、在运行时调用任意一个对象的方法。</strong></p>
 <p>缺点：由于反射会额外消耗一定的系统资源，因此如果不需要动态地创建一个对象，那么就不需要用反射。另外，反射调用方法时可以忽略权限检查，因此可能会破坏封装性而导致安全问题。</p>
-</li>
-<li><h3 id="你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"><a href="#你是用什么方案处理Java高并发问题的？可以详细讲讲吗？" class="headerlink" title="你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"></a>你是用什么方案处理Java高并发问题的？可以详细讲讲吗？</h3><p>a.应用层面：读写分离、缓存、队列、集群、令牌、系统拆分、隔离、系统升级（可水平扩容方向）。</p>
+<p>什么时候用反射？</p>
+<p>Spring 中的 IOC 的底层实现原理就是反射机制，Spring 的容器会帮我们创建实例，该容器中使用的方法就是反射，通过解析 xml 文件，获取到 id 属性和 class 属性里面的内容，利用反射原理创建配置文件里类的实例对象，存入到 Spring 的 bean 容器中。    </p>
+<h3 id="4-你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"><a href="#4-你是用什么方案处理Java高并发问题的？可以详细讲讲吗？" class="headerlink" title="4. 你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"></a>4. 你是用什么方案处理Java高并发问题的？可以详细讲讲吗？</h3><p>a.应用层面：读写分离、缓存、队列、集群、令牌、系统拆分、隔离、系统升级（可水平扩容方向）。</p>
 <p>讲一讲消息队列（MQ）：</p>
-<p>解耦：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃……A 系统跟其它各种乱七八糟的系统严重耦合，A 系统 产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一 条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。这样下来，A 系统 压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超 时等情况。</p>
+<p><strong>解耦</strong>：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃……A 系统跟其它各种乱七八糟的系统严重耦合，A 系统 产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一 条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。这样下来，A 系统 压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超 时等情况。</p>
 <p>就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但 是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦。</p>
-<p>异步：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库 要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>
-<p>削峰：减少高峰时期对服务器压力。</p>
+<p><strong>异步</strong>：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库 要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>
+<p><strong>削峰</strong>：减少高峰时期对服务器压力。</p>
 <p>缺点：</p>
 <p>可用性降低，如果MQ挂了，系统就崩了。</p>
 <p>复杂度提高，如何保证消息没有重复消费，如何处理丢失情况，如何保证传递的顺序性。。。</p>
@@ -288,7 +297,55 @@
 <p>消费者丢失：消费完才通知MQ。</p>
 <p>b.时间换空间：降低单次请求时间，这样在单位时间内系统并发就会提升。</p>
 <p>c.空间换时间：拉长整体处理业务时间，换取后台系统容量空间。</p>
+<p><strong>MQ如何处理顺序消费：</strong><a href="https://blog.csdn.net/weixin_43679441/article/details/104659007" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43679441/article/details/104659007</a></p>
+<h3 id="5-MQ如何保证消息的幂等性"><a href="#5-MQ如何保证消息的幂等性" class="headerlink" title="5. MQ如何保证消息的幂等性"></a>5. MQ如何保证消息的幂等性</h3><ol>
+<li>什么时候会出现幂等性<ol>
+<li>生产者已把消息发送到mq，在mq给生产者返回ack的时候网络中断，故生产者未收到确定信息，生产者认为消息未发送成功，但实际情况是，mq已成功接收到了消息，在网络重连后，生产者会重新发送刚才的消息，造成mq接收了重复的消息</li>
+<li>消费者在消费mq中的消息时，mq已把消息发送给消费者，消费者在给mq返回ack时网络中断，故mq未收到确认信息，该条消息会重新发给其他的消费者，或者在网络重连后再次发送给该消费者，但实际上该消费者已成功消费了该条消息，造成消费者消费了重复的消息；</li>
+</ol>
 </li>
+<li>解决办法<ol>
+<li><strong>mq接收生产者传来的消息：</strong>mq内部会为每条消息生成一个全局唯一、与业务无关的消息id，当mq接收到消息时，会先根据该id判断消息是否重复发送，mq再决定是否接收该消息</li>
+<li><strong>消费者消费mq中的消息：</strong>也可利用mq的该id来判断，或者可按自己的规则生成一个全局唯一id，每次消费消息时用该id先判断该消息是否已消费过</li>
+</ol>
+</li>
+</ol>
+<h4 id="有状态和无状态-Bean"><a href="#有状态和无状态-Bean" class="headerlink" title="有状态和无状态 Bean"></a>有状态和无状态 Bean</h4><p>有状态bean(Stateful Bean)：有数据存储功能，每个用户有自己特有的一个实例，在用户的生存期内，bean 保持了用户的信息，即“有状态”；一旦调用结束或实例结束，bean 的生命期也将结束，是非线程安全的。 </p>
+<p>无状态bean(Stateless Bean)：bean一旦实例化就被加进会话池中，各个用户都可以共用；即使用户已经消亡，bean 的生命期也不一定结束，它可能依然存在于会话池中，供其他用户调用；是线程安全的。</p>
+<h4 id="OOM？"><a href="#OOM？" class="headerlink" title="OOM？"></a>OOM？</h4><p>按照JVM规范，JAVA虚拟机在运行时会管理以下的内存区域：</p>
+<p>​    程序计数器：当前线程执行的字节码的行号指示器，线程私有<br>​    JAVA虚拟机栈：Java方法执行的内存模型，每个Java方法的执行对应着一个栈帧的进栈和出栈的操作。<br>​    本地方法栈：类似“ JAVA虚拟机栈 ”，为native方法的运行提供内存环境。<br>​    JAVA堆：对象内存分配的地方，内存垃圾回收的主要区域，所有线程共享。可分为新生代，老生代。<br>​    方法区：用于存储已经被JVM加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。Hotspot中的“永久代”。<br>​    运行时常量池：方法区的一部分，存储常量信息，如各种字面量、符号引用等。<br>​    直接内存：并不是JVM运行时数据区的一部分， 可直接访问的内存， 比如NIO会用到这部分。**</p>
+<p>![image-20210318154532539](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210318154532539.png)</p>
+<p>按照JVM规范，除了程序计数器不会抛出OOM外，其他各个内存区域都可能会抛出OOM。</p>
+<p>最常见的OOM情况有以下三种：</p>
+<p><strong>java.lang.OutOfMemoryError: Java heap space</strong> ——&gt;java堆内存溢出，此种情况最常见，一般由于内存泄露或者堆的大小设置不当引起。对于内存泄露，需要通过内存监控软件查找程序中的泄露代码，而堆大小可以通过虚拟机参数-Xms,-Xmx等修改。<br><strong>java.lang.OutOfMemoryError: PermGen space</strong> ——&gt;java永久代溢出，即方法区溢出了，一般出现于大量Class或者jsp页面，或者采用cglib等反射机制的情况，因为上述情况会产生大量的Class信息存储于方法区。此种情况可以通过更改方法区的大小来解决，使用类似-XX:PermSize=64m -XX:MaxPermSize=256m的形式修改。另外，过多的常量尤其是字符串也会导致方法区溢出。<br><strong>java.lang.StackOverflowError</strong> ——&gt; 不会抛OOM error，但也是比较常见的Java内存溢出。JAVA虚拟机栈溢出，一般是由于程序中存在死循环或者深度递归调用造成的，栈大小设置太小也会出现此种溢出。可以通过虚拟机参数-Xss来设置栈的大小。</p>
+<p><strong>阻塞队列：blockingQueue</strong></p>
+<p>阻塞<strong>队列</strong>，顾名思义，首先它是一个队列，通过一个共享的队列，可以使得数据由队列的一端输入，从另外一端输出；常用的队列主要有以下两种：</p>
+<p>　　　　先进先出（FIFO）：先插入的队列的元素也最先出队列，类似于排队的功能。从某种程度上来说这种队列也体现了一种公平性。</p>
+<p>　　　　后进先出（LIFO）：后插入队列的元素最先出队列，这种队列优先处理最近发生的事件。　　</p>
+<p>在多线程领域：所谓<strong>阻塞</strong>，在某些情况下会挂起线程（即阻塞），一旦条件满足，被挂起的线程又会自动被唤醒</p>
+<p><strong>当队列中没有数据的情况下，消费者端的所有线程都会被自动阻塞（挂起），直到有数据放入队列。</strong></p>
+<p><strong>当队列中填满数据的情况下，生产者端的所有线程都会被自动阻塞（挂起），直到队列中有空的位置，线程被自动唤醒。</strong></p>
+<p>作为BlockingQueue的使用者，我们再也不需要关心什么时候需要阻塞线程，什么时候需要唤醒线程，因为这一切BlockingQueue都给你一手包办了。</p>
+<ol>
+<li><p><strong>放入:</strong><br>1）offer(anObject):表示如果可能的话,将anObject加到BlockingQueue里,即如果BlockingQueue可以容纳,则返回true,否则返回false.（本方法不阻塞当前执行方法</p>
+<p> 的线程）；　　　　　　<br>2）offer(E o, long timeout, TimeUnit unit)：可以设定等待的时间，如果在指定的时间内，还不能往队列中加入BlockingQueue，则返回失败。</p>
+<p>3）put(anObject):把anObject加到BlockingQueue里,如果BlockQueue没有空间,则调用此方法的线程被阻断直到BlockingQueue里面有空间再继续.</p>
+</li>
+<li><p><strong>取出：</strong><br>1）poll(time):取走BlockingQueue里排在首位的对象,若不能立即取出,则可以等time参数规定的时间,取不到时返回null;</p>
+<p>2）poll(long timeout, TimeUnit unit)：从BlockingQueue取出一个队首的对象，如果在指定时间内，队列一旦有数据可取，则立即返回队列中的数据。否则知道时间超时还没有数据可取，返回失败。</p>
+<p>3）take():取走BlockingQueue里排在首位的对象,若BlockingQueue为空,阻断进入等待状态直到BlockingQueue有新的数据被加入; </p>
+<p>4）drainTo():一次性从BlockingQueue获取所有可用的数据对象（还可以指定获取数据的个数），通过该方法，可以提升获取数据效率；不需要多次分批加锁或释放锁。</p>
+</li>
+</ol>
+<p><strong>常见BQ：</strong></p>
+<ol>
+<li><strong>ArrayBlockingQueue</strong></li>
+</ol>
+<p>　　基于数组的阻塞队列实现，在ArrayBlockingQueue内部，维护了一个定长数组，以便缓存队列中的数据对象，这是一个常用的阻塞队列，除了一个定长数组外，ArrayBlockingQueue内部还保存着两个整形变量，分别标识着队列的头部和尾部在数组中的位置。ArrayBlockingQueue在生产者放入数据和消费者获取数据，都是共用同一个锁对象，由此也意味着两者无法真正并行运行，这点尤其不同于LinkedBlockingQueue；按照实现原理来分析，ArrayBlockingQueue完全可以采用分离锁，从而实现生产者和消费者操作的完全并行运行。Doug Lea之所以没这样去做，也许是因为ArrayBlockingQueue的数据写入和获取操作已经足够轻巧，以至于引入独立的锁机制，除了给代码带来额外的复杂性外，其在性能上完全占不到任何便宜。 </p>
+<p>2.<strong>LinkedBlockingQueue</strong></p>
+<p>​        基于链表的阻塞队列，同ArrayListBlockingQueue类似，其内部也维持着一个数据缓冲队列（该队列由一个链表构成），当生产者往队列中放入一个数据时，队列会从生产者手中获取数据，并缓存在队列内部，而生产者立即返回；只有当队列缓冲区达到最大值缓存容量时（LinkedBlockingQueue可以通过构造函数指定该值），才会阻塞生产者队列，直到消费者从队列中消费掉一份数据，生产者线程会被唤醒，反之对于消费者这端的处理也基于同样的原理。而LinkedBlockingQueue之所以能够高效的处理并发数据，还因为其对于生产者端和消费者端分别采用了独立的锁来控制数据同步，这也意味着在高并发的情况下生产者和消费者可以并行地操作队列中的数据，以此来提高整个队列的并发性能。作为开发者，我们需要注意的是，如果构造一个LinkedBlockingQueue对象，而没有指定其容量大小，LinkedBlockingQueue会默认一个类似无限大小的容量（Integer.MAX_VALUE），这样的话，如果生产者的速度一旦大于消费者的速度，也许还没有等到队列满阻塞产生，系统内存就有可能已被消耗殆尽了。</p>
+<p>ArrayBlockingQueue和LinkedBlockingQueue间还有一个明显的不同之处在于，前者在插入或删除元素时不会产生或销毁任何额外的对象实例，而后者则会生成一个额外的Node对象，会对GC产生一定的影响。</p>
+<ol start="5">
 <li><h3 id="在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？"><a href="#在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？" class="headerlink" title="在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？"></a>在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？</h3><p><strong>消除歧义</strong>：包括步骤如下：</p>
 <p>S1:从数据集中分割出实体数据和中文地址数据;选取中文地址数据并创建地址树;</p>
 <p>S2:将中文地址数据分为多个层级;</p>
@@ -305,6 +362,20 @@
 <p>redis的过期策略和内存淘汰机制：</p>
 <p>定期删除，redis默认每个100ms检查，是否有过期的key,有过期key则删除。需要说明的是，redis不是 每个100ms将所有的key检查一次，而是随机抽取进行检查(如果每隔100ms,全部key进行检查，redis岂 不是卡死)。因此，如果只采用定期删除策略，会导致很多key到时间没有删除。 于是，惰性删除派上用场。也就是说在你获取某个key的时候，redis会检查一下，这个key如果设置了 过期时间那么是否过期了？如果过期了此时就会删除。</p>
 <p>volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰。</p>
+<p><strong>redis速度快的原因：</strong></p>
+<p>1.redis是基于内存的，内存的读写速度非常快；</p>
+<p>2.redis是单线程的，省去了很多上下文切换线程的时间；</p>
+<p>3.redis使用多路复用技术，可以处理并发的连接。</p>
+<p><strong>为什么单线程：</strong></p>
+<p>因为Redis是基于内存的操作，CPU不是Redis的瓶颈，Redis的瓶颈最有可能是机器内存的大小或者网络带宽。既然单线程容易实现，而且CPU不会成为瓶颈，那就顺理成章地采用单线程的方案了。</p>
+<p><strong>redis持久化：</strong></p>
+<p>（1）客户端向服务端发送写操作(数据在客户端的内存中)。</p>
+<p>（2）数据库服务端接收到写请求的数据(数据在服务端的内存中)。</p>
+<p>（3）服务端调用write这个系统调用，将数据往磁盘上写(数据在系统内存的缓冲区中)。</p>
+<p>（4）操作系统将缓冲区中的数据转移到磁盘控制器上(数据在磁盘缓存中)。</p>
+<p>（5）磁盘控制器将数据写到磁盘的物理介质中(数据真正落到磁盘上)。</p>
+<p>RDB其实就是把数据以快照的形式保存在磁盘上。什么是快照呢，你可以理解成把当前时刻的数据拍成一张照片保存下来。RDB持久化是指在指定的时间间隔内将内存中的数据集快照写入磁盘。也是默认的持久化方式，这种方式是就是将内存中数据以快照的方式写入到二进制文件中。</p>
+<p>全量备份总是耗时的，有时候我们提供一种更加高效的方式AOF，工作机制很简单，redis会将每一个收到的写命令都通过write函数追加到文件中。通俗的理解就是日志记录。</p>
 </li>
 <li><h3 id="聊一下JVM？"><a href="#聊一下JVM？" class="headerlink" title="聊一下JVM？"></a>聊一下JVM？</h3><p>JVM是可运行Java代码的假象计算机，包括一套字节码指令集，一组寄存器，一个栈，一个垃圾回收，堆和一个存储方法域，JVM是运行在操作系统上的，与硬件没有直接的交互。</p>
 <p>栈：又称方法栈,线程私有的,线程执行方法是都会创建一个栈阵,用来存储局部变量表,操作栈,动态链接,方法 出口等信息.调用方法时执行入栈,方法返回式执行出栈。</p>
@@ -317,6 +388,8 @@
 </ul>
 <p>什么时候触发FullGC，除了直接调用System.gc外，老年代空间不足也会引起fullGC，若执行fullGC还是不足，就会出现OutOfMemoryError。（让新生代多存活一些时间，不要创建过大的对象和数组）</p>
 </li>
+</ol>
+<ol start="8">
 <li><h3 id="谈一谈String、StringBuilder、StringBuffer？"><a href="#谈一谈String、StringBuilder、StringBuffer？" class="headerlink" title="谈一谈String、StringBuilder、StringBuffer？"></a>谈一谈String、StringBuilder、StringBuffer？</h3><p>String的值是不可变的，这就导致每次对String的操作都会生成<strong>新的String对象</strong>，这样不仅效率低下，而且大量浪费有限的内存空间。JDK中声明的时候String类就是final，内部的value子节数组也是final的。</p>
 <p>和 String 类不同的是，StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且<strong>不产生新的未使用对象</strong>。</p>
 <p>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于 StringBuilder 的方法不是线程安全的（不能同步访问）。</p>
@@ -358,13 +431,22 @@
 <p><strong>3.从库的SQL线程</strong>：从库创建一个SQL线程，这个线程读取从库I/O线程写到relay log的更新事件并执行。</p>
 </li>
 </ol>
+<p><strong>主挂了怎么办？延迟怎么解决？</strong></p>
+<p>半同步复制时，为了保证主库上的每一个Binlog事务都能够被可靠的复制到从库上，主库在每次事务成功提交时，并不及时反馈给前端应用用户，而是等待其中的一个从库也接收到Binlog事务并成功写入中继日志后，主库才返回commit操作成功给客户端。半同步复制保证了事务成功提交后，至少有两份日志记录，一份在主库的Binlog日志上，另一份在至少一个从库的中继日志Relay log上，从而更近一步保证了数据的完整性。</p>
+<p>如果网络延迟故障或从库宕机，那么此时主库的Binlog都没有及时传送给从库上，此时主库上的事务会等待一段时间，时间长短由参数rpl_semi_master_timeout设置的毫秒数来决定，如果Binlog在这段时间内都无法成功推送到从库上，则MySQL自动调整复制模式为异步模式，此时事务正常返回提交结果给客户端。</p>
 </li>
 <li><h3 id="事务隔离级别？acid？"><a href="#事务隔离级别？acid？" class="headerlink" title="事务隔离级别？acid？"></a>事务隔离级别？acid？</h3><ul>
 <li>未提交读（READ UMCOMMITTED）<br>事务中的修改，即使没有提交，对其他事务也是可见的。</li>
-<li>提交读（READ COMMITTED）<br>一个事务只能读取已经提交的事务所做的修改。</li>
-<li><strong>可重复度</strong>（REPEATABLE READ）<br>保证在同一事务中多次读取同样数据的结果是一样的。（默认）</li>
-<li>可串行化（SERIALIZABLE）<br>强制事务串行执行。</li>
+<li>提交读（READ COMMITTED）<br>一个事务只能读取已经提交的事务所做的修改。解决脏读。</li>
+<li><strong>可重复度</strong>（REPEATABLE READ）<br>保证在同一事务中多次读取同样数据的结果是一样的。（默认）解决脏读和不可重复读</li>
+<li>可串行化（SERIALIZABLE）<br>强制事务串行执行。解决脏读、不可重复读、幻影读。</li>
 </ul>
+<p><strong>不可重复读的重点是修改 :</strong></p>
+<p><strong>同一事务，两次读取到的数据不一样。</strong></p>
+<p><strong>幻读的重点在于新增或者删除</strong></p>
+<p><strong>同样的条件 , 第 1 次和第 2 次读出来的记录数不一样</strong></p>
+<p><strong>脏读：</strong></p>
+<p><strong>强调的是第二个事务读到的不够新。</strong></p>
 <p>acid：原子性、一致性、隔离性、持久性</p>
 </li>
 <li><h3 id="封锁类型？"><a href="#封锁类型？" class="headerlink" title="封锁类型？"></a>封锁类型？</h3><ul>
@@ -384,7 +466,7 @@
 </ul>
 </li>
 </ol>
-<ol start="14">
+<ol start="10">
 <li><h3 id="Mybatis优缺点？"><a href="#Mybatis优缺点？" class="headerlink" title="Mybatis优缺点？"></a>Mybatis优缺点？</h3><p>优点：</p>
 <ol>
 <li><p>与JDBC相比，减少了50%以上的代码量。</p>
@@ -410,111 +492,62 @@
 <p>二级：二级缓存与一级缓存其机制相同，默认也是采用 PerpetualCache，HashMap 存储，不同在于其存 储作用域为 Mapper(Namespace)，并且可自定义存储源，如 Ehcache。默认不打开二级缓存，要开启二级缓存，使用二级缓存属性类需要实现Serializable序列化接口(可用来保存对象的状态)，可在它的映射文件中配置。</p>
 <p>对于缓存数据更新机制，当某一个作用域(一级缓存 Session/二级缓存Namespaces)的进行了C/U/D 操作后，默认该作用域下所有 select 中的缓存将被 clear 掉并重新更新，如果开启了二级缓存，则只根据配置判断是否刷新。</p>
 </li>
-<li><h3 id="Hibernate？？？"><a href="#Hibernate？？？" class="headerlink" title="Hibernate？？？"></a>Hibernate？？？</h3></li>
 </ol>
 <ol start="16">
 <li><h3 id="封锁粒度"><a href="#封锁粒度" class="headerlink" title="封锁粒度"></a>封锁粒度</h3><p>MySQL 中提供了两种封锁粒度：行级锁以及表级锁。</p>
 <p>应该尽量只锁定需要修改的那部分数据，而不是所有的资源。锁定的数据量越少， 发生锁争用的可能就越小，系统的并发程度就越高。但是加锁需要消耗资源，锁的各种操作（包括获取锁、释放锁、以及检查锁状态） 都会增加系统开销。因此封锁粒度越小，系统开销就越大。</p>
 </li>
 <li><h3 id="JAVA锁？乐观、悲观实现"><a href="#JAVA锁？乐观、悲观实现" class="headerlink" title="JAVA锁？乐观、悲观实现"></a>JAVA锁？乐观、悲观实现</h3><p>乐观锁认为一个用户读数据的时候，别人不会去写自己所读的数据；悲观锁就刚好相反，觉得自 己读数据库的时候，别人可能刚好在写自己刚读的数据，其实就是持一种比较保守的态度；悲观锁就是在读取数据的时候，为了不让别人修改自己读取的数据，就会先对自己读取的数据加 锁，只有自己把数据读完了，才允许别人修改那部分数据，或者反过来说，就是自己修改某条数 据的时候，不允许别人读取该数据，只有等自己的整个事务提交了，才释放自己加上的锁，才允 许其他用户访问那部分数据。</p>
+<p>java 中的乐观锁基本都是通过 CAS 操作实现的，CAS 是一种更新的原子操作，比较当前值跟传入值是否一样，一样则更新，否则失败。CAS(V,E,N)，CAS操作需要我们提供一个期望值，当期望值与当前线程的变量值相同时，说明还没线程修改该值，当前线程可以进行修改，也就是执行CAS操作，但如果期望值与当前线程不符，则说明该值已被其他线程修改，此时不执行更新操作，但可以选择重新读取该变量再尝试再次修改该变量，也可以放弃操作。</p>
+<p>java 中的悲观锁就是 Synchronized。AQS 框架下的锁则是先尝试 cas 乐观锁去获取锁，获取不到，才会转换为悲观锁，如 RetreenLock。</p>
+<p>ReentantLock 继承接口 Lock 并实现了接口中定义的方法，他是一种可重入锁，除了能完成 synchronized 所能完成的所有工作外，还提供了诸如可响应中断锁、可轮询锁请求、定时锁等避免多线程死锁的方法。</p>
+<p>synchronized 会被 JVM 自动解锁，ReentrantLock 加锁后需要手动进行解锁</p>
+<p><strong>自旋锁：</strong>是指当一个线程在获取锁的时候，如果锁已经被其它线程获取，那么该线程将循环等待，然后不断的判断锁是否能够被成功获取，直到获取到锁才会退出循环。自旋锁等待期间，线程的状态不会改变，线程一直是用户态并且是活动的(active)。</p>
+<p>自旋锁如果持有锁的时间太长，则会导致其它等待获取锁的线程耗尽CPU。</p>
+<p>自旋锁本身无法保证公平性，同时也无法保证可重入性。</p>
+<p>基于自旋锁，可以实现具备公平性和可重入性质的锁。</p>
+<p><strong>TicketLock</strong>:采用类似银行排号叫好的方式实现自旋锁的公平性，但是由于不停的读取serviceNum，每次读写操作都必须在多个处理器缓存之间进行缓存同步，这会导致繁重的系统总线和内存的流量，大大降低系统整体的性能。</p>
+<p><strong>CLHLock</strong>和<strong>MCSLock</strong>通过链表的方式避免了减少了处理器缓存同步，极大的提高了性能，区别在于CLHLock是通过轮询其前驱节点的状态，而MCS则是查看当前节点的锁状态。</p>
 </li>
+</ol>
+<ol start="18">
 <li><h3 id="Spring框架的优点？"><a href="#Spring框架的优点？" class="headerlink" title="Spring框架的优点？"></a>Spring框架的优点？</h3><p>1.降低了组件之间的耦合性 ，实现了软件各层之间的解耦  2.可以使用容易提供的众多服务，如事务管理，消息服务等  3.容器提供单例模式支持  4.容器提供了AOP技术，利用它很容易实现如权限拦截，运行期监控等功能 </p>
 <ul>
-<li>IOC控制反转，依赖注入<br>当某个角色需要另外一个角色协助的时候，在传统的程序设计过程中，通常由调用者来创建被调用者的实例。但在spring中创建被调用者的工作不再由调用者来完成，因此称为控制反转。创建被调用者的工作由spring来完成，然后注入调用者 。</li>
-<li>AOP面向切面编程<br>AOP从程序运行角度考虑程序的结构，提取业务处理过程的切面，oop是静态的抽象，aop是动态的抽象，  是对应用执行过程中的步骤进行抽象，从而获得步骤之间的逻辑划分。 权限模块、日志模块、事务模块。。。</li>
-</ul>
+<li><p>IOC控制反转<br>当某个角色需要另外一个角色协助的时候，在传统的程序设计过程中，通常由调用者来创建被调用者的实例。但在spring中创建被调用者的工作不再由调用者来完成，因此称为控制反转。创建被调用者的工作由spring来完成，然后注入调用者 。</p>
 </li>
-<li><h3 id="谈一谈docker？"><a href="#谈一谈docker？" class="headerlink" title="谈一谈docker？"></a>谈一谈docker？</h3></li>
-<li><h3 id="SQl优化？"><a href="#SQl优化？" class="headerlink" title="SQl优化？"></a>SQl优化？</h3><ol>
-<li>查询语句不使用select *；</li>
-<li>尽量减少子查询，使用关联查询（left、right、inner join）代替；</li>
-<li>减少使用IN或者NOT IN，使用EXISTS或者NOT EXIXTS代替；</li>
-<li>尽量避免在where子句中使用 != 或 &lt;&gt;，否则将会放弃索引而进行全表扫描。</li>
-</ol>
-</li>
-<li><h3 id="线程池？"><a href="#线程池？" class="headerlink" title="线程池？"></a>线程池？</h3></li>
-<li><h3 id="jenkins自动化部署？"><a href="#jenkins自动化部署？" class="headerlink" title="jenkins自动化部署？"></a>jenkins自动化部署？</h3><p>Jenkins是一款自包含的开源自动化服务,可用于自动执行与构建,测试和交付或部署软件有关的各种任务。</p>
-<p>关键就是构建触发器（访问url时自动构建项目）</p>
-</li>
-<li><h3 id="JVM的堆？"><a href="#JVM的堆？" class="headerlink" title="JVM的堆？"></a>JVM的堆？</h3></li>
-<li><h3 id="ES？"><a href="#ES？" class="headerlink" title="ES？"></a><strong>ES？</strong></h3><p>一个索引可以存储超出单个结点硬件限制的大量数据。比如，一个具有10亿文档的索引占据1TB的磁盘空间，而任一节点都没有这样大的磁盘空间；或者单个节点处理搜索请求，响应太慢。</p>
-<p>为了解决这个问题，Elasticsearch提供了将索引划分成多份的能力，这些份就叫做分片。当你创建一个索引的时候，你可以指定你想要的分片的数量。每个分片本身也是一个功能完善并且独立的“索引”，这个“索引”可以被放置到集群中的任何节点上。<br>分片之所以重要，主要有两方面的原因：</p>
+<li><p>AOP面向切面编程<br>AOP从程序运行角度考虑程序的结构，提取业务处理过程的切面，oop是静态的抽象，aop是动态的抽象，  是对应用执行过程中的步骤进行抽象，从而获得步骤之间的逻辑划分。 权限模块、日志模块、事务模块。。。</p>
 <ul>
-<li>允许你水平分割/扩展你的内容容量</li>
-<li>允许你在分片（潜在地，位于多个节点上）之上进行分布式的、并行的操作，进而提高性能/吞吐量</li>
-</ul>
-<p>至于一个分片怎样分布，它的文档怎样聚合回搜索请求，是完全由Elasticsearch管理的，对于作为用户的你来说，这些都是透明的。</p>
-<p>在一个网络/云的环境里，失败随时都可能发生，在某个分片/节点不知怎么的就处于离线状态，或者由于任何原因消失了。这种情况下，有一个故障转移机制是非常有用并且是强烈推荐的。为此目的，Elasticsearch允许你创建分片的一份或多份拷贝，这些拷贝叫做复制分片，或者直接叫复制。复制之所以重要，主要有两方面的原因：</p>
+<li><p>@EnableAspectJAutoProxy开启AOP</p>
 <ul>
-<li>在分片/节点失败的情况下，提供了高可用性。因为这个原因，注意到复制分片从不与原/主要（original/primary）分片置于同一节点上是非常重要的。</li>
-<li>扩展你的搜索量/吞吐量，因为搜索可以在所有的复制上并行运行</li>
+<li><pre><code class="java"><span class="function"><span class="keyword">boolean</span> <span class="title">proxyTargetClass</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;
+<span class="function"><span class="keyword">boolean</span> <span class="title">exposeProxy</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">false</span></span>;
+一个是控制aop的具体实现方式,为<span class="keyword">true</span> 的话使用cglib,为<span class="keyword">false</span>的话使用java的Proxy,默认为<span class="keyword">false</span>；
+第二个参数控制代理的暴露方式,解决内部调用不能使用代理的场景，默认为<span class="keyword">false</span>。
+&lt;!--￼<span class="number">0</span>--&gt;
+
+
+</code></pre>
+</li>
 </ul>
-<p>总之，每个索引可以被分成多个分片。一个索引也可以被复制0次（意思是没有复制）或多次。一旦复制了，每个索引就有了主分片（作为复制源的原来的分片）和复制分片（主分片的拷贝）之别。分片和复制的数量可以在索引创建的时候指定。在索引创建之后，你可以在任何时候动态地改变复制数量，但是不能改变分片的数量。</p>
-<p>默认五个主分片和一个复制（共十个）</p>
-<p><strong>倒排索引：</strong></p>
-<p>倒排索引，描述了从单词到文档的关联关系。利用倒排索引，可以快速的通过单词找到和该单词关联的文档列表。倒排索引由两部分组成，一个是单词词典，一个是倒排列表。一个文档由许多的单词组成，我们交给ES的文档的越多，分析拆分后得到的单词就越多，这些单词被整理组织成一个集合，集合中的每个元素记录了单词本身的一些相关信息以及一个指定倒排列表的指针。通过单词，我们会在倒排列表中找到一个倒排项，该倒排项中，记录了出现过该单词的所有文档ID，以及单词在文档中的位置信息。也就是说，倒排列表，是倒排项的集合。倒排列表会以文件的形式，具体的存储在磁盘中的某个位置，这个文件，称之为倒排文件。实现结构：一种是哈希+链表，另一种是树。</p>
 </li>
-<li><h3 id="索引？索引类型？"><a href="#索引？索引类型？" class="headerlink" title="索引？索引类型？"></a><strong>索引？索引类型？</strong></h3><p>索引是对数据库表中的一个或多个列的值进行排序的结构，有助于快速获取信息。</p>
-<ol>
-<li>唯一索引：索引不能重复，允许空值</li>
-<li>主键索引：唯一且不为空</li>
-<li>组合索引：多字段的组合作为索引（最左匹配：最左优先，以最左边的为起点任何连续的索引都能匹配上。同时遇到范围查询(&gt;、&lt;、between、like)就会停止匹配）</li>
-<li>前缀索引：查询条件为若干字段时使用。</li>
-</ol>
-<p>聚簇索引和辅助索引：</p>
-<p>聚簇索引是按表的主键构造一颗B+树，叶子节点就保存了表的行记录数据 每个数据页通过一个双向链表连接 实际的数据页只能按照一个B+树进行排序，所以一张表只能拥有一个聚簇索引；辅助索引和聚簇索引结构相同，按索引列构建了一颗新的b+树， 区别是辅助索引的叶子节点不包含行记录的全部数据，而是包含了主键的值（不知道是否还有其他 信息），查到主键值后，再使用主键查聚簇索引。</p>
-<p>覆盖索引：SQL只需要通过索引就可以返回查询所需要的数据，而不必通过二级索引查到主键之后再去查询数据。</p>
+</ul>
 </li>
-<li><h3 id="hashcode是啥？"><a href="#hashcode是啥？" class="headerlink" title="hashcode是啥？"></a>hashcode是啥？</h3><p>Object的hashcode方法是本地方法，也就是用c或c++实现的，该方法直接返回对象的内存地址。</p>
-</li>
-<li><h3 id="进程和线程的区别？多线程？几种实现多线程的方法？"><a href="#进程和线程的区别？多线程？几种实现多线程的方法？" class="headerlink" title="进程和线程的区别？多线程？几种实现多线程的方法？"></a>进程和线程的区别？多线程？几种实现多线程的方法？</h3><p>进程和线程的主要差别在于它们是不同的操作系统资源管理方式。进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。</p>
-<ol>
-<li>继承Thread类</li>
-<li>实现Runnable接口</li>
-<li>实现Callable接口，通过Future Task包装器来创建Thread线程</li>
-</ol>
-</li>
-<li><h3 id="类加载机制，双亲委派？"><a href="#类加载机制，双亲委派？" class="headerlink" title="类加载机制，双亲委派？"></a>类加载机制，双亲委派？</h3><p>类是在运行期间第一次使用时动态加载的，而不是编译时期一次性加载。因为如果 在编译时期一次性加载，那么会占用很多的内存。包括加载、验证、准备、解析、初始化。<br>双亲委派：一个类加载器首先将类加载请求传送到父类加载器，只有当父类加载器无法完成类加载请求时才尝试加载。</p>
-</li>
-<li><h3 id="网络七层模型以及五层模型？"><a href="#网络七层模型以及五层模型？" class="headerlink" title="网络七层模型以及五层模型？"></a>网络七层模型以及五层模型？</h3><p>七层：物理层、数据链路层、网络层、运输层、会话层、表示层、应用层。</p>
-<p>五层：物理层（怎样在传输媒体上传输数据比特流）、数据链路层（为同一链路的主机提供数据传输服务）、网络层（为主机之间提供数据传输服务）、运输层（提供进程间的通用数据服务，TCP，UDP）、应用层（为特定应用程序提供数据传输服务，如HTTP）。</p>
-</li>
-<li><h3 id="全局唯一id怎么实现？"><a href="#全局唯一id怎么实现？" class="headerlink" title="全局唯一id怎么实现？"></a>全局唯一id怎么实现？</h3><p>UUID：不适合作为主键，因为太长了，并且无序不可读，查询效率低。比较适合用于生成唯一的 名字的标示比如文件的名字。 </p>
-<p>数据库自增 id : 两台数据库分别设置不同步长，生成不重复ID的策略来实现高可用。这种方式生成 的 id 有序，但是需要独立部署数据库实例，成本高，还会有性能瓶颈。 </p>
-<p>利用 redis 生成 id : 性能比较好，灵活方便，不依赖于数据库。但是，引入了新的组件造成系统更 加复杂，可用性降低，编码更加复杂，增加了系统成本。</p>
-<p> Twitter的snowﬂake算法（64位整型） ：1位标识部分，在java中由于long的最高位是符号位，正数是0，负数是1，一般生成的ID为正数，所以为0；41位时间戳部分，这个是毫秒级的时间，一般实现上不会存储当前的时间戳，而是时间戳的差值（当前时间-固定的开始时间），这样可以使产生的ID从更小值开始；41位的时间戳可以使用69年，(1L &lt;&lt; 41) / (1000L * 60 * 60 * 24 * 365) = 69年；10位节点部分，Twitter实现中使用前5位作为数据中心标识，后5位作为机器标识，可以部署1024个节点；12位序列号部分，支持同一毫秒内同一个节点可以生成4096个ID；</p>
-</li>
-<li><h3 id="HTTP，HTTPs？"><a href="#HTTP，HTTPs？" class="headerlink" title="HTTP，HTTPs？"></a>HTTP，HTTPs？</h3><p>HTTP 有以下安全性问题：</p>
-<p>使用明文进行通信，内容可能会被窃听； 不验证通信方的身份，通信方的身份有可能遭遇伪装； 无法证明报文的完整性，报文有可能遭篡改。</p>
-<p>HTTPs 并不是新协议，而是让 HTTP 先和 SSL（Secure Sockets Layer）通信， 再由 SSL 和 TCP 通信，也就是说 HTTPs 使用了隧道进行通信。</p>
-<p>通过使用 SSL，HTTPs 具有了加密（防窃听）、认证（防伪装）和完整性保护 （防篡改）。</p>
-</li>
-<li><h3 id="重排序和volatile、Synchronized"><a href="#重排序和volatile、Synchronized" class="headerlink" title="重排序和volatile、Synchronized?"></a>重排序和volatile、Synchronized?</h3><p>指令重排：处理器为了提高程序整体的执行效率，可能会对代码进行优化，其中的一项优化方式就是调整代码顺序，按照更高效的顺序执行代码。</p>
-<p>使用 Volatile 一般用于 状态标记量 和 单例模式的双检锁</p>
-<p>1）保证了不同线程对这个变量进行操作时的可见性，即一个线程修改了某个变量的值，这新值对其他 线程来说是立即可见的,volatile关键字会强制将修改的值立即写入主存。</p>
-<p> 2）禁止进行指令重排序。</p>
-<p>Synchronized：是加锁方式同步，也就是说当如果一 个线程获得了对象锁，进入了同步块，其他访问该同步块的线程都必须阻塞在同步块外面等待。</p>
-</li>
-<li><h3 id="与-equal？"><a href="#与-equal？" class="headerlink" title="== 与 equal？"></a>== 与 equal？</h3><p>equal比较的是对象的地址，==比较的两个对象的引用（若为基本类型，则比较值）</p>
-</li>
-<li><h3 id="重写equals还要重写hashcode？"><a href="#重写equals还要重写hashcode？" class="headerlink" title="重写equals还要重写hashcode？"></a>重写equals还要重写hashcode？</h3><p>HashMap中比较key是这样的：先求出key的hashcode，比较值是否相同，再比较equal，看是否相同。若不重写equals，当比较equals时，只是看他们是否为同一对象（即内存地址的比较）</p>
-</li>
-<li><h3 id="写一下单例模式？"><a href="#写一下单例模式？" class="headerlink" title="写一下单例模式？"></a>写一下单例模式？</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="comment">//私有的 静态的 本类属性</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton _instance;</span><br><span class="line">    <span class="comment">//私有化构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstanceDC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">         <span class="keyword">if</span> (_instance == <span class="keyword">null</span>) &#123;<span class="comment">//第一次检查</span></span><br><span class="line">             <span class="keyword">synchronized</span> (Singleton<span class="class">.<span class="keyword">class</span>) </span>&#123;</span><br><span class="line">                 <span class="keyword">if</span> (_instance == <span class="keyword">null</span>) &#123; <span class="comment">//第二次检查   //线程1创建完对象后，线程会判断一次就不会创建对象了。解决了首次创建对象的唯一性问题。</span></span><br><span class="line">                     _instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">                 &#125;</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> _instance;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-
-
+</ul>
 </li>
 </ol>
-<ol start="36">
+<ol start="4">
 <li><h3 id="TCP和UDP？"><a href="#TCP和UDP？" class="headerlink" title="TCP和UDP？"></a>TCP和UDP？</h3><p>用户数据报协议 UDP（User Datagram Protocol）是无连接的，尽最大可能交 付，没有拥塞控制，面向报文（对于应用程序传下来的报文不合并也不拆分， 只是添加 UDP 首部），支持一对一、一对多、多对一和多对多的交互通信。</p>
 <p>传输控制协议 TCP（Transmission Control Protocol）是面向连接的，提供可 靠交付，有流量控制，拥塞控制，提供全双工通信，面向字节流（把应用层传 下来的报文看成字节流，把字节流组织成大小不等的数据块），每一条 TCP 连接只能是点对点的（一对一）。</p>
 </li>
 <li><h3 id="TCP拥塞控制？"><a href="#TCP拥塞控制？" class="headerlink" title="TCP拥塞控制？"></a>TCP拥塞控制？</h3><p>![image-20210302231749937](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210302231749937.png)</p>
+<p>拥塞窗口的增长是指数级别的。慢启动的机制只是说明在开始的时候发送的少，发送的慢，但是增长的速度是非常快的。为了控制拥塞窗口的增长，不能使拥塞窗口单纯的加倍，设置一个拥塞窗口的阈值，当拥塞窗口大小超过阈值时，不能再按照指数来增长，而是线性的增长。在慢启动开始的时候，慢启动的阈值等于窗口的最大值，一旦造成网络拥塞，发生超时重传时，慢启动的阈值会为原来的一半（这里的原来指的是发生网络拥塞时拥塞窗口的大小），同时拥塞窗口重置为 1。</p>
 </li>
 <li><h3 id="三次握手？四次挥手？"><a href="#三次握手？四次挥手？" class="headerlink" title="三次握手？四次挥手？"></a>三次握手？四次挥手？</h3><p>![image-20210302231553542](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210302231553542.png)</p>
 <p>![image-20210302231627382](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210302231627382.png)</p>
 <p>![image-20210302231646436](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210302231646436.png)</p>
 </li>
+</ol>
+<ol start="7">
 <li><h3 id="Cookie与Session"><a href="#Cookie与Session" class="headerlink" title="Cookie与Session"></a>Cookie与Session</h3><p>Cookie 只能存储 ASCII 码字符串，而 Session 则可以存取任何类型的数据， 因此在考虑数据复杂性时首选 Session；</p>
 <p> Cookie 存储在浏览器中，容易被恶意查看。如果非要将一些隐私数据存在 Cookie 中，可以将 Cookie 值进行加密，然后在服务器进行解密；</p>
 <p> 对于大型网站，如果用户所有的信息都存储在 Session 中，那么开销是非常大 的，因此不建议将所有的用户信息都存储到 Session 中。</p>
@@ -532,10 +565,10 @@
 </li>
 <li><h3 id="读过java类库源码？讲一下？？？"><a href="#读过java类库源码？讲一下？？？" class="headerlink" title="读过java类库源码？讲一下？？？"></a>读过java类库源码？讲一下？？？</h3></li>
 </ol>
-<ol start="42">
+<ol start="10">
 <li><h3 id="Linux-I-O操作？"><a href="#Linux-I-O操作？" class="headerlink" title="Linux I/O操作？"></a>Linux I/O操作？</h3></li>
 </ol>
-<ol start="43">
+<ol start="11">
 <li><h3 id="SSO单点登录？"><a href="#SSO单点登录？" class="headerlink" title="SSO单点登录？"></a>SSO单点登录？</h3><p><strong>在多个应用系统中，只需要登录一次，就可以访问其他相互信任的应用系统</strong></p>
 <ol>
 <li><p>用户访问app系统，app系统是需要登录的，但用户现在没有登录。</p>
@@ -544,22 +577,27 @@
 </li>
 <li><p>用户填写用户名、密码，SSO系统进行认证后，将登录状态写入SSO的session，浏览器（Browser）中写入SSO域下的Cookie。</p>
 </li>
-<li><p>SSO系统登录完成后会生成一个ST（Service Ticket），然后跳转到app系统，同时将ST作为参数传递给app系统。</p>
+<li><p>SSO系统登录完成后会生成一个ST（Service Ticket），然后跳转到app系统，同时将ST作为参数传递给app系统。（密码的加密采用MD5）</p>
 </li>
 <li><p>app系统拿到ST后，从后台向SSO发送请求，验证ST是否有效。</p>
 </li>
 <li><p>验证通过后，app系统将登录状态写入session并设置app域下的Cookie。</p>
 </li>
 </ol>
+<p>MD5:MD5码以512位分组来处理输入的信息，且每一分组又被划分为16个32位子分组，经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个32位分组级联后将生成一个128位散列值。</p>
 </li>
 <li><h3 id="秒杀遇到的问题以及解决方案？"><a href="#秒杀遇到的问题以及解决方案？" class="headerlink" title="秒杀遇到的问题以及解决方案？"></a>秒杀遇到的问题以及解决方案？</h3></li>
 </ol>
-<ol start="45">
+<ol start="13">
 <li><h3 id="Java实现方法限流？"><a href="#Java实现方法限流？" class="headerlink" title="Java实现方法限流？"></a>Java实现方法限流？</h3><p><em>接口限流实现 有一个API网关，出于对API接口的保护，需要建立一个流控功能，根据API名称， 每分钟最多只能请求指定的次数（如1000次），超过限制则这分钟内返回错误，但下一分钟又可以正常请求。</em></p>
 <p>首先：方法限流必须保证线程安全；其次：我们需要通过时间和调用频率来限制对象的使用，所以要用一个对象来存储每个apiName调用的时间和频率。如下我们用CacheValidate类来进行存储，我们采用isValidate方法判断调用次数是否超限：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CacheValidate</span></span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">long</span> time;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> invokeNum;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">getTime</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> time;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTime</span><span class="params">(<span class="keyword">long</span> time)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.time = time;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getInvokeNum</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> invokeNum;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setInvokeNum</span><span class="params">(<span class="keyword">int</span> invokeNum)</span> </span>&#123; </span><br><span class="line"> 		<span class="keyword">this</span>.invokeNum = invokeNum; </span><br><span class="line"> 	&#125; </span><br><span class="line">  </span><br><span class="line">  <span class="comment">//检查是否有效</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidate</span><span class="params">()</span> </span>&#123; </span><br><span class="line"> 		<span class="keyword">this</span>.invokeNum = invokeNum+<span class="number">1</span>; </span><br><span class="line"> 		<span class="keyword">if</span>((System.currentTimeMillis()/<span class="number">1000</span>) % <span class="number">60</span> - time &lt;= <span class="number">60</span>) &#123; </span><br><span class="line"> 			System.out.println(System.currentTimeMillis()/<span class="number">1000</span>); </span><br><span class="line"> 			<span class="keyword">if</span>(invokeNum &lt;= <span class="number">1000</span>) &#123; </span><br><span class="line"> 				System.err.println(<span class="string">"isValidate"</span>); </span><br><span class="line"> 				<span class="keyword">return</span> <span class="keyword">true</span>; </span><br><span class="line"> 			&#125; <span class="keyword">else</span> &#123; </span><br><span class="line"> 					System.err.println(<span class="string">"大于60次"</span>); </span><br><span class="line"> 				&#125; </span><br><span class="line"> 		&#125; <span class="keyword">else</span> &#123; </span><br><span class="line"> 				<span class="keyword">this</span>.invokeNum = <span class="number">1</span>; </span><br><span class="line"> 				<span class="keyword">this</span>.time=System.currentTimeMillis()/<span class="number">1000</span>; </span><br><span class="line"> 				<span class="keyword">return</span> <span class="keyword">true</span>; </span><br><span class="line"> 			&#125; </span><br><span class="line">		 <span class="keyword">return</span> <span class="keyword">false</span>;  </span><br><span class="line">	 	&#125; </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//限流网关</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FlowLimit</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, CacheValidate&gt; cache = <span class="keyword">new</span> HashMap&lt;String, CacheValidate&gt;();</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">invoke</span><span class="params">(String apiName)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (apiName == <span class="keyword">null</span>) &#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     CacheValidate cacheValidate = <span class="keyword">null</span>;</span><br><span class="line">     <span class="keyword">synchronized</span> (cache) &#123;</span><br><span class="line">       cacheValidate = cache.get(apiName);</span><br><span class="line">       <span class="keyword">if</span>(cacheValidate==<span class="keyword">null</span>)&#123;</span><br><span class="line"> 			   cacheValidate = <span class="keyword">new</span> CacheValidate();</span><br><span class="line"> 			   cacheValidate.setTime(System.currentTimeMillis()/<span class="number">1000</span> % <span class="number">60</span>);</span><br><span class="line"> 			   cacheValidate.setInvokeNum(<span class="number">1</span>);</span><br><span class="line"> 			   cache.put(apiName, cacheValidate);</span><br><span class="line"> 			   <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"> 		   &#125;</span><br><span class="line"> 		   <span class="keyword">return</span> cacheValidate.isValidate()；</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ol>
-<ol start="46">
+<ol start="14">
 <li><h3 id="缓存穿透和缓存雪崩？？？"><a href="#缓存穿透和缓存雪崩？？？" class="headerlink" title="缓存穿透和缓存雪崩？？？"></a>缓存穿透和缓存雪崩？？？</h3><ol>
 <li>缓存穿透</li>
 </ol>
@@ -576,19 +614,613 @@
 <p>2：做二级缓存，A1为原始缓存，A2为拷贝缓存，A1失效时，可以访问A2，A1缓存失效时间设置为短期，A2设置为长期</p>
 <p>3：不同的key，设置不同的过期时间，让缓存失效的时间点尽量均匀。</p>
 </li>
-<li><h3 id="Exception-与-Error包结构？"><a href="#Exception-与-Error包结构？" class="headerlink" title="Exception 与 Error包结构？"></a>Exception 与 Error包结构？</h3><p>java可抛出的结构分为三种类型：被检查的异常（CheckedException）,运行时异常（RuntimeException），错误（Error）。</p>
+<li><h3 id="Exception-与-Error包结构？"><a href="#Exception-与-Error包结构？" class="headerlink" title="Exception 与 Error包结构？"></a>Exception 与 Error包结构？</h3><p>java可抛出的结构分为三种类型：被检查的异常（CheckedException）,运行时异常（RuntimeException），错误（Error）。（都是继承Throwable类）</p>
 <ul>
-<li><p>运行时异常：java编译器不会检查它，当程序中可能出现这类异常时，如果既没有throws声明抛出他，也没有try-catch捕获他，还是会编译通过。如：类转换异常、数组越界、控制针。</p>
+<li>运行时异常：java编译器不会检查它，当程序中可能出现这类异常时，如果既没有throws声明抛出他，也没有try-catch捕获他，还是会编译通过。如：类转换异常、数组越界、控制针。</li>
+<li>被检查的异常：java编译器会检查它，要么throws声明抛出他，要么try-catch捕获他，否则不会通过编译。如IOException、SQLEXCEPTION。</li>
+<li>错误：和运行时异常一样，编译器也不会对错误进行检查。当资源不足、约束失败、或是其它程序无法继续运行的条件发生时，就产生错误。如内存泄漏、线程死亡等。</li>
+</ul>
+<p><strong>NoClassDefFound和ClassNotFoundException的区别</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ClassNotfoundException时在编译时JVM加载不到类或者找不到类导致的； </span><br><span class="line"></span><br><span class="line">而NoClassDefError是在运行时JVM加载不到类或者找不到类</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>被检查的异常：java编译器会检查它，要么throws声明抛出他，要么try-catch捕获他，否则不会通过编译。如IOException、SQLEXCEPTION。</p>
+<li><h3 id="sleep与wait"><a href="#sleep与wait" class="headerlink" title="sleep与wait"></a>sleep与wait</h3><p>对于 sleep()方法，我们首先要知道该方法是属于 Thread 类中的。而 wait()方法，则是属于Object 类中的。</p>
+<p>sleep()方法导致了程序暂停执行指定的时间，让出 cpu 该其他线程，但是他的监控状态依然保持者，当指定的时间到了又会自动恢复运行状态。在调用 sleep()方法的过程中，线程不会释放对象锁。</p>
+<p>而当调用 wait()方法的时候，线程会放弃对象锁，进入等待此对象的等待锁定池，只有针对此对象调用 notify()方法后本线程才进入对象锁定池准备获取对象锁进入运行状态。</p>
 </li>
-<li><p>错误：和运行时异常一样，编译器也不会对错误进行检查。当资源不足、约束失败、或是其它程序无法继续运行的条件发生时，就产生错误。如内存泄漏、线程死亡等。</p>
+<li><h3 id="堆排序？"><a href="#堆排序？" class="headerlink" title="堆排序？"></a>堆排序？</h3><p><strong>堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了</strong>。</p>
+<p>它是不稳定的。</p>
+</li>
+<li><h3 id="几大范式？"><a href="#几大范式？" class="headerlink" title="几大范式？"></a>几大范式？</h3><p>1.范式(1NF): 强调的是列的原子性,即列不能够再分成其他几列。(属性存在子集) </p>
+<p>2.范式(2NF): 首先是1NF,另外包含两部分内容,一是表必须有一个主键;二是没有包含在主键中的列必须完全依赖于主键,而不能只依赖于主键的一部分。 </p>
+<p>3.范式(3NF):首先是2NF,另外非主键列必须直接依赖于主键,不能存在传递依赖。即不能存在:非主键列A依赖于非主键列B。</p>
+<p>4.BCNF：消除主属性之间的传递依赖</p>
+</li>
+<li><h3 id="Hash算法？"><a href="#Hash算法？" class="headerlink" title="Hash算法？"></a>Hash算法？</h3><p>散列方法的主要思想是根据结点的关键码值来确定其存储地址：以关键码值K为自变量，通过一定的函数关系h(K)(称为散列函数)，计算出对应的函数值来，把这个值解释为结点的存储地址，将结点存入到此存储单元中。检索时，用同样的方法计算地址，然后到相应的单元里去取要找的结点。通过散列方法可以对结点进行快速检索。散列（hash，也称“哈希”）是一种重要的存储方式，也是一种常见的检索方法。</p>
+</li>
+</ol>
+<ol start="20">
+<li><h3 id="线程的几个状态？"><a href="#线程的几个状态？" class="headerlink" title="线程的几个状态？"></a>线程的几个状态？</h3></li>
+</ol>
+<ol start="21">
+<li><h3 id="join方法"><a href="#join方法" class="headerlink" title="join方法"></a>join方法</h3><p>在线程中调用另一个线程的 join() 方法，会将当前线程挂起，而不是忙等待，直到 目标线程结束。</p>
+</li>
+<li><h3 id="B树和B-树？"><a href="#B树和B-树？" class="headerlink" title="B树和B+树？"></a>B树和B+树？</h3><p>B+树中只有叶子节点会带有指向记录的指针（ROWID），而B树则所有节点都带有，在内部节点出现的索引项不会再出现在叶子节点中。</p>
+<p> B+树中所有叶子节点都是通过指针连接在一起，而B树不会。</p>
+<p>对于在内部节点的数据，B树可直接得到，不必根据叶子节点来定位。</p>
+</li>
+<li><h3 id="CMS与G1垃圾收集器："><a href="#CMS与G1垃圾收集器：" class="headerlink" title="CMS与G1垃圾收集器："></a>CMS与<strong>G1垃圾收集器：</strong></h3><p>CMS 处理过程有七个步骤：</p>
+<ol>
+<li>初始标记(CMS-initial-mark) ,会导致stw;</li>
+<li>并发标记(CMS-concurrent-mark)，与用户线程同时运行；</li>
+<li>预清理（CMS-concurrent-preclean），与用户线程同时运行；</li>
+<li>可被终止的预清理（CMS-concurrent-abortable-preclean） 与用户线程同时运行；</li>
+<li>重新标记(CMS-remark) ，会导致swt；</li>
+<li>并发清除(CMS-concurrent-sweep)，与用户线程同时运行；</li>
+<li>并发重置状态等待下次CMS的触发(CMS-concurrent-reset)，与用户线程同时运行；</li>
+</ol>
+<p><strong>G1:</strong></p>
+<p>本质上来说，G1垃圾回收器依然是一个分代垃圾回收器。但是它与一般的回收器所不同的是，它引入了额外的概念，Region。G1垃圾回收器把堆划分成一个个大小相同的Region。在HotSpot的实现中，整个堆被划分成2048左右个Region。每个Region的大小在1-32MB之间，具体多大取决于堆的大小。</p>
+</li>
+<li><h3 id="布隆过滤器？"><a href="#布隆过滤器？" class="headerlink" title="布隆过滤器？"></a>布隆过滤器？</h3><p>​    当一个元素被加入集合中时,通过k各散列函数将这个元素映射成一个位数组中的k个点,并将这k个点全部置为1.</p>
+<p>　　有一定的误判率–在判断一个元素是否属于某个集合时,有可能会把不属于这个集合的元素误判为属于这个集合.因此,它不适合那些”零误判”的应用场合.在能容忍低误判的应用场景下,布隆过滤器通过极少的误判换区了存储空间的极大节省.</p>
+<p>　　Bloom Filter使用k个相互独立的哈希函数（Hash Function），它们分别将集合中的每个元素映射到{1,…,m}的范围中。对任意一个元素x，第i个哈希函数映射的位置hi(x)就会被置为1（1≤i≤k）。注：如果一个位置多次被置为1，那么只有第一次会起作用，后面几次将没有任何效果。</p>
+<p>在判断y是否属于这个集合时，对y应用k次哈希函数，若所有hi(y)的位置都是1（1≤i≤k），就认为y是集合中的元素，否则就认为y不是集合中的元素。</p>
+</li>
+</ol>
+<ol start="25">
+<li><h3 id="一致性哈希？"><a href="#一致性哈希？" class="headerlink" title="一致性哈希？"></a>一致性哈希？</h3></li>
+</ol>
+<ol start="26">
+<li><h3 id="java处理Excel问题？"><a href="#java处理Excel问题？" class="headerlink" title="java处理Excel问题？"></a>java处理Excel问题？</h3><p><strong>1.Excel版本的问题</strong>：</p>
+<p>对于xls：</p>
+<p>InputStream is = new FileInputStream(file);</p>
+<p>Workbook workbook = new HSSFWorkbook(is);</p>
+<p>对于xlsx：</p>
+<p>InputStream is = new FileInputStream(file);</p>
+<p>Workbook workbook =new XSSFWorkbook(is);</p>
+<p><strong>2.对于空行的处理</strong>：</p>
+<p>int countRow=sheet.getPhysicalNumberOfRows();这句话可以获取Excel的行数，但是这里值得一提的是，这里获取到的行是指激活行，即便没填写任何数据，只要该行被激活，就算。因此使用这句话获取的数值一般会比我们实际的行数多一些。这里我们就要用到行数判空，除去一些空行。</p>
+<p><strong>3.Excel日期格式的判定</strong>：</p>
+<p>一般而言，Excel的日期是按数字格式来获取的，也就是Cell.CELL_TYPE_NUMERIC，然后再通过row.getCell(列标).getDateCellValue()获取日期，这里有个问题，就是如果Excel的单元格格式处理的不好，容易得到一个数字，然后再通过getDateCellValue获取时就得到一个1990年的时间，显然这是不对的。这里我们可以把该行定义为String类型，即row.getCell(列标).setCellType(Cell.CELL_TYPE_STRING);然后再获取row.getCell(列标).getStringCellValue()，如果要存储的列为Date类型，再进行String与Date的转化。</p>
+</li>
+<li><h3 id="java序列化与反序列化？"><a href="#java序列化与反序列化？" class="headerlink" title="java序列化与反序列化？"></a>java序列化与反序列化？</h3><p>序列化：把对象转换为字节序列的过程称为对象的序列化。<br>反序列化：把字节序列恢复为对象的过程称为对象的反序列化。 </p>
+<ul>
+<li>把对象的字节序列永久地保存到硬盘上，通常存放在一个文件中；（持久化对象）</li>
+<li>在网络上传送对象的字节序列。（网络传输对象）</li>
+</ul>
+<p>一个对象想要被序列化，那么它的类就要实现Serializable此接口或者它的子接口。这个对象的所有属性（包括private属性、包括其引用的对象）都可以被序列化和反序列化来保存、传递。不想序列化的字段可以使用transient修饰。</p>
+</li>
+<li><h3 id="分布式体系？"><a href="#分布式体系？" class="headerlink" title="分布式体系？"></a>分布式体系？</h3></li>
+</ol>
+<ol start="29">
+<li><h3 id="TOMCAT-实现原理？"><a href="#TOMCAT-实现原理？" class="headerlink" title="TOMCAT 实现原理？"></a>TOMCAT 实现原理？</h3></li>
+</ol>
+<ol start="30">
+<li><h3 id="三种分布式锁实现方式？"><a href="#三种分布式锁实现方式？" class="headerlink" title="三种分布式锁实现方式？"></a>三种分布式锁实现方式？</h3></li>
+</ol>
+<ol start="31">
+<li><h3 id="java类库？"><a href="#java类库？" class="headerlink" title="java类库？"></a>java类库？</h3></li>
+</ol>
+<ol start="32">
+<li><h3 id="用户态、核心态？？？"><a href="#用户态、核心态？？？" class="headerlink" title="用户态、核心态？？？"></a>用户态、核心态？？？</h3><p><strong>运行在用户态下的程序不能直接访问操作系统内核数据结构和程序。当我们在系统中执行一个程序时，大部分时间是运行在用户态下的，在其需要操作系统帮助完成某些它没有权力和能力完成的工作时就会切换到内核态</strong></p>
+<ul>
+<li>处于用户态执行时，进程所能访问的内存空间和对象受到限制，其所处于占有的处理机是可被抢占的 ；</li>
+<li>而处于核心态执行中的进程，则能访问所有的内存空间和对象，且所占有的处理机是不允许被抢占的。</li>
+</ul>
+<p><strong>1）系统调用</strong></p>
+<p><strong>这是用户态进程主动要求切换到内核态的一种方式</strong>，<strong>用户态进程通过系统调用申请使用操作系统提供的服务程序完成工作。</strong>比如前例中fork()实际上就是执行了一个创建新进程的系统调用。</p>
+<p>而系统调用的机制其核心还是使用了操作系统为用户特别开放的一个中断来实现，例如Linux的int 80h中断。</p>
+<p><strong>2）异常</strong></p>
+<p>当CPU在执行运行在用户态下的程序时，发生了某些事先不可知的异常，这时会触发由当前运行进程切换到处理此异常的内核相关程序中，也就转到了内核态，比如缺页异常。</p>
+<p><strong>3）外围设备的中断</strong></p>
+<p><strong>当外围设备完成用户请求的操作后，会向CPU发出相应的中断信号</strong>，这时CPU会暂停执行下一条即将要执行的指令转而去执行与中断信号对应的处理程序，</p>
+<p>如果先前执行的指令是用户态下的程序，那么这个转换的过程自然也就发生了由用户态到内核态的切换。比如硬盘读写操作完成，系统会切换到硬盘读写的中断处理程序中执行后续操作等。</p>
+<p><strong>这3种方式是系统在运行时由用户态转到内核态的最主要方式，其中系统调用可以认为是用户进程主动发起的，异常和外围设备中断则是被动的。</strong></p>
+</li>
+</ol>
+<ol start="33">
+<li><h3 id="死锁和解决方式？"><a href="#死锁和解决方式？" class="headerlink" title="死锁和解决方式？"></a>死锁和解决方式？</h3><p>概念： 多个并发进程因争夺系统资源而产生相互等待的现象。</p>
+<pre><code>原理： 当一组进程中的每个进程都在等待某个事件发生，而只有这组进程中的其他进程才能触发该事件，这就称这组进程发生了死锁。
+本质原因：
+    1）、系统资源有限。
+    2）、进程推进顺序不合理。</code></pre><p>死锁产生的4个必要条件</p>
+<pre><code>1、互斥： 某种资源一次只允许一个进程访问，即该资源一旦分配给某个进程，其他进程就不能再访问，直到该进程访问结束。
+2、占有且等待： 一个进程本身占有资源（一种或多种），同时还有资源未得到满足，正在等待其他进程释放该资源。
+3、不可抢占： 别人已经占有了某项资源，你不能因为自己也需要该资源，就去把别人的资源抢过来。
+4、循环等待： 存在一个进程链，使得每个进程都占有下一个进程所需的至少一种资源。</code></pre></li>
+</ol>
+<pre><code>**a**、破坏“占有且等待”条件
+     方法1：所有的进程在开始运行之前，必须一次性地申请其在整个运行过程中所需要的全部资源。
+         优点：简单易实施且安全。
+         缺点：因为某项资源不满足，进程无法启动，而其他已经满足了的资源也不会得到利用，严重降低了资源的利用率，造成资源浪费。
+                  使进程经常发生饥饿现象。
+     方法2：该方法是对第一种方法的改进，允许进程只获得运行初期需要的资源，便开始运行，在运行过程中逐步释放掉分配到的已经使用完毕的资源，然后再去请求新的资源。这样的话，资源的利用率会得到提高，也会减少进程的饥饿问题。
+
+**b、**破坏“循环等待”条件
+
+   可以通过定义资源类型的线性顺序来预防，可将每个资源编号，当一个进程占有编号为i的资源时，那么它下一次申请资源只能申请编号大于i的资源
+
+**c、**破坏“不可抢占”条件
+
+   当一个已经持有了一些资源的进程在提出新的资源请求没有得到满足时，它必须释放已经保持的所有资源，待以后需要使用的时候再重新申请。这就意味着进程已占有的资源会被短暂地释放或者说是被抢占了。
+
+
+
+避免死锁 ----- 在使用前进行判断，只允许不会产生死锁的进程申请资源
+的死锁避免是利用额外的检验信息，在分配资源时判断是否会出现死锁，只在不会出现死锁的情况下才分配资源。
+两种避免办法：
+    1、如果一个进程的请求会导致死锁，则不启动该进程
+    2、如果一个进程的增加资源请求会导致死锁 ，则拒绝该申请。
+避免死锁的具体实现通常利用银行家算法</code></pre><ol start="34">
+<li><h3 id="设置一个带过期时间的LRU缓存："><a href="#设置一个带过期时间的LRU缓存：" class="headerlink" title="设置一个带过期时间的LRU缓存："></a>设置一个带过期时间的LRU缓存：</h3></li>
+</ol>
+<ol start="35">
+<li><h3 id="设计一个分布式锁："><a href="#设计一个分布式锁：" class="headerlink" title="设计一个分布式锁："></a>设计一个分布式锁：</h3></li>
+</ol>
+<ol start="36">
+<li><h3 id="CAP与BASE？"><a href="#CAP与BASE？" class="headerlink" title="CAP与BASE？"></a>CAP与BASE？</h3><p>CAP原则又称CAP定理，指的是在一个分布式系统中，<strong>一致性</strong>（Consistency）、<strong>可用性</strong>（Availability）、<strong>分区容错性</strong>（Partition tolerance）。CAP原则的精髓就是要么AP，要么CP，要么AC，但是不存在CAP。</p>
+<p>一致性（C）：在分布式系统中的所有数据备份，在同一时刻是否同样的值，即写操作之后的读操作，必须返回该值。（分为弱一致性、强一致性和最终一致性）<br>可用性（A）：在集群中一部分节点故障后，集群整体是否还能响应客户端的读写请求。（对数据更新具备高可用性）<br>分区容忍性（P）：以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在C和A之间做出选择。</p>
+<p>2.1、CA without P：如果不要求P（不允许分区），则C（强一致性）和A（可用性）是可以保证的。但放弃P的同时也就意味着放弃了系统的扩展性，也就是分布式节点受限，没办法部署子节点，这是违背分布式系统设计的初衷的。传统的关系型数据库RDBMS：Oracle、MySQL就是CA。</p>
+<p>2.2、CP without A：如果不要求A（可用），相当于每个请求都需要在服务器之间保持强一致，而P（分区）会导致同步时间无限延长(也就是等待数据同步完才能正常访问服务)，一旦发生网络故障或者消息丢失等情况，就要牺牲用户的体验，等待所有数据全部一致了之后再让用户访问系统。设计成CP的系统其实不少，最典型的就是分布式数据库，如Redis、HBase等。对于这些分布式数据库来说，数据的一致性是最基本的要求，因为如果连这个标准都达不到，那么直接采用关系型数据库就好，没必要再浪费资源来部署分布式数据库。</p>
+<p>2.3、 AP wihtout C：要高可用并允许分区，则需放弃一致性。一旦分区发生，节点之间可能会失去联系，为了高可用，每个节点只能用本地数据提供服务，而这样会导致全局数据的不一致性。典型的应用就如某米的抢购手机场景，可能前几秒你浏览商品的时候页面提示是有库存的，当你选择完商品准备下单的时候，系统提示你下单失败，商品已售完。这其实就是先在 A（可用性）方面保证系统可以正常的服务，然后在数据的一致性方面做了些牺牲，虽然多少会影响一些用户体验，但也不至于造成用户购物流程的严重阻塞。</p>
+<p>CAP理论就是说在分布式存储系统中，最多只能实现上面的两点。而由于网络硬件肯定会出现延迟丢包等问题，所以分区容错性是我们必须需要实现的。所以我们只能在一致性和可用性之间进行权衡</p>
+<p><strong>解决方案 base：</strong></p>
+<p>BASE是Basically Available（基本可用）、Soft state（软状态）和Eventually consistent（最终一致性）三个短语的简写，BASE是对CAP中一致性和可用性权衡的结果。</p>
+<p><strong>最终一致性</strong>强调的是系统中所有的数据副本，在经过一段时间的同步后，最终能够达到一个一致的状态。因此，最终一致性的本质是需要系统保证最终数据能够达到一致，而不需要实时保证系统数据的强一致性。</p>
+<p><strong>基本可用</strong>：</p>
+<p><strong>响应时间上的损失</strong>：正常情况下，一个在线搜索引擎需要0.5秒内返回给用户相应的查询结果，但由于出现异常（比如系统部分机房发生断电或断网故障），查询结果的响应时间增加到了1~2秒。<br><strong>功能上的损失</strong>：正常情况下，在一个电子商务网站上进行购物，消费者几乎能够顺利地完成每一笔订单，但是在一些节日大促购物高峰的时候，由于消费者的购物行为激增，为了保护购物系统的稳定性，部分消费者可能会被引导到一个降级页面。</p>
+<p><strong>软状态</strong>：是指允许系统中的数据存在中间状态，并认为该中间状态的存在不会影响系统的整体可用性，即<strong>允许系统在不同节点的数据副本之间进行数据同步的过程存在延时</strong>。</p>
+</li>
+</ol>
+<ol start="37">
+<li><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket?"></a>Socket?</h3></li>
+</ol>
+<ol start="38">
+<li><h3 id="fork函数？"><a href="#fork函数？" class="headerlink" title="fork函数？"></a>fork函数？</h3><p>一个进程，包括代码、数据和分配给进程的资源。fork（）函数通过系统调用创建一个与原来进程几乎完全相同的进程，也就是两个进程可以做完全相同的事，但如果初始参数或者传入的变量不同，两个进程也可以做不同的事。一个进程调用fork（）函数后，系统先给新的进程分配资源，例如存储数据和代码的空间。然后把原来的进程的所有值都复制到新的新进程中，只有少数值与原来的进程的值不同。相当于克隆了一个自己。</p>
+<p><strong>fork调用的一个奇妙之处就是它仅仅被调用一次，却能够返回两次，它可能有三种不同的返回值：</strong><br>  1）在父进程中，fork返回新创建子进程的进程ID；<br>  2）在子进程中，fork返回0；<br>  3）如果出现错误，fork返回一个负值；</p>
+</li>
+<li><h3 id="可重入锁？"><a href="#可重入锁？" class="headerlink" title="可重入锁？"></a>可重入锁？</h3><p>可重入就是说某个线程已经获得某个锁，可以再次获取锁而不会出现死锁。常见的Synchronized，ReentrantLock。ReentrantLock 和 synchronized 不一样，需要手动释放锁，所以使用 ReentrantLock的时候一定要<strong>手动释放锁</strong>，并且<strong>加锁次数和释放次数要一样</strong></p>
+</li>
+<li><h3 id="公平锁和非公平锁"><a href="#公平锁和非公平锁" class="headerlink" title="公平锁和非公平锁"></a>公平锁和非公平锁</h3><p>公平锁：多个线程按照申请锁的顺序去获得锁，线程会直接进入队列去排队，永远都是队列的第一位才能得到锁。</p>
+<ul>
+<li>优点：所有的线程都能得到资源，不会饿死在队列中。</li>
+<li>缺点：吞吐量会下降很多，队列里面除了第一个线程，其他的线程都会阻塞，cpu唤醒阻塞线程的开销会很大。</li>
+</ul>
+<p>非公平锁：多个线程去获取锁的时候，会直接去尝试获取，获取不到，再去进入等待队列，如果能获取到，就直接获取到锁。</p>
+<ul>
+<li>优点：可以减少CPU唤醒线程的开销，整体的吞吐效率会高点，CPU也不必取唤醒所有线程，会减少唤起线程的数量。</li>
+<li>缺点：你们可能也发现了，这样可能导致队列中间的线程一直获取不到锁或者长时间获取不到锁，导致饿死。</li>
+</ul>
+</li>
+<li><h3 id="Spring中的JDK动态代理-和CGLIB？"><a href="#Spring中的JDK动态代理-和CGLIB？" class="headerlink" title="Spring中的JDK动态代理 和CGLIB？"></a>Spring中的JDK动态代理 和CGLIB？</h3><ul>
+<li><p><strong>JDK动态代理</strong><br>jdk动态代理是jre提供给我们的类库，可以直接使用，不依赖第三方；</p>
+<p>简单一句话，动态代理就是要生成一个包装类对象，由于代理的对象是动态的，所以叫动态代理。由于我们需要增强，这个增强是需要留给开发人员开发代码的，因此代理类不能直接包含被代理对象，而是一个InvocationHandler，该InvocationHandler包含被代理对象，并负责分发请求给被代理对象，分发前后均可以做增强。从原理可以看出，JDK动态代理是“对象”的代理。</p>
+</li>
+<li><p><strong>CGLib动态代理</strong>（不能代理final类）</p>
+<p>“代理”的目的是构造一个和被代理的对象有同样行为的对象，一个对象的行为是在类中定义的，对象只是类的实例。所以构造代理，不一定非得通过持有、包装对象这一种方式。</p>
+<p>通过“继承”可以继承父类所有的公开方法，然后可以重写这些方法，在重写时对这些方法增强，这就是cglib的思想。根据里氏代换原则（LSP），父类需要出现的地方，子类可以出现，所以cglib实现的代理也是可以被正常使用的。</p>
+</li>
+</ul>
+<p>JDK动态代理主要涉及java.lang.reflect包下边的两个类：Proxy和InvocationHandler。其中，InvocationHandler是一个接口，可以通过实现该接口定义横切逻辑（如：我们在方法执行前后打印的日志），并通过反射机制调用目标类的代码，动态地将横切逻辑和业务逻辑编织在一起。JDK动态代理的话，他有一个限制，就是它只能为接口创建代理实例，而对于没有通过接口定义业务方法的类，就只能使用CGLIB实现，利用ASM开源包，对代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。</p>
+</li>
+<li><h3 id="Mybatis如何实现动态SQL？"><a href="#Mybatis如何实现动态SQL？" class="headerlink" title="Mybatis如何实现动态SQL？"></a>Mybatis如何实现动态SQL？</h3><p>Mybatis提供了动态SQL，也就是可以根据用户提供的参数，动态决定查询语句依赖的查询条件或SQL语句的内容。</p>
+<ul>
+<li>针对一些非必填项，可以用if进行判空</li>
+<li>针对从多个条件中选择一个条件的情况，可以使用提供的choose、when、otherwise标签；按顺序判断when中的条件是否成立，如果有一个成立，则choose结束。当choose中所有的when条件都不满足时，则执行other wise中的sql（类似于switch、case、defaukt）</li>
+<li>where标签可以自动去除句子开头的AND、OR；可以去除sql拼接中的 1=1；</li>
+<li>foreach标签，用于对集合的遍历；可以指定一个集合，声明可以在元素体内使用的集合项item和索引index变量，也允许你指定开头与结尾的字符串以及集合项迭代之间的分隔符。这个元素也不会错误地添加多余的分隔符</li>
+<li>set标签，当在 update 语句中使用 if 标签时，如果最后的if 没有执行，则会导致逗号多余错误。使用 set 标签可以将动态的配置 set 关键字，和剔除追加到条件末尾的任何不相关的逗号。</li>
+<li>sql标签，在实际开发中会遇到许多相同的SQL，比如根据某个条件筛选，这个筛选很多地方都能用到，我们可以将其抽取出来成为一个公用的部分，这样修改也方便，一旦出现了错误，只需要改这一处便能处处生效了，此时就用到了<sql>这个标签了。然后用include标签涵盖就行。</li>
+</ul>
+</li>
+<li><h3 id="堆和栈？？？"><a href="#堆和栈？？？" class="headerlink" title="堆和栈？？？"></a>堆和栈？？？</h3><p>栈内存:栈内存首先是一片内存区域，存储的都是局部变量，凡是定义在方法中的都是局部变量（方法外的是全局变量），for循环内部定义的也是局部变量，是先加载函数才能进行局部变量的定义，所以方法先进栈，然后再定义变量，变量有自己的作用域，一旦离开作用域，变量就会被释放。栈内存的更新速度很快，因为局部变量的生命周期都很短。</p>
+<p>堆内存:存储的是数组和对象（其实数组就是对象），凡是new建立的都是在堆中，堆中存放的都是实体（对象），实体用于封装数据，而且是封装多个（实体的多个属性），如果一个数据消失，这个实体也没有消失，还可以用，所以堆是不会随时释放的，但是栈不一样，栈里存放的都是单个变量，变量被释放了，那就没有了。堆里的实体虽然不会被释放，但是会被当成垃圾，Java有垃圾回收机制不定时的收取。</p>
+<p>所以堆与栈的区别很明显：</p>
+<pre><code>1.栈内存存储的是局部变量而堆内存存储的是实体；
+
+2.栈内存的更新速度要快于堆内存，因为局部变量的生命周期很短；
+
+3.栈内存存放的变量生命周期一旦结束就会被释放，而堆内存存放的实体会被垃圾回收机制不定时的回收。</code></pre></li>
+<li><h3 id="数据库索引为什么要用B-树？？？"><a href="#数据库索引为什么要用B-树？？？" class="headerlink" title="数据库索引为什么要用B+树？？？"></a>数据库索引为什么要用B+树？？？</h3><ol>
+<li><p>一个二叉查找树是由n个节点随机构成，所以，对于某些情况，二叉查找树会退化成一个有n个节点的线性链。</p>
+</li>
+<li><p>AVL树，由于维护这种高度平衡所付出的代价比从中获得的效率收益还大，故而实际的应用不多，更多的地方是用追求局部而不是非常严格整体平衡的红黑树。当然，如果应用场景中对插入删除不频繁，只是对查找要求较高，那么AVL还是较优于红黑树。</p>
+</li>
+<li><p>红黑树，它是一种弱平衡二叉树，相对于要求严格的AVL树来说，它的旋转次数变少，所以对于搜索、插入、删除操作多的情况下，我们就用红黑树。</p>
+</li>
+<li><p><strong>B与B+：</strong></p>
+<ol>
+<li><p>首先明确一点，我们在MySQL中的数据一般是放在磁盘中的，读取数据的时候肯定会有访问磁盘的操作，磁盘中有两个机械运动的部分，分别是盘片旋转和磁臂移动。盘片旋转就是我们市面上所提到的多少转每分钟，而磁盘移动则是在盘片旋转到指定位置以后，移动磁臂后开始进行数据的读写。那么这就存在一个定位到磁盘中的块的过程，而定位是磁盘的存取中花费时间比较大的一块，毕竟机械运动花费的时候要远远大于电子运动的时间。当大规模数据存储到磁盘中的时候，显然定位是一个非常花费时间的过程，但是我们可以通过B树进行优化，提高磁盘读取时定位的效率。我们可以根据B类树的特点，构造一个多阶的B类树，然后在尽量多的在结点上存储相关的信息，保证层数尽量的少，以便后面我们可以更快的找到信息，磁盘的I/O操作也少一些，而且B类树是平衡树，每个结点到叶子结点的高度都是相同，这也保证了每个查询是稳定的。与红黑树相比，在相同的的节点的情况下，一颗B/B+树的高度远远小于红黑树的高度。B/B+树上操作的时间通常由<strong>存取磁盘的时间和CPU计算时间</strong>这两部分构成，而CPU的速度非常快，所以B树的操作效率取决于访问磁盘的次数，关键字总数相同的情况下B树的高度越小，磁盘I/O所花的时间越少。</p>
+</li>
+<li><p>1、 <strong>B+树的磁盘读写代价更低：B+树的内部节点并没有指向关键字具体信息的指针，因此其内部节点相对B树更小，如果把所有同一内部节点的关键字存放在同一盘块中，那么盘块所能容纳的关键字数量也越多，一次性读入内存的需要查找的关键字也就越多，相对IO读写次数就降低了。</strong></p>
+<p>2、<strong>B+树的查询效率更加稳定：由于非终结点并不是最终指向文件内容的结点，而只是叶子结点中关键字的索引。所以任何关键字的查找必须走一条从根结点到叶子结点的路。所有关键字查询的路径长度相同，导致每一个数据的查询效率相当。</strong></p>
+<p>3、<strong>由于B+树的数据都存储在叶子结点中，分支结点均为索引，方便扫库，只需要扫一遍叶子结点即可，但是B树因为其分支结点同样存储着数据，我们要找到具体的数据，需要进行一次中序遍历按序来扫，所以B+树更加适合在区间查询的情况，所以通常B+树用于数据库索引。</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h3 id="HTTP长连接，短连接？？？"><a href="#HTTP长连接，短连接？？？" class="headerlink" title="HTTP长连接，短连接？？？"></a>HTTP长连接，短连接？？？</h3><p>在HTTP/1.0中默认使用短连接。也就是说，客户端和服务器每进行一次HTTP操作，就建立一次连接，任务结束就中断连接。当客户端浏览器访问的某个HTML或其他类型的Web页中包含有其他的Web资源（如JavaScript文件、图像文件、CSS文件等），每遇到这样一个Web资源，浏览器就会重新建立一个HTTP会话。</p>
+<p>而从HTTP/1.1起，默认使用长连接，用以保持连接特性。使用长连接的HTTP协议，会在响应头加入这行代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection:keep-alive</span><br></pre></td></tr></table></figure>
+
+<p>在使用长连接的情况下，当一个网页打开完成后，客户端和服务器之间用于传输HTTP数据的TCP连接不会关闭，客户端再次访问这个服务器时，会继续使用这一条已经建立的连接。Keep-Alive不会永久保持连接，它有一个保持时间，可以在不同的服务器软件（如Apache）中设定这个时间。实现长连接需要客户端和服务端都支持长连接。</p>
+<p>HTTP协议的长连接和短连接，实质上是TCP协议的长连接和短连接。</p>
+<ul>
+<li><p>TCP短连接：client向server发起连接请求，server接到请求，然后双方建立连接。client向server发送消息，server回应client，然后一次请求就完成了。这时候双方任意都可以发起close操作，不过一般都是client先发起close操作。上述可知，短连接一般只会在 client/server间传递一次请求操作。短连接的优点是：管理起来比较简单，存在的连接都是有用的连接，不需要额外的控制手段。</p>
+</li>
+<li><p>TCP长连接：TCP的保活功能主要为服务器应用提供。如果客户端已经消失而连接未断开，则会使得服务器上保留一个半开放的连接，而服务器又在等待来自客户端的数据，此时服务器将永远等待客户端的数据。保活功能就是试图在服务端器端检测到这种<strong>半开放</strong>的连接。</p>
+<p>如果一个给定的连接在两小时内没有任何动作，服务器就向客户发送一个探测报文段，根据客户端主机响应探测4个客户端状态：</p>
+<ul>
+<li>客户主机依然正常运行，且服务器可达。此时客户的TCP响应正常，服务器将保活定时器复位。</li>
+<li>客户主机已经崩溃，并且关闭或者正在重新启动。上述情况下客户端都不能响应TCP。服务端将无法收到客户端对探测的响应。服务器总共发送10个这样的探测，每个间隔75秒。若服务器没有收到任何一个响应，它就认为客户端已经关闭并终止连接。</li>
+<li>客户端崩溃并已经重新启动。服务器将收到一个对其保活探测的响应，这个响应是一个复位，使得服务器终止这个连接。</li>
+<li>客户机正常运行，但是服务器不可达。这种情况与第二种状态类似。</li>
+</ul>
+<p><strong>长连接</strong>可以<strong>省去较多的TCP建立和关闭的操作，减少浪费，节约时间</strong>。对于频繁请求资源的客户来说，较适用长连接。不过这里<strong>存在一个问题</strong>，<strong>存活功能的探测周期太长</strong>，还有就是它只是探测TCP连接的存活，属于比较斯文的做法，遇到恶意的连接时，保活功能就不够使了。在长连接的应用场景下，client端一般不会主动关闭它们之间的连接，<strong>Client与server之间的连接如果一直不关闭的话，会存在一个问题，随着客户端连接越来越多，server早晚有扛不住的时候</strong>，这时候server端需要采取一些策略，如关闭一些长时间没有读写事件发生的连接，这样可以避免一些恶意连接导致server端服务受损；如果条件再允许就可以以客户端机器为颗粒度，限制每个客户端的最大长连接数，这样可以完全避免某个蛋疼的客户端连累后端服务。</p>
 </li>
 </ul>
 </li>
-<li></li>
+<li><h3 id="Java泛型和类型擦除"><a href="#Java泛型和类型擦除" class="headerlink" title="Java泛型和类型擦除"></a>Java泛型和类型擦除</h3></li>
 </ol>
+<ol start="79">
+<li><h3 id="select-与-epoll？"><a href="#select-与-epoll？" class="headerlink" title="select 与 epoll？"></a>select 与 epoll？</h3><p>它仅仅知道了，有I/O事件发生了，却并不知道是哪那几个流（可能有一个，多个，甚至全部），我们只能无差别轮询所有流，找出能读出数据，或者写入数据的流，对他们进行操作。所以<strong>select具有O(n)的无差别轮询复杂度</strong>，同时处理的流越多，无差别轮询时间就越长。</p>
+<p>poll本质上和select没有区别，它将用户传入的数组拷贝到内核空间，然后查询每个fd对应的设备状态， <strong>但是它没有最大连接数的限制</strong>，原因是它是基于链表来存储的。</p>
+<p><strong>epoll可以理解为event poll</strong>，不同于忙轮询和无差别轮询，epoll会把哪个流发生了怎样的I/O事件通知我们。所以我们说epoll实际上是<strong>事件驱动（每个事件关联上fd）</strong>的，此时我们对这些流的操作都是有意义的。<strong>（复杂度降低到了O(1)）</strong></p>
+<p><strong>但select，poll，epoll本质上都是同步I/O，因为他们都需要在读写事件就绪后自己负责进行读写，也就是说这个读写过程是阻塞的</strong>，而异步I/O则无需自己负责进行读写，异步I/O的实现会负责把数据从内核拷贝到用户空间。</p>
+</li>
+</ol>
+<pre><code>epoll的边沿出发和水平触发：
 
+**水平触发**：只要缓冲区有数据就会一直触发epoll_wait（默认）
+
+**边沿触发**：**只有所监听的事件状态改变或者有事件发生时**才会触发epoll_wait
+
+边沿触发通常与非阻塞IO一起使用，其工作模式为：epoll_wait触发一次，在while（1）循环内非阻塞IO读取数据，直到缓冲区数据为空（保证了数据的完整性），内核才会继续调用epoll_wait等待事件发生。</code></pre><ol start="80">
+<li><h3 id="HTTP状态码？"><a href="#HTTP状态码？" class="headerlink" title="HTTP状态码？"></a>HTTP状态码？</h3><p>![image-20210316135704671](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210316135704671.png)</p>
+<p>![image-20210316135719962](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210316135719962.png)</p>
+<p>![image-20210316135731358](/Users/heqinyang/Library/Application Support/typora-user-images/image-20210316135731358.png)</p>
+</li>
+<li><h3 id="TCP校验和"><a href="#TCP校验和" class="headerlink" title="TCP校验和"></a>TCP校验和</h3><p>TCP校验和（Checksum）是一个端到端的校验和，由发送端计算，然后由接收端验证。其目的是为了发现TCP首部和数据在发送端到接收端之间发生的任何改动。如果接收方检测到校验和有差错，则TCP段会被直接丢弃。TCP校验和覆盖TCP首部和TCP数据，而IP首部中的校验和只覆盖IP的首部，不覆盖IP数据报中的任何数据。要加上一个12字节的伪首部；伪首部共有12字节（前96Bits），包含如下信息：源IP地址、目的IP地址、保留字节(置0)、传输层协议号(TCP是6)、TCP报文长度(报头+数据)。</p>
+<p>伪首部是为了增加TCP校验和的检错能力：如检查TCP报文是否收错了(目的IP地址)、传输层协议是否选对了(传输层协议号)等。</p>
+<p><strong>首先，把伪首部、TCP报头、TCP数据分为16位的字，如果总长度为奇数个字节，则在最后增添一个位都为0的字节。把TCP报头中的校验和字段置为0（否则就陷入鸡生蛋还是蛋生鸡的问题）。</strong></p>
+<p><strong>其次，用反码相加法累加所有的16位字（进位也要累加）。</strong></p>
+<p><strong>最后，对计算结果取反，作为TCP的校验和</strong>。</p>
+<p>发送方：原码相加 ，并将高位叠加到低位，取反 ，得到反码求和结果，放入校验和</p>
+<p>接收方：将所有原码 相加，高位叠加， 如全为1，则正确</p>
+</li>
+<li><h3 id="TCP快重传"><a href="#TCP快重传" class="headerlink" title="TCP快重传"></a>TCP快重传</h3><p>由于TCP采用的是累计确认机制，即当接收端收到比期望序号大的报文段时，便会重复发送最近一次确认的报文段的确认信号，我们称之为冗余ACK（duplicate ACK），如果在超时重传定时器溢出之前，接收到连续的三个重复冗余ACK（其实是收到4个同样的ACK，第一个是正常的，后三个才是冗余的），发送端便知晓哪个报文段在传输过程中丢失了，于是重发该报文段，不需要等待超时重传定时器溢出，大大提高了效率。这便是快速重传机制。</p>
+</li>
+<li><h3 id="TCP-粘包？"><a href="#TCP-粘包？" class="headerlink" title="TCP 粘包？"></a>TCP 粘包？</h3><p>发送端为了将多个发往接收端的包，更加高效的的发给接收端，于是采用了优化算法（Nagle算法），将多次间隔较小、数据量较小的数据，合并成一个数据量大的数据块，然后进行封包。那么这样一来，接收端就必须使用高效科学的拆包机制来分辨这些数据。</p>
+<p><strong>TCP粘包</strong>就是指发送方发送的若干包数据到达接收方时粘成了一包，从接收缓冲区来看，后一包数据的头紧接着前一包数据的尾，出现粘包的原因是多方面的，可能是来自发送方，也可能是来自接收方。</p>
+<p>（1）发送方原因</p>
+<p>TCP默认使用Nagle算法（主要作用：减少网络中报文段的数量），而Nagle算法主要做两件事：</p>
+<p>​        只有上一个分组得到确认，才会发送下一个分组<br>​        收集多个小分组，在一个确认到来时一起发送<br>Nagle算法造成了发送方可能会出现粘包问题</p>
+<p>（2）接收方原因</p>
+<p>TCP接收到数据包时，并不会马上交到应用层进行处理，或者说应用层并不会立即处理。实际上，TCP将接收到的数据包保存在接收缓存里，然后应用程序主动从缓存读取收到的分组。这样一来，如果TCP接收数据包到缓存的速度大于应用程序从缓存中读取数据包的速度，多个包就会被缓存，应用程序就有可能读取到多个首尾相接粘到一起的包。</p>
+<p>解决办法：</p>
+<p>（1）发送方</p>
+<p>对于发送方造成的粘包问题，可以通过关闭Nagle算法来解决，使用TCP_NODELAY选项来关闭算法。</p>
+<p>（2）接收方</p>
+<p>接收方没有办法来处理粘包现象，只能将问题交给应用层来处理。</p>
+<p>（2）应用层</p>
+<p>应用层的解决办法简单可行，不仅能解决接收方的粘包问题，还可以解决发送方的粘包问题。</p>
+<p>解决办法：<strong>循环处理，应用程序从接收缓存中读取分组时，读完一条数据，就应该循环读取下一条数据，直到所有数据都被处理完成，但是如何判断每条数据的长度呢？</strong></p>
+<p>​        格式化数据：每条数据有固定的格式（开始符，结束符），这种方法简单易行，但是选择开始符和结束符时一定要确保每条数据的内部不包含开始符和结束符。<br>​        发送长度：发送每条数据时，将数据的长度一并发送，例如规定数据的前4位是数据的长度，应用层在处理时可以根据长度来判断每个分组的开始和结束位置。</p>
+</li>
+<li><h3 id="SOCKET通信原理？"><a href="#SOCKET通信原理？" class="headerlink" title="SOCKET通信原理？"></a>SOCKET通信原理？</h3></li>
+</ol>
+<ol start="85">
+<li><h3 id="阿里面经"><a href="#阿里面经" class="headerlink" title="阿里面经"></a>阿里面经</h3><h4 id="Java线程的状态？"><a href="#Java线程的状态？" class="headerlink" title="Java线程的状态？"></a>Java线程的状态？</h4><p>在线程的生命周期中，它要经过新建(New)、就绪（Runnable）、运行（Running）、阻塞(Blocked)和死亡(Dead)5 种状态。</p>
+<ul>
+<li><p>当程序使用 new 关键字创建了一个线程之后，该线程就处于新建状态，此时仅由 JVM 为其分配内存，并初始化其成员变量的值。</p>
+</li>
+<li><p>当线程对象调用了start()方法后，就处于就绪状态。Java 虚拟机会为其创建方法调用栈和程序计数器，等待调度运行。</p>
+</li>
+<li><p>如果处于就绪状态的线程获得了 CPU，开始执行 run()方法的线程执行体，则该线程处于运行状态。</p>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>阻塞状态是指线程因为某种原因放弃了 cpu 使用权，也即让出了 cpu timeslice，暂时停止运行。<br>等待阻塞：执行o.wait()方法，JVM会把该线程放入等待队列<br>同步阻塞：线程在获取对象的同步锁的同时，若该同步锁被其他的线程占用，JVM会将其放入锁池lock pool中<br>其他阻塞：线程执行Thread.sleep或t, join()方法，或发出I/O请求，JVM就将其设为阻塞状态。</li>
+<li>线程会以下面三种方式结束，结束后就是死亡状态。<ol>
+<li>正常结束：run（）或者call（）方法执行完成。</li>
+<li>异常结束：线程抛出一个未捕获的Exception或Error。</li>
+<li>调用stop：直接调用该线程的stop（）方法，也会释放该线程持有的所有锁的对象。</li>
+</ol>
+</li>
+</ul>
+<h4 id="进程和线程的区别，进程间如何通讯，线程间如何通讯？"><a href="#进程和线程的区别，进程间如何通讯，线程间如何通讯？" class="headerlink" title="进程和线程的区别，进程间如何通讯，线程间如何通讯？"></a>进程和线程的区别，进程间如何通讯，线程间如何通讯？</h4><p>进程和线程的主要差别在于它们是不同的操作系统资源管理方式。进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。</p>
+<p>协程：<strong>协程是一种用户态的轻量级线程</strong>，协程的调度完全由用户控制。协程拥有自己的寄存器上下文和栈。协程调度切换时，将寄存器上下文和栈保存到其他地方，在切回来的时候，恢复先前保存的寄存器上下文和栈，直接操作栈则基本没有内核切换的开销，可以不加锁的访问全局变量，所以上下文的切换非常快。<br>   协程在子程序内部可中断的，然后转而执行别的子程序，在适当的时候再返回来接着执行。</p>
+<p><strong>1.</strong> 极高的执行效率：因为子程序切换不是线程切换，而是由程序自身控制，因此，没有线程切换的开销，和多线程比，线程数量越多，协程的性能优势就越明显；<br><strong>2.</strong> 不需要多线程的锁机制：因为只有一个线程，也不存在同时写变量冲突，在协程中控制共享资源不加锁，只需要判断状态就好了，所以执行效率比多线程高很多。</p>
+<p>既然协程这么优秀，为什么不彻底替代线程呢？事实上协程和线程完全不是两个相同层面的东西，完全谈不上替代一说，协程可以说是一个独立于线程的功能，它是在线程的基础上，针对某些应用场景进一步发展出来的功能。我们知道，线程在多核的环境下是能做到真正意义上的并行执行的，注意，是并行，不是并发，而协程是为并发而生的。</p>
+<p><strong>进程通信：</strong></p>
+<pre><code>1. 共享内存：（最快）相对于其他几种方式，共享内存直接在进程的虚拟地址空间进行操作，不再通过执行进入内核的系统调用来传递彼此的数据
+2. 信号，本质是计数器，用于对多进程共享数据对象的访问。用于多进程对共享数据对象的访问。在进程访问临界资源之前，需要测试信号量，如果为正数，则信号量-1并且进程可以进入临界区，若为非正数，则进程挂起放入等待队列，直至有进程退出临界区，释放资源并+1信号量，此时唤醒等待队列的进程。信号量本身就是临界资源，所以必须是原子操作。
+3. 管道：单向，一端输入，另一端输出，先进先出FIFO。管道也是文件。管道大小4096字节。
+4. 消息队列：消息队列是先进先出FIFO原则。消息队列克服了信号传递信息少、管道只能承载无格式字节流以及缓冲区大小受限等缺点。</code></pre><p>线程间通信：</p>
+<p>方式一：volatile，大致意思就是多个线程同时监听一个变量，当这个变量发生变化的时候 ，线程能够感知并执行相应的业务。</p>
+<p>方式二：<em>Object</em>类提供了线程间通信的方法：<em>wait()</em>、<em>notify()</em>、<em>notifyaAll()</em>，它们是多线程通信的基础，而这种实现方式的思想自然是线程间通信。wait和 notify必须配合synchronized使用，wait方法释放锁，notify方法不释放锁。</p>
+<p>方式三：使用JUC工具类 CountDownLatch，基于AQS框架，相当于也是维护了一个线程间共享变量state。</p>
+<p>（<strong>AQS框架</strong>：抽象的队列同步器，常用的有：ReentrantLock/Semaphore/CountDownLatch，它维护了一个 volatile int state（代表共享资源）和一个 FIFO 线程等待队列（多线程争用资源被阻塞时会进入此队列），定义了两种资源共享方式：Exclusive独占，每次只能允许一个节点获取到资源，每次释放资源之后也只会唤醒后驱节点，如 ReentrantLock；Share共享，每次可以允许多个节点按照顺序获取资源，每次释放头节点资源后可能会唤醒后驱的后驱，如Semaphore/CountDownLatch</p>
+<p><strong>队列储存同步获取资源失败的线程 头结点持有锁 头结点释放锁之后会唤醒后面的节点</strong>：</p>
+<p>节点有五种状态：</p>
+<p>​            <code>0</code>：初始状态或者不代表任何意义时的取值。</p>
+<p>    <code>SIGNAL(-1)</code>：这个状态一般由下一个节点来设置，代表的意思是<strong>当前节点在释放了资源后将后续节点的线程唤醒</strong>。(大白话就是后续节点拜托前方的大哥东西用完了叫他，他先去睡会儿)</p>
+<p>    <code>CONDITION(-2)</code>：表示节点处于等待队列中，<strong>等待队列中的节点不会参与资源竞争</strong>，必须从等待队列出来后重新加入同步队列才能参与竞争。</p>
+<p>    <code>PROPAGATE(-3)</code>：在<strong>共享模式</strong>的时候用到。共享模式下，<strong>不仅只是唤醒下个节点，还可能唤醒下下个节点</strong>(根据当前剩余资源<code>state</code>的值能否满足最近节点的需求决定)。</p>
+<p>    <code>CANCELLED(1)</code>：表示该节点没用了，可能是等太久了，也可能是其他原因，总之就是废了，处于该状态的节点不会再改变，所以<code>AQS</code>中经常会判断节点状态是否大于<code>0</code>来检查节点是否还有用。</p>
+<p><strong>CyclicBarrier、CountDownLatch、Semaphore</strong>：</p>
+<ol>
+<li><p>CountDownLatch 类位于 java.util.concurrent 包下，利用它可以实现类似计数器的功能，每次调用 countDown() 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await() 方法而在等待的线程就会被唤醒</p>
+</li>
+<li><p>CyclicBarrier字面意思回环栅栏，通过它可以实现让一组线程等待至某个状态之后再全部同时执行。叫做回环是因为当所有等待线程都被释放以后， CyclicBarrier 可以被重用。我们暂且把这个状态就叫做barrier，当调用 await()方法之后，线程就处于 barrier 了。CyclicBarrier 中最重要的方法就是 await 方法，它有 2 个重载版本：</p>
+<p>1.public int await()：用来挂起当前线程，直至所有线程都到达 barrier 状态再同时执行后续任务；</p>
+<p>2.public int await(long timeout, TimeUnit unit)：让这些线程等待至一定的时间，如果还有线程没有到达 barrier 状态就直接让到达 barrier 的线程执行后续任务。</p>
+</li>
+<li><p>Semaphore：信号量，可以同时控制访问线程的个数，通过acquire（）获得许可，release（）释放一个许可。</p>
+</li>
+<li><p>CountDownLatch 和 CyclicBarrier 都能够实现线程之间的等待，只不过它们侧重点不同；CountDownLatch 一般用于某个线程 A 等待若干个其他线程执行完任务之后，它才执行；而 CyclicBarrier 一般用于一组线程互相等待至某个状态，然后这一组线程再同时执行；另外，CountDownLatch 是不能够重用的，而 CyclicBarrier 是可以重用的。Semaphore 其实和锁有点类似，它一般用于控制对某组资源的访问权限</p>
+</li>
+</ol>
+<p>​    </p>
+<h4 id="CAS"><a href="#CAS" class="headerlink" title="CAS"></a>CAS</h4><p>比较并交换，它包含 3 个参数，CAS(V,E,N)。V 表示要更新的变量(内存值)，E 表示预期值(旧的)，N 表示新值。当且仅当 V 值等于 E 值时，才会将 V 的值设为 N，如果 V 值和 E 值不同，则说明已经有其他线程做了更新，则当前线程什么都不做。最后，CAS 返回当前 V 的真实值。CAS 操作是抱着乐观的态度进行的(乐观锁)，它总是认为自己可以成功完成操作。当多个线程同时使用 CAS 操作一个变量时，只有一个会胜出，并成功更新，其余均会失败。失败的线程不会被挂起，仅是被告知失败，并且允许再次尝试，当然也允许失败的线程放弃操作 。基于这样的原理，CAS 操作即使没有锁，也可以发现其他线程对当前线程的干扰，并进行恰当的处理。</p>
+<p><strong>如何避免ABA</strong>：</p>
+<p>部分乐观锁的实现是通过版本号（version）的方式来解决 ABA 问题，乐观锁每次在执行数据的修改操作时，都会带上一个版本号，一旦版本号和数据的版本号一致就可以执行修改操作并对版本号执行+1 操作，否则就执行失败。因为每次操作的版本号都会随之增加，所以不会出现 ABA 问题，因为版本号只会增加不会减少。</p>
+<h4 id="CAS-Synchronized取代Segment-ReentrantLock"><a href="#CAS-Synchronized取代Segment-ReentrantLock" class="headerlink" title="CAS+Synchronized取代Segment+ReentrantLock"></a>CAS+Synchronized取代Segment+ReentrantLock</h4><p>以前：首先在初始化ConcurrentHashMap的时候,会初始化一个Segment数组,容量为16,而每个Segment呢,都继承了ReentrantLock类,也就是说每个Segment类本身就是一个锁,之后Segment内部又有一个table数组,而每个table数组里的索引数据呢,又对应着一个Node链表.首先,当我们使用put方法的时候,是对我们的key进行hash拿到一个整型,然后将整型对16取模,拿到对应的Segment,之后调用Segment的put方法,然后上锁,请注意,这里lock()的时候其实是this.lock(),也就是说,每个Segment的锁是分开的，其中一个上锁不会影响另一个,此时也就代表了我可以有十六个线程进来,而ReentrantLock上锁的时候如果只有一个线程进来,是不会有线程挂起的操作的,也就是说只需要在AQS里使用CAS改变一个state的值为1,此时就能对代码进行操作,这样一来,我们等于将并发量16了.</p>
+<p>现在：Synchronized是靠对象的对象头和此对象对应的monitor来保证上锁的,也就是对象头里的重量级锁标志指向了monitor,而monitor呢,内部则保存了一个当前线程,也就是抢到了锁的线程.它是对Node链表里的每一个Node加锁,也就是说,Synchronized是将每一个Node对象作为了一个锁,这样做的好处是什么呢?将锁细化了,也就是说,除非两个线程同时操作一个Node,注意,是一个Node而不是一个Node链表,那么才会争抢同一把锁.</p>
+<p>如果使用ReentrantLock其实也可以将锁细化成这样的,只要让Node类继承ReentrantLock就行了,这样的话调用f.lock()就能做到和Synchronized(f)同样的效果,但为什么不这样做呢?</p>
+<p>锁已经被细化到这种程度了,那么出现并发争抢的可能性还高吗?还有就是,哪怕出现争抢了,只要线程可以在30到50次自旋里拿到锁,那么Synchronized就不会升级为重量级锁,而等待的线程也就不用被挂起,我们也就少了挂起和唤醒这个上下文切换的过程开销.但如果是ReentrantLock呢?它则只有在线程没有抢到锁,然后新建Node节点后再尝试一次而已,不会自旋,而是直接被挂起,这样一来,我们就很容易会多出线程上下文开销的代价。</p>
+<p>Synchronized和ReentrantLock他们的开销差距是在释放锁时唤醒线程的数量,Synchronized是唤醒锁池里所有的线程+刚好来访问的线程,而ReentrantLock则是当前线程后进来的第一个线程+刚好来访问的线程.</p>
+<h4 id="ReentrantLock与Synchronized？"><a href="#ReentrantLock与Synchronized？" class="headerlink" title="ReentrantLock与Synchronized？"></a>ReentrantLock与Synchronized？</h4><p>​    <strong>相同点</strong>：</p>
+<p>​        两个都是可重入锁，它们都是加锁方式同步，而且都是阻塞式的同步，也就是说当如果一个线程获得了对象锁，进入了同步块，其他访问该同步块的线程都必须阻塞在同步块外面等待，而进行线程阻塞和唤醒的代价是比较高的（操作系统需要在用户态与内核态之间来回切换，代价很高，不过可以通过对锁优化进行改善）</p>
+<p>​    <strong>不同</strong>：</p>
+<pre><code>1. 实现不同，SynChronized通过JVM加锁解锁，ReentrantLock（实现了 Lock接口）需要自己手动释放锁；
+    2. SynChronized不可中断，除非抛出异常（释放锁方式：代码执行完，正常释放锁、、、抛出异常，由JVM退出等待），ReentrantLock持有锁的线程长期不释放锁的时候，正在等待的线程可以选择放弃等待（设置超时方法，时间过了就不等待、、、代码块中调用interrupt方法中断）
+      3. SynChronized是非公平锁，而ReentrantLock是两者都可以，默认公平锁，构造器可以传入boolean值，true为公平锁，false为非公平锁，
+        4. 资源竞争不是很激烈的情况下，偶尔会有同步的情形下，synchronized是很合适的。原因在于，编译程序通常会尽可能的进行优化synchronize，另外可读性非常好；ReentrantLock提供了多样化的同步，比如有时间限制的同步，可以被Interrupt的同步（synchronized的同步是不能Interrupt的）等。在资源竞争不激烈的情形下，性能稍微比synchronized差点点。但是当同步非常激烈的时候，synchronized的性能一下子能下降好几十倍。而ReentrantLock确还能维持常态。</code></pre><h4 id="Cookie和Session的区别"><a href="#Cookie和Session的区别" class="headerlink" title="Cookie和Session的区别"></a>Cookie和Session的区别</h4><p>Cookie 只能存储 ASCII 码字符串，而 Session 则可以存取任何类型的数据， 因此在考虑数据复杂性时首选 Session；</p>
+<p> Cookie 存储在浏览器中，容易被恶意查看。如果非要将一些隐私数据存在 Cookie 中，可以将 Cookie 值进行加密，然后在服务器进行解密；</p>
+<ol>
+<li><p>由于HTTP协议是无状态的协议，所以服务端需要记录用户的状态时，就需要用某种机制来识具体的用户，这个机制就是Session.典型的场景比如购物车，当你点击下单按钮时，由于HTTP协议无状态，所以并不知道是哪个用户操作的，所以服务端要为特定的用户创建了特定的Session，用用于标识这个用户，并且跟踪用户，这样才知道购物车里面有几本书。这个Session是保存在服务端的，有一个唯一标识。在服务端保存Session的方法很多，内存、数据库、文件都有。集群的时候也要考虑Session的转移，在大型的网站，一般会有专门的Session服务器集群，用来保存用户会话，这个时候 Session 信息都是放在内存的，使用一些缓存服务比如Memcached之类的来放 Session。</p>
+</li>
+<li><p>思考一下服务端如何识别特定的客户？这个时候Cookie就登场了。每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。实际上大多数的应用都是用 Cookie 来实现Session跟踪的，第一次创建Session的时候，服务端会在HTTP协议中告诉客户端，需要在 Cookie 里面记录一个Session ID，以后每次请求把这个会话ID发送到服务器，我就知道你是谁了。有人问，如果客户端的浏览器禁用了 Cookie 怎么办？一般这种情况下，会使用一种叫做URL重写的技术来进行会话跟踪，即每次HTTP交互，URL后面都会被附加上一个诸如 sid=xxxxx 这样的参数，服务端据此来识别用户。</p>
+</li>
+<li><p>Cookie其实还可以用在一些方便用户的场景下，设想你某次登陆过一个网站，下次登录的时候不想再次输入账号了，怎么办？这个信息可以写到Cookie里面，访问网站的时候，网站页面的脚本可以读取这个信息，就自动帮你把用户名给填了，能够方便一下用户。这也是Cookie名称的由来，给用户的一点甜头。</p>
+</li>
+</ol>
+<h4 id="索引有什么用？如何建索引？"><a href="#索引有什么用？如何建索引？" class="headerlink" title="索引有什么用？如何建索引？"></a>索引有什么用？如何建索引？</h4><p>索引在MySQL中也叫做“键”，它是一个特殊的文件，它保存着数据表里所有记录的位置信息，更通俗的来说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。当数据库中数据量很大时，查找数据会变得很慢，我们就可以通过索引来提高数据库的查询效率。</p>
+<p>不是索引越多越好，而是需要自己合理的使用。<br>对经常更新的表就避免对其进行过多索引的创建，对经常用于查询的字段应该创建索引，<br>数据量小的表最好不要使用索引，因为由于数据较少，可能查询全部数据花费的时间比遍历<br>索引的时间还要短，索引就可能不会产生优化效果。<br>在一字段上相同值比较多不要建立索引，比如在学生表的”性别”字段上只有男，女两个不同值。相反的，在一个字段上不同值较多可是建立索引。</p>
+<p>索引和主键：</p>
+<p><strong>1.</strong> <strong>主键一定是唯一性索引，唯一性索引并不一定就是主键。</strong> </p>
+<p><strong>2. 一个表中可以有多个唯一性索引，但只能有一个主键。</strong></p>
+<p><strong>3. 主键列不允许空值，而唯一性索引列允许空值。</strong> </p>
+<h4 id="ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。"><a href="#ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。" class="headerlink" title="ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。"></a>ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。</h4><p>ArrayList通过数组实现，只要size &gt; 数组的长度，就会触发grow，其中增长比例是原来的容量的一半；读取性能很高，随机访问时间复杂度为O(1)，适用于读大于写的场景。</p>
+<p>LinkedList是是通过双向队列来实现的，更新效率更高，写只需要修改前后两个节点的相关引用，但是读取效率比较低，需要最多遍历一半长度的队列，适用与写大于读的场景。</p>
+<p>关于remove：迭代器的remove方法与集合的remove方法,最大的不同是,迭代器的remove方法中包括对游标和expectedModCount的修正。<br>因为Iterator是在一个独立的线程中工作的,它在new Itr()进行初始化时,会记录当时集合中的元素,可以理解为记录了集合的状态,在使用集合的Remove方法对集合进行修改时,被记录的集合状态并不会与之同步改变,所以在cursor指向下一个要返回的元素时,可能会发生找不到的错误,即抛出ConcurrentModificationException异常。</p>
+<h4 id="equals方法实现"><a href="#equals方法实现" class="headerlink" title="equals方法实现"></a>equals方法实现</h4><p>equal比较的是对象的地址，==比较的两个对象的引用（若为基本类型，则比较值）</p>
+<p>如果没有重写hashCode()，则任何对象的hashCode（）值都不相等（而hashmap想让部分值的hashCode值一样，所以就要重写）；</p>
+<p>HashMap中的比较key是这样的，先求出key的hashcode(),比较其值是否相等，若相等再比较equals(),若相等则认为他们是相等的。若equals()不相等则认为他们不相等。<br>如果只重写equals没有重写hashCode()，就会导致相同的key值也被hashcode认为是不同的key值（因为没有重写hashCode()，则任何对象的hashCode（）值都不相等），就会在hashmap中存储相同的key值（map中key值不能相同），这就不符合条件了。</p>
+<p>equals和hashcode的关系:<br>1、如果两个对象相同（即用equals比较返回true），那么它们的hashCode值一定要相同；<br>2、如果两个对象的hashCode相同，它们并不一定相同(即用equals比较返回false)</p>
+<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><p>面向过程是具体化的，流程化的，解决一个问题，你需要一步一步的分析，一步一步的实现。</p>
+<p>面向对象是模型化的，你只需抽象出一个类，这是一个封闭的盒子，在这里你拥有数据也拥有解决问题的方法。需要什么功能直接使用就可以了，不必去一步一步的实现，至于这个功能是如何实现的，管我们什么事？我们会用就可以了。</p>
+<p>1、封装<br>隐藏对象的属性和实现细节，仅对外提供公共访问方式，将变化隔离，便于使用，提高复用性和安全性。<br>2、继承<br>提高代码复用性；继承是多态的前提。<br>3、多态<br>父类或接口定义的引用变量可以指向子类或具体实现类的实例对象。提高了程序的拓展性。</p>
+<p>1、单一职责原则SRP(Single Responsibility Principle)<br>类的功能要单一，不能包罗万象，跟杂货铺似的。<br>2、开放封闭原则OCP(Open－Close Principle)<br>一个模块对于拓展是开放的，对于修改是封闭的，想要增加功能热烈欢迎，想要修改，哼，一万个不乐意。<br>3、里式替换原则LSP(the Liskov Substitution Principle LSP)<br>子类可以替换父类出现在父类能够出现的任何地方。比如你能代表你爸去你姥姥家干活。哈哈~~<br>4、依赖倒置原则DIP(the Dependency Inversion Principle DIP)<br>高层次的模块不应该依赖于低层次的模块，他们都应该依赖于抽象。抽象不应该依赖于具体实现，具体实现应该依赖于抽象。就是你出国要说你是中国人，而不能说你是哪个村子的。比如说中国人是抽象的，下面有具体的xx省，xx市，xx县。你要依赖的是抽象的中国人，而不是你是xx村的。<br>5、接口分离原则ISP(the Interface Segregation Principle ISP)<br>设计时采用多个与特定客户类有关的接口比采用一个通用的接口要好。就比如一个手机拥有打电话，看视频，玩游戏等功能，把这几个功能拆分成不同的接口，比在一个接口里要好的多。</p>
+<h4 id="VM如何加载字节码文件"><a href="#VM如何加载字节码文件" class="headerlink" title="VM如何加载字节码文件"></a>VM如何加载字节码文件</h4><p>java文件经过编译后得到class文件，被称为字节码文件，Class文件是一组以8字节为基础单位的二进制流，各个数据项目按照严格的顺序排列在class文件中，中间没有任何的分隔符，这使得class文件在存储的内容全部是虚拟机运行程序所必须的，当存储的数据大于8位就采用大端模式。class文件不想xml等语言有分隔符，所以各种数据类型的排列顺序还是数量都是严格的。</p>
+<p>类从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期包括：加载（Loading）、验证（Verification）、准备(Preparation)、解析(Resolution)、初始化(Initialization)、使用(Using)和卸载(Unloading)7个阶段。</p>
+<ol>
+<li>在装载阶段，虚拟机需要完成以下3件事情</li>
+</ol>
+<p>​    (1) 通过一个类的全限定名来获取定义此类的二进制字节流</p>
+<p>​    (2) 将这个字节流所代表的静态存储结构转化为方法区的运行时数据结构</p>
+<p>​    (3) 在Java堆中生成一个代表这个类的java.lang.Class对象，作为方法区这些数据的访问入口。</p>
+<ol start="2">
+<li>如果我们是从自己本地的class文件加载类信息肯定不会出错，但是我们上面讲到了类的加载只是加载了一系列的二级制字节码，无法保证字节码的正确性，所以需要验证（通过网络下载.class文件；从zip，jar等归档文件中加载.class文件；从专有数据库中提取.class文件）</li>
+<li>准备阶段是正式为类变量分配并设置类变量初始值的阶段，这些内存都将在方法区中进行分配（因为这里的变量都是类变量，实例变量在堆，类变量在方法区）</li>
+<li>解析阶段是虚拟机将常量池内的符号引用替换为直接引用的过程。解析动作主要针对类或接口、字段、类方法、接口方法、方法类型、方法句柄和调用点限定符7类符号引用进行</li>
+<li>类初始化阶段是类加载过程的最后一步，到了初始化阶段，才真正开始执行类中定义的java程序代码。在准备阶段变量已经付过一次系统要求的初始值，而在初始化阶段，则根据程序猿通过程序制定的主管计划去初始化类变量和其他资源。</li>
+</ol>
+<h4 id="如何排查内存溢出"><a href="#如何排查内存溢出" class="headerlink" title="如何排查内存溢出"></a>如何排查内存溢出</h4><ol>
+<li><strong><code>使用jdk自带的jvisualvm.exe，查看占空间的类和实例最多的类，找到其最近的内存释放点一般就是内存泄漏的对象。</code></strong></li>
+<li><strong>也可以使用jmap查看jvm进程实例最多的类。</strong></li>
+</ol>
+<h4 id="ThreadLocal？"><a href="#ThreadLocal？" class="headerlink" title="ThreadLocal？"></a>ThreadLocal？</h4><p>当使用ThreadLocal维护变量时，ThreadLocal为每个使用该变量的线程提供独立的变量副本，所以每一个线程都可以独立地改变自己的副本，而不会影响其它线程所对应的副本。</p>
+<p>从线程的角度看，目标变量就象是线程的本地变量，这也是类名中“Local”所要表达的意思。</p>
+<p>ThreadLocal是如何做到为每一个线程维护变量的副本的呢？其实实现的思路很简单：在ThreadLocal类中有一个Map，用于存储每一个线程的变量副本，Map中元素的键为线程对象，而值对应线程的变量副本。</p>
+<p><strong>与同步方式比较</strong>：概括起来说，对于多线程资源共享的问题，同步机制采用了“以时间换空间”的方式，而ThreadLocal采用了“以空间换时间”的方式。前者仅提供一份变量，让不同的线程排队访问，而后者为每一个线程都提供了一份变量，因此可以同时访问而互不影响。</p>
+<h4 id="IO与NIO？"><a href="#IO与NIO？" class="headerlink" title="IO与NIO？"></a>IO与NIO？</h4><ol>
+<li>Java IO和NIO之间第一个最大的区别是，IO是面向流的，NIO是面向缓冲区的。 Java IO面向流意味着每次从流中读一个或多个字节，直至读取所有字节，它们没有被缓存在任何地方。此外，它不能前后移动流中的数据。如果需要前后移动从流中读取的数据，需要先将它缓存到一个缓冲区。 Java NIO的缓冲导向方法略有不同。数据读取到一个它稍后处理的缓冲区，需要时可在缓冲区中前后移动。这就增加了处理过程中的灵活性。但是，还需要检查是否该缓冲区中包含所有您需要处理的数据。而且，需确保当更多的数据读入缓冲区时，不要覆盖缓冲区里尚未处理的数据。</li>
+<li>Java IO的各种流是阻塞的。这意味着，当一个线程调用read() 或 write()时，该线程被阻塞，直到有一些数据被读取，或数据完全写入。该线程在此期间不能再干任何事情了。Java NIO的非阻塞模式，使一个线程从某通道发送请求读取数据，但是它仅能得到目前可用的数据，如果目前没有数据可用时，就什么都不会获取，而不是保持线程阻塞，所以直至数据变的可以读取之前，该线程可以继续做其他的事情。 非阻塞写也是如此。一个线程请求写入一些数据到某通道，但不需要等待它完全写入，这个线程同时可以去做别的事情。 线程通常将非阻塞IO的空闲时间用于在其它通道上执行IO操作，所以一个单独的线程现在可以管理多个输入和输出通道（channel）。  NIO通讯是将整个任务切换成许多小任务，由一个线程负责处理所有io事件，并负责分发。它是利用<strong>事件驱动机制</strong>，而不是监听机制，事件到的时候再触发。NIO线程之间通过wait，notify等方式通讯。保证了每次上下文切换都有意义，减少无谓的进程切换。<strong>本质上是同步I/O，因为他们都需要在读写事件就绪后自己负责进行读写</strong></li>
+<li>Java NIO的选择器允许一个单独的线程来监视多个输入通道，你可以注册多个通道使用一个选择器，然后使用一个单独的线程来“选择”通道：这些通道里已经有可以处理的输入，或者选择已准备写入的通道。这种选择机制，使得一个单独的线程很容易来管理多个通道。</li>
+<li>BIO：同步阻塞I/O模式，数据的读取写入必须阻塞在一个线程内等待其完成。</li>
+<li>AIO：异步非阻塞，在此种模式下，用户进程只需要发起一个IO操作然后立即返回，等IO操作真正的完成以后，应用程序会得到IO操作完成的通知。</li>
+<li><strong>零拷贝</strong>：传统的 Linux 操作系统的标准 I/O 接口是基于数据拷贝操作的，即 I/O 操作会导致数据在操作系统内核地址空间的缓冲区和应用程序地址空间定义的缓冲区之间进行传输。<br>零拷贝主要的任务就是<strong>避免</strong>CPU将数据从一块存储拷贝到另外一块存储，主要就是利用各种零拷贝技术，避免让CPU做大量的数据拷贝任务，减少不必要的拷贝，或者让别的组件来做这一类简单的数据传输任务，让CPU解脱出来专注于别的任务。这样就可以让系统资源的利用更加有效。</li>
+</ol>
+<h4 id="mysql存储引擎-myIsam和innodb的区别？"><a href="#mysql存储引擎-myIsam和innodb的区别？" class="headerlink" title="mysql存储引擎 myIsam和innodb的区别？"></a><strong>mysql存储引擎 myIsam和innodb的区别</strong>？</h4><p><strong>MyISAM类型（表级锁）不支持事务处理等高级处理，而InnoDB（行级锁）类型支持。MyISAM类型表强调性能，其执行速度比InnoDB快，但是不提供事务支持，而InnoDB提供事务支持以及外部键等高级数据库功能。</strong></p>
+<ol>
+<li><p>InnoDB中不保存表的具体行数，也就是说当执行select count(<em>) from table时，InnoDB会扫描一遍整张表来计算有多少行，但是MyISAM只需要简单地读出保存好的行数即可。需要注意的是count(</em>)语句中包含where条件时两种表的操作是一致的。</p>
+</li>
+<li><p>对于AUTO_INCREMENT类型的字段，InnoDB中必须包含只有该字段的索引，而在MyISAM中可以和其他字段一起建立联合索引。</p>
+</li>
+<li><p>InnoDB表的行锁也不是绝对的，假如在执行一个SQL语句时MySQL不能确定要扫描的范围，此时InnoDB依旧会锁全表，例如update table set num=1 where name like ‘%aaa%’。</p>
+</li>
+<li><h3 id="两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁："><a href="#两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁：" class="headerlink" title="两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁："></a>两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁：</h3><ol>
+<li>平台上大多承载的是读多写少的项目，而MyISAM的读性能比InnoDB要强不少；</li>
+<li>MyISAM的索引和数据是分开的，并且索引是有压缩的，这样内存使用率就提高了不少</li>
+<li>使用事务的项目一般就用InnoDB。大项目总量约几个亿的rows的某一类型（如日志等）业务表会使用MyISAM。</li>
+</ol>
+</li>
+<li><p>清空整个表时，InnoDB是一行一行的删除，效率非常慢。MyISAM则会重建表。</p>
+</li>
+<li><p><strong>聚簇索引innodb与非聚簇索引MyISAM？</strong></p>
+<p><strong>聚簇索引：</strong>将数据存储与索引放到了一块，索引结构的叶子节点保存了行数据</p>
+<p><strong>非聚簇索引：</strong>将数据与索引分开存储，索引结构的叶子节点指向了数据对应的位置</p>
+<p><strong>在innodb中</strong>，在聚簇索引之上创建的索引称之为辅助索引，非聚簇索引都是辅助索引，像复合索引、前缀索引、唯一索引。<strong>辅助索引叶子节点存储的不再是行的物理位置，而是主键值，辅助索引访问数据总是需要二次查找</strong>。</p>
+<p><strong>MyISAM使用的是非聚簇索引</strong>，<strong>非聚簇索引的两棵B+树看上去没什么不同</strong>，节点的结构完全一致只是存储的内容不同而已，主键索引B+树的节点存储了主键，辅助键索引B+树存储了辅助键。表数据存储在独立的地方，这两颗B+树的叶子节点都使用一个地址指向真正的表数据，对于表数据来说，这两个键没有任何差别。由于<strong>索引树是独立的，通过辅助键检索无需访问主键的索引树</strong>。</p>
+</li>
+</ol>
+<h4 id="缓存失效如何解决？"><a href="#缓存失效如何解决？" class="headerlink" title="缓存失效如何解决？"></a>缓存失效如何解决？</h4><p>引起这个原因的主要因素是高并发下，我们一般设定一个缓存的过期时间时，可能有一些会设置5分钟啊，10分钟这些；并发很高时可能会出在某一个时间同时生成了很多的缓存，并且过期时间在同一时刻，这个时候就可能引发——当过期时间到后，这些缓存同时失效，请求全部转发到DB，DB可能会压力过重。</p>
+<p>处理方法：</p>
+<p>一个简单方案就是将缓存失效时间分散开，不要所以缓存时间长度都设置成5分钟或者10分钟；比如我们可以在原有的失效时间基础上增加一个随机值，比如1-5分钟随机，这样每一个缓存的过期时间的重复率就会降低，就很难引发集体失效的事件。</p>
+<p>缓存失效时产生的雪崩效应，将所有请求全部放在数据库上，这样很容易就达到数据库的瓶颈，导致服务无法正常提供。尽量避免这种场景的发生。</p>
+<p><strong>缓存穿透</strong>：</p>
+<p>　　出现场景：指查询一个一定不存在的数据，由于缓存是不命中时被动写的，并且出于容错考虑，如果从存储层查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到存储层去查询，失去了缓存的意义。</p>
+<p>　　当在流量较大时，出现这样的情况，一直请求DB，很容易导致服务挂掉。</p>
+<p>处理方法：</p>
+<p>　　　　方法1.在封装的缓存SET和GET部分增加个步骤，如果查询一个KEY不存在，就已这个KEY为前缀设定一个标识KEY；以后再查询该KEY的时候，先查询标识KEY，如果标识KEY存在，就返回一个协定好的非false或者NULL值，然后APP做相应的处理，这样缓存层就不会被穿透。当然这个验证KEY的失效时间不能太长。</p>
+<p>　　　　方法2.如果一个查询返回的数据为空（不管是数据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，一般只有几分钟。</p>
+<p>　　　　方法3.采用布隆过滤器，将所有可能存在的数据哈希到一个足够大的bitmap中，一个一定不存在的数据会被这个bitmap拦截掉，从而避免了对底层存储系统的查询压力。</p>
+<ol>
+<li>首先需要k个hash函数，每个函数可以把key散列成为1个整数<ol start="2">
+<li>初始化时，需要一个长度为n比特的数组，每个比特位初始化为0<ol start="3">
+<li>某个key加入集合时，用k个hash函数计算出k个散列值，并把数组中对应的比特位置为1<ol start="4">
+<li>判断某个key是否在集合时，用k个hash函数计算出k个散列值，并查询数组中对应的比特位，如果所有的比特位都是1，认为在集合中。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>优点：</p>
+<p>不需要存储key，节省空间</p>
+<p>缺点：</p>
+<ol>
+<li>算法判断key在集合中时，有一定的概率key其实不在集合中</li>
+<li>无法删除</li>
+</ol>
+<p>​    </p>
+<h4 id="Netty零拷贝"><a href="#Netty零拷贝" class="headerlink" title="Netty零拷贝"></a>Netty零拷贝</h4><p>网络服务器都存在网络数据传输的问题，在服务器上，文件都是存放在磁盘上，当有请求到来的时候，需要将磁盘上的文件发送到网络中。</p>
+<p>传统数据读取方式：</p>
+<ol>
+<li><code>File.read(fileDesc, buf, len);</code></li>
+<li><code>Socket.send(socket, buf, len);</code></li>
+</ol>
+<p>即首先调用read方法，将磁盘文件读取到内存中；然后调用Socket的send方法，将字节数据发送出去。</p>
+<p>\1. 将数据从硬盘拷贝到内核空间中的缓冲区<br>\2. 将数据从内核缓冲区拷贝到用户空间缓冲区<br>\3. 将数据从用户空间缓冲区再拷回到内核缓冲区（Socket Buffer)<br>\4. 将数据从内核缓冲区拷贝到网卡缓冲区(NIC Buffer）</p>
+<p>Step 1. read()方法会造成一次上下文切换，即从用户态切换到内核态。在底层会调用sys_read()方法（或者其他等同的方法）来读取文件。第一次拷贝由DMA引擎完成，从磁盘读取数据然后保存在内核空间缓冲区。<br>Step 2. 被请求的数据从read buffer 拷贝到用户缓冲区，此时read()方法返回。read()方法返回会造成上下文从内核态切换回用户态。此时数据被存放在用户空间缓冲区。<br>Step 3. socket的send()方法会使上下文从用户态切换到内核态。第三次拷贝发生了，数据被从用户缓冲区拷贝回到内核缓冲区。但是这次数据不再是放在read buffer中了，而是放到了不同的地方:Socket Buffer中。<br>Step 4. send()方法返回，造成第四次上下文切换。第四次拷贝异步并独立地将数据从内核缓冲区拷贝到协议引擎。</p>
+<p><strong>零拷贝通过消除了不必要的数据拷贝过程而达到提高性能的目的</strong>。<br>上面的传统方式来说，第二步和第三步的拷贝是不必要的，即数据可以直接从内核缓冲区的read buffer拷贝到内核缓冲区的 socket buffer。</p>
+<ol>
+<li>零拷贝并不是没有任何数据拷贝过程，而是将需要CPU参与的数据拷贝过程都消除掉。</li>
+<li>零拷贝在java中是通过FileChannel的transferTo实现的，但是它是依赖与所在操作系统对于零拷贝的支持。</li>
+<li>linux系统中提供了sendfile()方法来支持将数据从一个文件描述符转移到另外一个，从而实现零拷贝的目的。</li>
+<li>零拷贝的演变过程：首先消除了数据在内核空间与用户空间之间的拷贝，但是仍然需要在内核态中进行一次拷贝（从read buffer到socket buffer)。如果网卡接口支持gather操作，那么可以直接从read buffer拷贝到网卡接口buffer。</li>
+<li>零拷贝仍然需要经历两次数据拷贝：1）将数据从磁盘拷贝到内核缓冲区2）将数据从内核缓冲区拷贝到网卡接口数据缓冲区。零拷贝只需要两次上下文切换，即调用transferTo的时候从用户态转移到内核态，transferTo返回的时候从内核态转移回用户态。</li>
+</ol>
+<p>​    </p>
+<h4 id="SpringMVC请求过程"><a href="#SpringMVC请求过程" class="headerlink" title="SpringMVC请求过程"></a>SpringMVC请求过程</h4><ul>
+<li>客户端请求提交到 <strong>DispatcherServlet</strong>。</li>
+<li>由 DispatcherServlet 控制器寻找一个或多个 HandlerMapping，找到处理请求的 Controller。</li>
+<li>DispatcherServlet 将请求提交到 Controller。</li>
+<li>Controller 调用业务逻辑处理后返回 ModelAndView。控制器处理完请求后，会将模型和视图名（有时候是视图对象）返回给DispatcherServlet。模型包含了控制器要传递给视图进行显示的属性。如果返回的是视图名称，它会被解析成视图对象再进行呈现。绑定模型和视图的基本类是ModelAndView。</li>
+<li>DispatcherServlet 寻找一个或多个 ViewResolver 视图解析器，找到 ModelAndView 指定的视图。<br>视图负责将结果显示到客户端。</li>
+</ul>
+<p>DispatcherSevlet负责将请求分发，所有的请求都有经过它来统一分发：</p>
+<p>1、构造WebApplicationContext被作为属性绑定到请求上以备控制器和其他元素使用。绑定的默认key为DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE。</p>
+<p>2、绑定地区解析器到请求上以备解析地区时使用，比如生成视图和准备数据时等等。如果不需要解析地区，则无需使用。</p>
+<p>3、绑定主题解析器到请求上以备视图等元素加载主题时使用。</p>
+<p>4、如果配置了文件流解析器，则会检测请求中是否包含文件流，如果包含，则请求会被包装为MultipartHttpServletRequest供其他元素做进一步处理。这一部分将会在后面的章节中进行详细说明。</p>
+<p>5、搜索合适的处理器处理请求。找到的话，与该处理器相关联的执行链（前拦截器、后拦截器、控制器等）会被执行以准备模型数据或生成视图。</p>
+<p>6、如果返回了模型对象，下一步就会进行视图的渲染。如果没有任何模型对象返回，例如因为安全的原因被前拦截器或后拦截器拦截了请求，那么就没有视图会生成，因为该请求已经结束了。</p>
+<p>​    </p>
+<h4 id="Mysql强制走索引？"><a href="#Mysql强制走索引？" class="headerlink" title="Mysql强制走索引？"></a>Mysql强制走索引？</h4><p>一般情况下，在查询时MySQL将自己决定是否使用索引，使用哪一个索引。但在一些特殊情况下，我们希望MySQL只使用一个或几个索引，或者不希望使用某个索引。这就需要使用MySQL的控制索引的一些查询选项。</p>
+<ul>
+<li><p>限制使用索引的范围<br>有时我们在数据表里建立了很多索引，当MySQL对索引进行选择时，这些索引都在考虑的范围内。但有时我们希望MySQL只考虑几个索引，而不是全部的索引，这就需要用到USE INDEX对查询语句进行设置。如：</p>
+<p>SELECT<em>FROMTABLE1 *</em>USE INDEX(**FIELD1,FIELD2)…</p>
+<p>从以上SQL语句可以看出，无论在TABLE1中已经建立了多少个索引，MySQL在选择索引时，只考虑在FIELD1和FIELD2上建立的索引。</p>
+</li>
+<li><p>限制不使用索引的范围<br>如果我们要考虑的索引很多，而不被使用的索引又很少时，可以使用IGNORE INDEX进行反向选取。在上面的例子中是选择被考虑的索引，而使用IGNORE INDEX是选择不被考虑的索引。</p>
+<p>SELECT<em>FROMTABLE1 *</em>IGNORE INDEX**(FIELD1,FIELD2)…</p>
+<p>在上面的SQL语句中，TABLE1表中只有FIELD1和FIELD2上的索引不被使用。</p>
+</li>
+<li><p>强迫使用某一个索引上面的两个例子都是给MySQL提供一个选择，也就是说MySQL并不一定要使用这些索引。而有时我们希望MySQL必须要使用某一个索引(由于 MySQL在查询时只能使用一个索引，因此只能强迫MySQL使用一个索引)。这就需要使用FORCE INDEX来完成这个功能。</p>
+<p>SELECT<em>FROMTABLE1 *</em>FORCE INDEX** (FIELD1)…</p>
+</li>
+<li><p>使用临时表提供查询性能当我们查询的结果集中的数据比较多时，可以通过SQL_BUFFER_RESULT.选项强制将结果集放到临时表中，这样就可以很快地释放MySQL的表锁(这样其它的SQL语句就可以对这些记录进行查询了)，并且可以长时间地为客户端提供大记录集。</p>
+<p><strong>SELECTSQL_BUFFER_RESULT</strong> * FROMTABLE1WHERE…</p>
+<p>和SQL_BUFFER_RESULT.选项类似的还有SQL_BIG_RESULT，这个选项一般用于分组或DISTINCT关键字，这个选项通知MySQL，如果有必要，就将查询结果放到临时表中，甚至在临时表中进行排序。</p>
+<p><strong>SELECTSQL_BUFFER_RESULT</strong> FIELD1,COUNT(*)FROMTABLE1 GROUP BY FIELD1</p>
+</li>
+</ul>
+<h4 id="java引用类型？"><a href="#java引用类型？" class="headerlink" title="java引用类型？"></a>java引用类型？</h4><p>在JAVA中提供了四种引用类型：强引用、软引用、软引用和虚引用。在四种引用类型中，只有强引用FinalReference类型变量是包内可见的，其他三种引用类型均为public，可以在程序中直接使用。</p>
+<ul>
+<li><strong>强引用</strong>：强引用是使用最普遍的引用。如果一个对象具有强引用，那么垃圾回收器绝不会回收它。例如:StringBuilder sb = new StringBuilder(“test”);变量str指向StringBuffer实例所在的堆空间，通过str可以操作该对象。强引用特点：<ul>
+<li>强引用可以直接访问目标对象</li>
+<li>只要有引用变量存在，垃圾回收器永远不会回收。JVM即使抛出OOM异常，也不会回收强引用所指向的对象。</li>
+<li>强引用可能导致内存泄漏问</li>
+</ul>
+</li>
+<li><strong>软引用</strong>：软引用是除了强引用外，最强的引用类型。可以通过java.lang.ref.SoftReference使用软引用。一个持有软引用的对象，不会被JVM很快回收，JVM会根据当前堆的使用情况来判断何时回收。当堆使用率临近阈值时，才会去回收软引用的对象。因此，软引用可以用于实现对内存敏感的高速缓存。SoftReference的特点是它的一个实例保存对一个Java对象的软引用，该软引用的存在不妨碍垃圾收集线程对该Java对象的回收。也就是说，一旦SoftReference保存了对一个Java对象的软引用后，在垃圾线程对 这个Java对象回收前，SoftReference类所提供的get()方法返回Java对象的强引用。一旦垃圾线程回收该Java对象之后，get()方法将返回null。</li>
+<li><strong>弱引用</strong>：弱引用是一种比软引用较弱的引用类型。在系统GC时，只要发现弱引用，不管系统堆空间是否足够，都会将对象进行回收。在java中，可以用java.lang.ref.WeakReference实例来保存对一个Java对象的弱引用。弱引用与软引用的区别在于：只具有弱引用的对象拥有更短暂的生命周期。不过，由于垃圾回收器是一个优先级很低的线程，因此不一定会很快发现那些只具有弱引用的对象。弱引用主要用于监控对象是否已经被垃圾回收器标记为即将回收的垃圾，可以通过弱引用的isEnQueued方法返回对象是否被垃圾回收器标记。</li>
+<li><strong>虚引用</strong>：虚引用是所有类型中最弱的一个。一个持有虚引用的对象和没有引用几乎是一样的，随时可能被垃圾回收器回收，当试图通过虚引用的get()方法取得强引用时，总是会失败。并且虚引用必须和引用队列一起使用，它的作用在于检测对象是否已经从内存中删除，跟踪垃圾回收过程。当垃圾回收器准备回收一个对象时，如果发现它还有虚引用，就会在垃圾回收后，销毁这个对象，将这个虚引用加入引用队列。</li>
+</ul>
+<h4 id="final-finally-finalize的区别"><a href="#final-finally-finalize的区别" class="headerlink" title="final finally finalize的区别"></a>final finally finalize的区别</h4><p>final修饰的类不可以被继承，final修饰的变量不可以修改，final修饰的方法不可以被重写（override）。</p>
+<p>finally是为了保证重点代码一定要被执行的一种机制，例如try catch finally来进行JDBC的关闭以及unlock锁等。</p>
+<p>finalize：垃圾回收器准备释放内存的时候，会先调用finalize()，保证对象在被垃圾收集前完成特定资源等回收。</p>
+<h4 id="枚举单例"><a href="#枚举单例" class="headerlink" title="枚举单例"></a>枚举单例</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span>  EnumSingleton &#123;</span><br><span class="line">    INSTANCE;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> EnumSingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关于分布式事务、两阶段提交协议、三阶提交协议"><a href="#关于分布式事务、两阶段提交协议、三阶提交协议" class="headerlink" title="关于分布式事务、两阶段提交协议、三阶提交协议"></a>关于分布式事务、两阶段提交协议、三阶提交协议</h4><p>所谓的两个阶段是指：第一阶段：<strong>准备阶段(投票阶段)</strong>和第二阶段：<strong>提交阶段（执行阶段）</strong>。</p>
+<h3 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h3><p>事务协调者(事务管理器)给每个参与者(资源管理器)发送Prepare消息，每个参与者要么直接返回失败(如权限验证失败)，要么在本地执行事务，写本地的redo和undo日志，但不提交，到达一种“万事俱备，只欠东风”的状态。</p>
+<p>1）协调者节点向所有参与者节点询问是否可以执行提交操作(vote)，并开始等待各参与者节点的响应。</p>
+<p>2）参与者节点执行询问发起为止的所有事务操作，并将Undo信息和Redo信息写入日志。（注意：若成功这里其实每个参与者已经执行了事务操作）</p>
+<p>3）各参与者节点响应协调者节点发起的询问。如果参与者节点的事务操作实际执行成功，则它返回一个”同意”消息；如果参与者节点的事务操作实际执行失败，则它返回一个”中止”消息。</p>
+<h3 id="提交阶段"><a href="#提交阶段" class="headerlink" title="提交阶段"></a>提交阶段</h3><p>如果协调者收到了参与者的失败消息或者超时，直接给每个参与者发送回滚(Rollback)消息；否则，发送提交(Commit)消息；参与者根据协调者的指令执行提交或者回滚操作，释放所有事务处理过程中使用的锁资源。(注意:必须在最后阶段释放锁资源)</p>
+<p>1）协调者节点向所有参与者节点发出”正式提交(commit)”的请求。</p>
+<p>2）参与者节点正式完成操作，并释放在整个事务期间内占用的资源。</p>
+<p>3）参与者节点向协调者节点发送”完成”消息。</p>
+<p>4）协调者节点受到所有参与者节点反馈的”完成”消息后，完成事务。</p>
+<p>1、<strong>同步阻塞问题</strong>。执行过程中，所有参与节点都是事务阻塞型的。当参与者占有公共资源时，其他第三方节点访问公共资源不得不处于阻塞状态。</p>
+<p>2、<strong>单点故障</strong>。由于协调者的重要性，一旦协调者发生故障。参与者会一直阻塞下去。尤其在第二阶段，协调者发生故障，那么所有的参与者还都处于锁定事务资源的状态中，而无法继续完成事务操作。（如果是协调者挂掉，可以重新选举一个协调者，但是无法解决因为协调者宕机导致的参与者处于阻塞状态的问题）</p>
+<p>3、<strong>数据不一致</strong>。在二阶段提交的阶段二中，当协调者向参与者发送commit请求之后，发生了局部网络异常或者在发送commit请求过程中协调者发生了故障，这回导致只有一部分参与者接受到了commit请求。而在这部分参与者接到commit请求之后就会执行commit操作。但是其他部分未接到commit请求的机器则无法执行事务提交。于是整个分布式系统便出现了数据部一致性的现象。</p>
+<p>4、二阶段无法解决的问题：协调者再发出commit消息之后宕机，而唯一接收到这条消息的参与者同时也宕机了。那么即使协调者通过选举协议产生了新的协调者，这条事务的状态也是不确定的，没人知道事务是否被已经提交。</p>
+<p>与两阶段提交不同的是，三阶段提交有两个改动点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、引入超时机制。同时在协调者和参与者中都引入超时机制。</span><br><span class="line">2、在第一阶段和第二阶段中插入一个准备阶段。保证了在最后提交阶段之前各参与节点的状态是一致的。</span><br></pre></td></tr></table></figure>
+
+<p>也就是说，除了引入超时机制之外，3PC把2PC的准备阶段再次一分为二，这样三阶段提交就有<code>CanCommit</code>、<code>PreCommit</code>、<code>DoCommit</code>三个阶段。也就是说，除了引入超时机制之外，3PC把2PC的准备阶段再次一分为二，这样三阶段提交就有<code>CanCommit</code>、<code>PreCommit</code>、<code>DoCommit</code>三个阶段。</p>
+<h3 id="CanCommit阶段"><a href="#CanCommit阶段" class="headerlink" title="CanCommit阶段"></a>CanCommit阶段</h3><p>3PC的CanCommit阶段其实和2PC的准备阶段很像。协调者向参与者发送commit请求，参与者如果可以提交就返回Yes响应，否则返回No响应。</p>
+<blockquote>
+<p><strong>1.事务询问</strong> 协调者向参与者发送CanCommit请求。询问是否可以执行事务提交操作。然后开始等待参与者的响应。</p>
+<p><strong>2.响应反馈</strong> 参与者接到CanCommit请求之后，正常情况下，如果其自身认为可以顺利执行事务，则返回Yes响应，并进入预备状态。否则反馈No</p>
+</blockquote>
+<h3 id="PreCommit阶段"><a href="#PreCommit阶段" class="headerlink" title="PreCommit阶段"></a>PreCommit阶段</h3><p>协调者根据参与者的反应情况来决定是否可以记性事务的PreCommit操作。根据响应情况，有以下两种可能。</p>
+<p><strong>假如协调者从所有的参与者获得的反馈都是Yes响应，那么就会执行事务的预执行。</strong></p>
+<blockquote>
+<p><strong>1.发送预提交请求</strong> 协调者向参与者发送PreCommit请求，并进入Prepared阶段。</p>
+<p><strong>2.事务预提交</strong> 参与者接收到PreCommit请求后，会执行事务操作，并将undo和redo信息记录到事务日志中。</p>
+<p><strong>3.响应反馈</strong> 如果参与者成功的执行了事务操作，则返回ACK响应，同时开始等待最终指令。</p>
+</blockquote>
+<p><strong>假如有任何一个参与者向协调者发送了No响应，或者等待超时之后，协调者都没有接到参与者的响应，那么就执行事务的中断。</strong></p>
+<blockquote>
+<p><strong>1.发送中断请求</strong> 协调者向所有参与者发送abort请求。</p>
+<p><strong>2.中断事务</strong> 参与者收到来自协调者的abort请求之后（或超时之后，仍未收到协调者的请求），执行事务的中断。</p>
+</blockquote>
+<h3 id="doCommit阶段"><a href="#doCommit阶段" class="headerlink" title="doCommit阶段"></a>doCommit阶段</h3><p>该阶段进行真正的事务提交，也可以分为以下两种情况。</p>
+<p><strong>执行提交</strong></p>
+<blockquote>
+<p><strong>1.发送提交请求</strong> 协调接收到参与者发送的ACK响应，那么他将从预提交状态进入到提交状态。并向所有参与者发送doCommit请求。</p>
+<p><strong>2.事务提交</strong> 参与者接收到doCommit请求之后，执行正式的事务提交。并在完成事务提交之后释放所有事务资源。</p>
+<p><strong>3.响应反馈</strong> 事务提交完之后，向协调者发送Ack响应。</p>
+<p><strong>4.完成事务</strong> 协调者接收到所有参与者的ack响应之后，完成事务。</p>
+</blockquote>
+<p><strong>中断事务</strong> 协调者没有接收到参与者发送的ACK响应（可能是接受者发送的不是ACK响应，也可能响应超时），那么就会执行中断事务。</p>
+<blockquote>
+<p><strong>1.发送中断请求</strong> 协调者向所有参与者发送abort请求</p>
+<p><strong>2.事务回滚</strong> 参与者接收到abort请求之后，利用其在阶段二记录的undo信息来执行事务的回滚操作，并在完成回滚之后释放所有的事务资源。</p>
+<p><strong>3.反馈结果</strong> 参与者完成事务回滚之后，向协调者发送ACK消息</p>
+<p><strong>4.中断事务</strong> 协调者接收到参与者反馈的ACK消息之后，执行事务的中断。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在doCommit阶段，如果参与者无法及时接收到来自协调者的doCommit或者rebort请求时，会在等待超时之后，会继续进行事务的提交。（其实这个应该是基于概率来决定的，当进入第三阶段时，说明参与者在第二阶段已经收到了PreCommit请求，那么协调者产生PreCommit请求的前提条件是他在第二阶段开始之前，收到所有参与者的CanCommit响应都是Yes。（一旦参与者收到了PreCommit，意味他知道大家其实都同意修改了）所以，一句话概括就是，当进入第三阶段时，由于网络超时等原因，虽然参与者没有收到commit或者abort响应，但是他有理由相信：成功提交的几率很大。 ）</span><br></pre></td></tr></table></figure>
+
+<h4 id="TDD开发模式"><a href="#TDD开发模式" class="headerlink" title="TDD开发模式"></a>TDD开发模式</h4><p>测试驱动开发是敏捷开发中的一项核心实践和技术，也是一种设计方法论。TDD的原理是在开发功能代码之前，先编写单元测试用例代码，测试代码确定需要编写什么产品代码。TDD的基本思路就是通过测试来推动整个开发的进行，但测试驱动开发并不只是单纯的测试工作，而是把需求分析，设计，质量控制量化的过程。TDD首先考虑使用需求（对象、功能、过程、接口等），主要是编写测试用例框架对功能的过程和接口进行设计，而测试框架可以持续进行验证。 </p>
+<p>TDD 的定义和步骤看起来很简单：需求被转化成一系列明确的测试例，然后我们撰写代码使测试依此通过，最后重构使得增量代码和存量代码和平共处，满足设计规范和原则。</p>
+<h4 id="MVCC"><a href="#MVCC" class="headerlink" title="MVCC"></a>MVCC</h4><p>总体上来讲MVCC的实现是基于ReadView版本链以及Undo日志实现的</p>
+<p>首先对于使用InnoDB存储引擎的表来说，它的聚簇索引记录中都包含两个必要的隐藏列</p>
+<ul>
+<li>trx_id：每次一个事务对某条聚簇索引记录进行改动时，都会把该事务的事务id赋值给trx_id隐藏列。</li>
+<li>roll_pointer：每次对某条聚簇索引记录进行改动时，都会把旧的版本写入到undo日志中，然后这个隐藏列就相当于一个指针，可以通过它来找到该记录修改前的信息</li>
+</ul>
+<p>undo log主要存储的也是逻辑日志，比如我们要insert一条数据了，那undo log会记录的一条对应的delete日志。我们要update一条记录时，它会记录一条对应相反的update记录</p>
+<h4 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h4><h4 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h4>
     </div>
 
     
@@ -616,7 +1248,10 @@
     <a href="/2020/12/15/%E9%94%81/" rel="prev" title="关于锁机制">
       <i class="fa fa-chevron-left"></i> 关于锁机制
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/03/10/%E9%98%BF%E9%87%8C%E9%9D%A2%E7%BB%8F/" rel="next" title="阿里面经">
+      阿里面经 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -675,7 +1310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#记录自己准备面试的一些东西"><span class="nav-number">1.</span> <span class="nav-text">记录自己准备面试的一些东西</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"><span class="nav-number">1.1.</span> <span class="nav-text">你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"><span class="nav-number">1.2.</span> <span class="nav-text">Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是反射？反射有哪些优点？又有哪些缺点？"><span class="nav-number">1.3.</span> <span class="nav-text">什么是反射？反射有哪些优点？又有哪些缺点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"><span class="nav-number">1.4.</span> <span class="nav-text">你是用什么方案处理Java高并发问题的？可以详细讲讲吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？"><span class="nav-number">1.5.</span> <span class="nav-text">在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你使用Redis做过什么？是怎么实现的？"><span class="nav-number">1.6.</span> <span class="nav-text">你使用Redis做过什么？是怎么实现的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聊一下JVM？"><span class="nav-number">1.7.</span> <span class="nav-text">聊一下JVM？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谈一谈String、StringBuilder、StringBuffer？"><span class="nav-number">1.8.</span> <span class="nav-text">谈一谈String、StringBuilder、StringBuffer？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重写与重载？"><span class="nav-number">1.9.</span> <span class="nav-text">重写与重载？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类和对象？"><span class="nav-number">1.10.</span> <span class="nav-text">类和对象？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主从复制？"><span class="nav-number">1.11.</span> <span class="nav-text">主从复制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务隔离级别？acid？"><span class="nav-number">1.12.</span> <span class="nav-text">事务隔离级别？acid？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封锁类型？"><span class="nav-number">1.13.</span> <span class="nav-text">封锁类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mybatis优缺点？"><span class="nav-number">1.14.</span> <span class="nav-text">Mybatis优缺点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hibernate？？？"><span class="nav-number">1.15.</span> <span class="nav-text">Hibernate？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封锁粒度"><span class="nav-number">1.16.</span> <span class="nav-text">封锁粒度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA锁？乐观、悲观实现"><span class="nav-number">1.17.</span> <span class="nav-text">JAVA锁？乐观、悲观实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring框架的优点？"><span class="nav-number">1.18.</span> <span class="nav-text">Spring框架的优点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谈一谈docker？"><span class="nav-number">1.19.</span> <span class="nav-text">谈一谈docker？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQl优化？"><span class="nav-number">1.20.</span> <span class="nav-text">SQl优化？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程池？"><span class="nav-number">1.21.</span> <span class="nav-text">线程池？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jenkins自动化部署？"><span class="nav-number">1.22.</span> <span class="nav-text">jenkins自动化部署？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM的堆？"><span class="nav-number">1.23.</span> <span class="nav-text">JVM的堆？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES？"><span class="nav-number">1.24.</span> <span class="nav-text">ES？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引？索引类型？"><span class="nav-number">1.25.</span> <span class="nav-text">索引？索引类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hashcode是啥？"><span class="nav-number">1.26.</span> <span class="nav-text">hashcode是啥？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程和线程的区别？多线程？几种实现多线程的方法？"><span class="nav-number">1.27.</span> <span class="nav-text">进程和线程的区别？多线程？几种实现多线程的方法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类加载机制，双亲委派？"><span class="nav-number">1.28.</span> <span class="nav-text">类加载机制，双亲委派？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络七层模型以及五层模型？"><span class="nav-number">1.29.</span> <span class="nav-text">网络七层模型以及五层模型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全局唯一id怎么实现？"><span class="nav-number">1.30.</span> <span class="nav-text">全局唯一id怎么实现？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP，HTTPs？"><span class="nav-number">1.31.</span> <span class="nav-text">HTTP，HTTPs？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重排序和volatile、Synchronized"><span class="nav-number">1.32.</span> <span class="nav-text">重排序和volatile、Synchronized?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#与-equal？"><span class="nav-number">1.33.</span> <span class="nav-text">&#x3D;&#x3D; 与 equal？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重写equals还要重写hashcode？"><span class="nav-number">1.34.</span> <span class="nav-text">重写equals还要重写hashcode？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一下单例模式？"><span class="nav-number">1.35.</span> <span class="nav-text">写一下单例模式？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP和UDP？"><span class="nav-number">1.36.</span> <span class="nav-text">TCP和UDP？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP拥塞控制？"><span class="nav-number">1.37.</span> <span class="nav-text">TCP拥塞控制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三次握手？四次挥手？"><span class="nav-number">1.38.</span> <span class="nav-text">三次握手？四次挥手？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cookie与Session"><span class="nav-number">1.39.</span> <span class="nav-text">Cookie与Session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程安全了解吗？可以自己写一个线程安全的类吗？"><span class="nav-number">1.40.</span> <span class="nav-text">线程安全了解吗？可以自己写一个线程安全的类吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#读过java类库源码？讲一下？？？"><span class="nav-number">1.41.</span> <span class="nav-text">读过java类库源码？讲一下？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-I-O操作？"><span class="nav-number">1.42.</span> <span class="nav-text">Linux I&#x2F;O操作？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSO单点登录？"><span class="nav-number">1.43.</span> <span class="nav-text">SSO单点登录？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#秒杀遇到的问题以及解决方案？"><span class="nav-number">1.44.</span> <span class="nav-text">秒杀遇到的问题以及解决方案？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java实现方法限流？"><span class="nav-number">1.45.</span> <span class="nav-text">Java实现方法限流？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存穿透和缓存雪崩？？？"><span class="nav-number">1.46.</span> <span class="nav-text">缓存穿透和缓存雪崩？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exception-与-Error包结构？"><span class="nav-number">1.47.</span> <span class="nav-text">Exception 与 Error包结构？</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#记录自己准备面试的一些东西"><span class="nav-number">1.</span> <span class="nav-text">记录自己准备面试的一些东西</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-你在使用Java-jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。"><span class="nav-number">1.1.</span> <span class="nav-text">1 你在使用Java jdk的时候，或者使用springboot框架的时候，见到过什么设计模式？请描述一下。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？"><span class="nav-number">1.2.</span> <span class="nav-text">2 Java有哪些集合类？比如用过HashMap吗？HashMap和HashTable以及ConcurrentHashMap的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-什么是反射？反射有哪些优点？又有哪些缺点？"><span class="nav-number">1.3.</span> <span class="nav-text">3 什么是反射？反射有哪些优点？又有哪些缺点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-你是用什么方案处理Java高并发问题的？可以详细讲讲吗？"><span class="nav-number">1.4.</span> <span class="nav-text">4. 你是用什么方案处理Java高并发问题的？可以详细讲讲吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-MQ如何保证消息的幂等性"><span class="nav-number">1.5.</span> <span class="nav-text">5. MQ如何保证消息的幂等性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#有状态和无状态-Bean"><span class="nav-number">1.5.1.</span> <span class="nav-text">有状态和无状态 Bean</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OOM？"><span class="nav-number">1.5.2.</span> <span class="nav-text">OOM？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？"><span class="nav-number">1.6.</span> <span class="nav-text">在做知识图谱系统中你遇到过最大的技术困难是什么？又是怎么解决的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你使用Redis做过什么？是怎么实现的？"><span class="nav-number">1.7.</span> <span class="nav-text">你使用Redis做过什么？是怎么实现的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聊一下JVM？"><span class="nav-number">1.8.</span> <span class="nav-text">聊一下JVM？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谈一谈String、StringBuilder、StringBuffer？"><span class="nav-number">1.9.</span> <span class="nav-text">谈一谈String、StringBuilder、StringBuffer？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重写与重载？"><span class="nav-number">1.10.</span> <span class="nav-text">重写与重载？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类和对象？"><span class="nav-number">1.11.</span> <span class="nav-text">类和对象？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主从复制？"><span class="nav-number">1.12.</span> <span class="nav-text">主从复制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务隔离级别？acid？"><span class="nav-number">1.13.</span> <span class="nav-text">事务隔离级别？acid？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封锁类型？"><span class="nav-number">1.14.</span> <span class="nav-text">封锁类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mybatis优缺点？"><span class="nav-number">1.15.</span> <span class="nav-text">Mybatis优缺点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封锁粒度"><span class="nav-number">1.16.</span> <span class="nav-text">封锁粒度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA锁？乐观、悲观实现"><span class="nav-number">1.17.</span> <span class="nav-text">JAVA锁？乐观、悲观实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring框架的优点？"><span class="nav-number">1.18.</span> <span class="nav-text">Spring框架的优点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP和UDP？"><span class="nav-number">1.19.</span> <span class="nav-text">TCP和UDP？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP拥塞控制？"><span class="nav-number">1.20.</span> <span class="nav-text">TCP拥塞控制？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三次握手？四次挥手？"><span class="nav-number">1.21.</span> <span class="nav-text">三次握手？四次挥手？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cookie与Session"><span class="nav-number">1.22.</span> <span class="nav-text">Cookie与Session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程安全了解吗？可以自己写一个线程安全的类吗？"><span class="nav-number">1.23.</span> <span class="nav-text">线程安全了解吗？可以自己写一个线程安全的类吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#读过java类库源码？讲一下？？？"><span class="nav-number">1.24.</span> <span class="nav-text">读过java类库源码？讲一下？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux-I-O操作？"><span class="nav-number">1.25.</span> <span class="nav-text">Linux I&#x2F;O操作？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSO单点登录？"><span class="nav-number">1.26.</span> <span class="nav-text">SSO单点登录？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#秒杀遇到的问题以及解决方案？"><span class="nav-number">1.27.</span> <span class="nav-text">秒杀遇到的问题以及解决方案？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java实现方法限流？"><span class="nav-number">1.28.</span> <span class="nav-text">Java实现方法限流？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存穿透和缓存雪崩？？？"><span class="nav-number">1.29.</span> <span class="nav-text">缓存穿透和缓存雪崩？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exception-与-Error包结构？"><span class="nav-number">1.30.</span> <span class="nav-text">Exception 与 Error包结构？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sleep与wait"><span class="nav-number">1.31.</span> <span class="nav-text">sleep与wait</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序？"><span class="nav-number">1.32.</span> <span class="nav-text">堆排序？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#几大范式？"><span class="nav-number">1.33.</span> <span class="nav-text">几大范式？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hash算法？"><span class="nav-number">1.34.</span> <span class="nav-text">Hash算法？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程的几个状态？"><span class="nav-number">1.35.</span> <span class="nav-text">线程的几个状态？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#join方法"><span class="nav-number">1.36.</span> <span class="nav-text">join方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B树和B-树？"><span class="nav-number">1.37.</span> <span class="nav-text">B树和B+树？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CMS与G1垃圾收集器："><span class="nav-number">1.38.</span> <span class="nav-text">CMS与G1垃圾收集器：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布隆过滤器？"><span class="nav-number">1.39.</span> <span class="nav-text">布隆过滤器？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一致性哈希？"><span class="nav-number">1.40.</span> <span class="nav-text">一致性哈希？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java处理Excel问题？"><span class="nav-number">1.41.</span> <span class="nav-text">java处理Excel问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java序列化与反序列化？"><span class="nav-number">1.42.</span> <span class="nav-text">java序列化与反序列化？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式体系？"><span class="nav-number">1.43.</span> <span class="nav-text">分布式体系？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TOMCAT-实现原理？"><span class="nav-number">1.44.</span> <span class="nav-text">TOMCAT 实现原理？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种分布式锁实现方式？"><span class="nav-number">1.45.</span> <span class="nav-text">三种分布式锁实现方式？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java类库？"><span class="nav-number">1.46.</span> <span class="nav-text">java类库？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户态、核心态？？？"><span class="nav-number">1.47.</span> <span class="nav-text">用户态、核心态？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#死锁和解决方式？"><span class="nav-number">1.48.</span> <span class="nav-text">死锁和解决方式？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置一个带过期时间的LRU缓存："><span class="nav-number">1.49.</span> <span class="nav-text">设置一个带过期时间的LRU缓存：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计一个分布式锁："><span class="nav-number">1.50.</span> <span class="nav-text">设计一个分布式锁：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CAP与BASE？"><span class="nav-number">1.51.</span> <span class="nav-text">CAP与BASE？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Socket"><span class="nav-number">1.52.</span> <span class="nav-text">Socket?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fork函数？"><span class="nav-number">1.53.</span> <span class="nav-text">fork函数？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可重入锁？"><span class="nav-number">1.54.</span> <span class="nav-text">可重入锁？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公平锁和非公平锁"><span class="nav-number">1.55.</span> <span class="nav-text">公平锁和非公平锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring中的JDK动态代理-和CGLIB？"><span class="nav-number">1.56.</span> <span class="nav-text">Spring中的JDK动态代理 和CGLIB？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mybatis如何实现动态SQL？"><span class="nav-number">1.57.</span> <span class="nav-text">Mybatis如何实现动态SQL？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆和栈？？？"><span class="nav-number">1.58.</span> <span class="nav-text">堆和栈？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库索引为什么要用B-树？？？"><span class="nav-number">1.59.</span> <span class="nav-text">数据库索引为什么要用B+树？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP长连接，短连接？？？"><span class="nav-number">1.60.</span> <span class="nav-text">HTTP长连接，短连接？？？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java泛型和类型擦除"><span class="nav-number">1.61.</span> <span class="nav-text">Java泛型和类型擦除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select-与-epoll？"><span class="nav-number">1.62.</span> <span class="nav-text">select 与 epoll？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP状态码？"><span class="nav-number">1.63.</span> <span class="nav-text">HTTP状态码？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP校验和"><span class="nav-number">1.64.</span> <span class="nav-text">TCP校验和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP快重传"><span class="nav-number">1.65.</span> <span class="nav-text">TCP快重传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP-粘包？"><span class="nav-number">1.66.</span> <span class="nav-text">TCP 粘包？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SOCKET通信原理？"><span class="nav-number">1.67.</span> <span class="nav-text">SOCKET通信原理？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阿里面经"><span class="nav-number">1.68.</span> <span class="nav-text">阿里面经</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Java线程的状态？"><span class="nav-number">1.68.1.</span> <span class="nav-text">Java线程的状态？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#进程和线程的区别，进程间如何通讯，线程间如何通讯？"><span class="nav-number">1.68.2.</span> <span class="nav-text">进程和线程的区别，进程间如何通讯，线程间如何通讯？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CAS"><span class="nav-number">1.68.3.</span> <span class="nav-text">CAS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CAS-Synchronized取代Segment-ReentrantLock"><span class="nav-number">1.68.4.</span> <span class="nav-text">CAS+Synchronized取代Segment+ReentrantLock</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReentrantLock与Synchronized？"><span class="nav-number">1.68.5.</span> <span class="nav-text">ReentrantLock与Synchronized？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Cookie和Session的区别"><span class="nav-number">1.68.6.</span> <span class="nav-text">Cookie和Session的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#索引有什么用？如何建索引？"><span class="nav-number">1.68.7.</span> <span class="nav-text">索引有什么用？如何建索引？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。"><span class="nav-number">1.68.8.</span> <span class="nav-text">ArrayList是如何实现的，ArrayList和LinkedList的区别？ArrayList如何实现扩容。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#equals方法实现"><span class="nav-number">1.68.9.</span> <span class="nav-text">equals方法实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象"><span class="nav-number">1.68.10.</span> <span class="nav-text">面向对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VM如何加载字节码文件"><span class="nav-number">1.68.11.</span> <span class="nav-text">VM如何加载字节码文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何排查内存溢出"><span class="nav-number">1.68.12.</span> <span class="nav-text">如何排查内存溢出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ThreadLocal？"><span class="nav-number">1.68.13.</span> <span class="nav-text">ThreadLocal？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#IO与NIO？"><span class="nav-number">1.68.14.</span> <span class="nav-text">IO与NIO？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql存储引擎-myIsam和innodb的区别？"><span class="nav-number">1.68.15.</span> <span class="nav-text">mysql存储引擎 myIsam和innodb的区别？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁："><span class="nav-number">1.69.</span> <span class="nav-text">两种类型最主要的差别是InnoDB支持事务处理与外键和行级锁：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#缓存失效如何解决？"><span class="nav-number">1.69.1.</span> <span class="nav-text">缓存失效如何解决？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Netty零拷贝"><span class="nav-number">1.69.2.</span> <span class="nav-text">Netty零拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SpringMVC请求过程"><span class="nav-number">1.69.3.</span> <span class="nav-text">SpringMVC请求过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mysql强制走索引？"><span class="nav-number">1.69.4.</span> <span class="nav-text">Mysql强制走索引？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#java引用类型？"><span class="nav-number">1.69.5.</span> <span class="nav-text">java引用类型？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#final-finally-finalize的区别"><span class="nav-number">1.69.6.</span> <span class="nav-text">final finally finalize的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#枚举单例"><span class="nav-number">1.69.7.</span> <span class="nav-text">枚举单例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于分布式事务、两阶段提交协议、三阶提交协议"><span class="nav-number">1.69.8.</span> <span class="nav-text">关于分布式事务、两阶段提交协议、三阶提交协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备阶段"><span class="nav-number">1.70.</span> <span class="nav-text">准备阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交阶段"><span class="nav-number">1.71.</span> <span class="nav-text">提交阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CanCommit阶段"><span class="nav-number">1.72.</span> <span class="nav-text">CanCommit阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PreCommit阶段"><span class="nav-number">1.73.</span> <span class="nav-text">PreCommit阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#doCommit阶段"><span class="nav-number">1.74.</span> <span class="nav-text">doCommit阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#TDD开发模式"><span class="nav-number">1.74.1.</span> <span class="nav-text">TDD开发模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MVCC"><span class="nav-number">1.74.2.</span> <span class="nav-text">MVCC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虚拟内存"><span class="nav-number">1.74.3.</span> <span class="nav-text">虚拟内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Netty"><span class="nav-number">1.74.4.</span> <span class="nav-text">Netty</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -689,12 +1324,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span>
       </div>
   </nav>
@@ -721,7 +1356,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
